@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SilkTest.Workbench.Common" tests="1" time="7217">
+   <testcase name="calc_failed" classname="SilkTest.Workbench.Common" time="7217">
+      <failure/>
+   </testcase>
+</testsuite>

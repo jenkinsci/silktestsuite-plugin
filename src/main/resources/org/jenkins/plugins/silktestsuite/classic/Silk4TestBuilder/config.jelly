@@ -1,0 +1,15 @@
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+  <st:documentation>
+    Executes a VisualTest or a VB.net TestScript with Borland SilkTest Workbench
+    <st:attribute name="testScript" use="required"/>
+  </st:documentation>
+  <f:entry title="Test Script:">
+    <f:textbox field="testScript" value="${instance.testScript}" />
+  </f:entry>
+  <f:entry title="Option File:">
+    <f:textbox field="optionFile" value="${instance.optionFile}" />
+  </f:entry>
+  <f:entry title="Query:">
+    <f:textbox field="query" value="${instance.query}" />
+  </f:entry>
+</j:jelly>

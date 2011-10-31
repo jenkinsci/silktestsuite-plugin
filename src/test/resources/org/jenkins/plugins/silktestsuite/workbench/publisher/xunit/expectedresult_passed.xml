@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SilkTest.Workbench.Common" tests="1" time="7343">
+   <testcase name="calc" classname="SilkTest.Workbench.Common" time="7343"/>
+</testsuite>

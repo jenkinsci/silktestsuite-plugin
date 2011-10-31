@@ -1,0 +1,26 @@
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+  <st:documentation>
+    Executes a VisualTest or a VB.net TestScript with Borland SilkTest Workbench
+    <st:attribute name="user" use="required"/>
+    <st:attribute name="password" use="required"/>
+    <st:attribute name="dsn" use="required"/>
+  </st:documentation>
+  <f:entry title="User:">
+    <f:textbox field="user" value="${instance.user}" />
+  </f:entry>
+  <f:entry title="Password:">
+    <f:password field="password" value="${instance.password}" />
+  </f:entry>
+  <f:entry title="Data Source Name:">
+    <f:textbox field="dsn" value="${instance.dsn}" />
+  </f:entry>
+  <f:entry title="Project name(s):">
+    <f:textbox field="projectsCsv" value="${instance.projectsCsv}" />
+  </f:entry>
+  <f:entry title="Test name(s):">
+    <f:textbox field="namesCsv" value="${instance.namesCsv}" />
+  </f:entry>
+  <f:entry title="Playback Environment Settings">
+    <f:textbox field="playbackenv" value="${instance.playbackenv}" />
+  </f:entry>
+</j:jelly>

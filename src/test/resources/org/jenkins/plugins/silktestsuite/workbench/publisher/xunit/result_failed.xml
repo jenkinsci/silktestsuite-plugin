@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ExternalReferenceModel xmlns:dt="urn:schemas-microsoft-com:datatypes" version="1">
+  <Execution>
+    <Result name="calc_failed">
+      <ResultEntry>
+        <AssetName dt:dt="string" xml:space="preserve" AssociatedProject="Common">calc_failed</AssetName>
+        <TestName dt:dt="string" xml:space="preserve">calc_failed</TestName>
+        <DateTime dt:dt="string" xml:space="preserve">2011-10-10T19:18:50</DateTime>
+        <Result dt:dt="string" xml:space="preserve" IntVal="1"></Result>
+        <ResultLineNumber dt:dt="i4">1</ResultLineNumber>
+        <TestLineNumber dt:dt="i4">1</TestLineNumber>
+        <Actions dt:dt="string" xml:space="preserve">&lt;&lt;Start&gt;&gt;</Actions>
+        <ResultDetail dt:dt="string" xml:space="preserve"></ResultDetail>
+        <CommandDetails dt:dt="string" xml:space="preserve"></CommandDetails>
+        <UserName dt:dt="string" xml:space="preserve">Admin</UserName>
+        <MachineName dt:dt="string" xml:space="preserve">LNZ-VMWINXP32-E</MachineName>
+        <MilliSeconds dt:dt="i2">711</MilliSeconds>
+        <Properties>
+          <Category Name="Result details" Value="" />
+          <Category Name="Result" Value="">
+            <Level1 Name="Steps" Value="&lt;&lt;Start&gt;&gt;" />
+            <Level1 Name="Result" Value="" />
+            <Level1 Name="Result detail" Value="" />
+          </Category>
+        </Properties>
+      </ResultEntry>
+      <ResultEntry>
+        <AssetName dt:dt="string" xml:space="preserve" AssociatedProject="Common">calc_failed</AssetName>
+        <TestName dt:dt="string" xml:space="preserve">calc_failed</TestName>
+        <DateTime dt:dt="string" xml:space="preserve">2011-10-10T19:18:50</DateTime>
+        <Result dt:dt="string" xml:space="preserve" IntVal="1"></Result>
+        <ResultLineNumber dt:dt="i4">2</ResultLineNumber>
+        <TestLineNumber dt:dt="i4">2</TestLineNumber>
+        <Actions dt:dt="string" xml:space="preserve">Make 'calculator' active</Actions>
+        <ResultDetail dt:dt="string" xml:space="preserve"></ResultDetail>
+        <CommandDetails dt:dt="string" xml:space="preserve"></CommandDetails>
+        <UserName dt:dt="string" xml:space="preserve">Admin</UserName>
+        <MachineName dt:dt="string" xml:space="preserve">LNZ-VMWINXP32-E</MachineName>
+        <MilliSeconds dt:dt="i2">727</MilliSeconds>
+        <Properties>
+          <Category Name="Result details" Value="" />
+          <Category Name="Result" Value="">
+            <Level1 Name="Steps" Value="Make 'calculator' active" />
+            <Level1 Name="Result" Value="" />
+            <Level1 Name="Result detail" Value="" />
+          </Category>
+          <Category Name="Playback details" Value="" />
+          <Category Name="Extended properties" Value="">
+            <Level1 Name="Locator" Value="calculator" />
+          </Category>
+        </Properties>
+      </ResultEntry>
+      <ResultEntry>
+        <AssetName dt:dt="string" xml:space="preserve" AssociatedProject="Common">calc_failed</AssetName>
+        <TestName dt:dt="string" xml:space="preserve">calc_failed</TestName>
+        <DateTime dt:dt="string" xml:space="preserve">2011-10-10T19:18:51</DateTime>
+        <Result dt:dt="string" xml:space="preserve" IntVal="1"></Result>
+        <ResultLineNumber dt:dt="i4">3</ResultLineNumber>
+        <TestLineNumber dt:dt="i4">3</TestLineNumber>
+        <Actions dt:dt="string" xml:space="preserve">Using Window 'calculator'</Actions>
+        <ResultDetail dt:dt="string" xml:space="preserve"></ResultDetail>
+        <CommandDetails dt:dt="string" xml:space="preserve"></CommandDetails>
+        <UserName dt:dt="string" xml:space="preserve">Admin</UserName>
+        <MachineName dt:dt="string" xml:space="preserve">LNZ-VMWINXP32-E</MachineName>
+        <MilliSeconds dt:dt="i2">149</MilliSeconds>
+        <Properties>
+          <Category Name="Result details" Value="" />
+          <Category Name="Result" Value="">
+            <Level1 Name="Steps" Value="Make 'calculator' active" />
+            <Level1 Name="Result" Value="" />
+            <Level1 Name="Result detail" Value="" />
+          </Category>
+          <Category Name="Playback details" Value="" />
+          <Category Name="Extended properties" Value="">
+            <Level1 Name="Locator" Value="calculator" />
+          </Category>
+        </Properties>
+      </ResultEntry>
+      <ResultEntry>
+        <AssetName dt:dt="string" xml:space="preserve" AssociatedProject="Common">calc_failed</AssetName>
+        <TestName dt:dt="string" xml:space="preserve">calc_failed</TestName>
+        <DateTime dt:dt="string" xml:space="preserve">2011-10-10T19:18:51</DateTime>
+        <Result dt:dt="string" xml:space="preserve" IntVal="1"></Result>
+        <ResultLineNumber dt:dt="i4">4</ResultLineNumber>
+        <TestLineNumber dt:dt="i4">4</TestLineNumber>
+        <Actions dt:dt="string" xml:space="preserve">Select button 'pushButton1'</Actions>
+        <ResultDetail dt:dt="string" xml:space="preserve"></ResultDetail>
+        <CommandDetails dt:dt="string" xml:space="preserve"></CommandDetails>
+        <UserName dt:dt="string" xml:space="preserve">Admin</UserName>
+        <MachineName dt:dt="string" xml:space="preserve">LNZ-VMWINXP32-E</MachineName>
+        <MilliSeconds dt:dt="i2">258</MilliSeconds>
+        <Properties>
+          <Category Name="Result details" Value="" />
+          <Category Name="Result" Value="">
+            <Level1 Name="Steps" Value="Make 'calculator' active" />
+            <Level1 Name="Result" Value="" />
+            <Level1 Name="Result detail" Value="" />
+          </Category>
+          <Category Name="Playback details" Value="" />
+          <Category Name="Extended properties" Value="">
+            <Level1 Name="Locator" Value="calculator" />
+          </Category>
+        </Properties>
+      </ResultEntry>
+      <ResultEntry>
+        <AssetName dt:dt="string" xml:space="preserve" AssociatedProject="Common">calc_failed</AssetName>
+        <TestName dt:dt="string" xml:space="preserve">calc_failed</TestName>
+        <DateTime dt:dt="string" xml:space="preserve">2011-10-10T19:18:51</DateTime>
+        <Result dt:dt="string" xml:space="preserve" IntVal="1"></Result>
+        <ResultLineNumber dt:dt="i4">5</ResultLineNumber>
+        <TestLineNumber dt:dt="i4">5</TestLineNumber>
+        <Actions dt:dt="string" xml:space="preserve">Select button 'pushButton2'</Actions>
+        <ResultDetail dt:dt="string" xml:space="preserve"></ResultDetail>
+        <CommandDetails dt:dt="string" xml:space="preserve"></CommandDetails>
+        <UserName dt:dt="string" xml:space="preserve">Admin</UserName>
+        <MachineName dt:dt="string" xml:space="preserve">LNZ-VMWINXP32-E</MachineName>
+        <MilliSeconds dt:dt="i2">383</MilliSeconds>
+        <Properties>
+          <Category Name="Result details" Value="" />
+          <Category Name="Result" Value="">
+            <Level1 Name="Steps" Value="Make 'calculator' active" />
+            <Level1 Name="Result" Value="" />
+            <Level1 Name="Result detail" Value="" />
+          </Category>
+          <Category Name="Playback details" Value="" />
+          <Category Name="Extended properties" Value="">
+            <Level1 Name="Locator" Value="calculator" />
+          </Category>
+        </Properties>
+      </ResultEntry>
+      <ResultEntry>
+        <AssetName dt:dt="string" xml:space="preserve" AssociatedProject="Common">calc_failed</AssetName>
+        <TestName dt:dt="string" xml:space="preserve">calc_failed</TestName>
+        <DateTime dt:dt="string" xml:space="preserve">2011-10-10T19:18:51</DateTime>
+        <Result dt:dt="string" xml:space="preserve" IntVal="1"></Result>
+        <ResultLineNumber dt:dt="i4">6</ResultLineNumber>
+        <TestLineNumber dt:dt="i4">6</TestLineNumber>
+        <Actions dt:dt="string" xml:space="preserve">Select button 'pushButton3'</Actions>
+        <ResultDetail dt:dt="string" xml:space="preserve"></ResultDetail>
+        <CommandDetails dt:dt="string" xml:space="preserve"></CommandDetails>
+        <UserName dt:dt="string" xml:space="preserve">Admin</UserName>
+        <MachineName dt:dt="string" xml:space="preserve">LNZ-VMWINXP32-E</MachineName>
+        <MilliSeconds dt:dt="i2">508</MilliSeconds>
+        <Properties>
+          <Category Name="Result details" Value="" />
+          <Category Name="Result" Value="">
+            <Level1 Name="Steps" Value="Make 'calculator' active" />
+            <Level1 Name="Result" Value="" />
+            <Level1 Name="Result detail" Value="" />
+          </Category>
+          <Category Name="Playback details" Value="" />
+          <Category Name="Extended properties" Value="">
+            <Level1 Name="Locator" Value="calculator" />
+          </Category>
+        </Properties>
+      </ResultEntry>
+      <ResultEntry>
+        <AssetName dt:dt="string" xml:space="preserve" AssociatedProject="Common">calc_failed</AssetName>
+        <TestName dt:dt="string" xml:space="preserve">calc_failed</TestName>
+        <DateTime dt:dt="string" xml:space="preserve">2011-10-10T19:18:51</DateTime>
+        <Result dt:dt="string" xml:space="preserve" IntVal="1"></Result>
+        <ResultLineNumber dt:dt="i4">7</ResultLineNumber>
+        <TestLineNumber dt:dt="i4">7</TestLineNumber>
+        <Actions dt:dt="string" xml:space="preserve">Select button 'pushButton'</Actions>
+        <ResultDetail dt:dt="string" xml:space="preserve"></ResultDetail>
+        <CommandDetails dt:dt="string" xml:space="preserve"></CommandDetails>
+        <UserName dt:dt="string" xml:space="preserve">Admin</UserName>
+        <MachineName dt:dt="string" xml:space="preserve">LNZ-VMWINXP32-E</MachineName>
+        <MilliSeconds dt:dt="i2">618</MilliSeconds>
+        <Properties>
+          <Category Name="Result details" Value="" />
+          <Category Name="Result" Value="">
+            <Level1 Name="Steps" Value="Make 'calculator' active" />
+            <Level1 Name="Result" Value="" />
+            <Level1 Name="Result detail" Value="" />
+          </Category>
+          <Category Name="Playback details" Value="" />
+          <Category Name="Extended properties" Value="">
+            <Level1 Name="Locator" Value="calculator" />
+          </Category>
+        </Properties>
+      </ResultEntry>
+      <ResultEntry>
+        <AssetName dt:dt="string" xml:space="preserve" AssociatedProject="Common">calc_failed</AssetName>
+        <TestName dt:dt="string" xml:space="preserve">calc_failed</TestName>
+        <DateTime dt:dt="string" xml:space="preserve">2011-10-10T19:18:51</DateTime>
+        <Result dt:dt="string" xml:space="preserve" IntVal="1"></Result>
+        <ResultLineNumber dt:dt="i4">8</ResultLineNumber>
+        <TestLineNumber dt:dt="i4">8</TestLineNumber>
+        <Actions dt:dt="string" xml:space="preserve">Select button 'pushButton3'</Actions>
+        <ResultDetail dt:dt="string" xml:space="preserve"></ResultDetail>
+        <CommandDetails dt:dt="string" xml:space="preserve"></CommandDetails>
+        <UserName dt:dt="string" xml:space="preserve">Admin</UserName>
+        <MachineName dt:dt="string" xml:space="preserve">LNZ-VMWINXP32-E</MachineName>
+        <MilliSeconds dt:dt="i2">743</MilliSeconds>
+        <Properties>
+          <Category Name="Result details" Value="" />
+          <Category Name="Result" Value="">
+            <Level1 Name="Steps" Value="Make 'calculator' active" />
+            <Level1 Name="Result" Value="" />
+            <Level1 Name="Result detail" Value="" />
+          </Category>
+          <Category Name="Playback details" Value="" />
+          <Category Name="Extended properties" Value="">
+            <Level1 Name="Locator" Value="calculator" />
+          </Category>
+        </Properties>
+      </ResultEntry>
+      <ResultEntry>
+        <AssetName dt:dt="string" xml:space="preserve" AssociatedProject="Common">calc_failed</AssetName>
+        <TestName dt:dt="string" xml:space="preserve">calc_failed</TestName>
+        <DateTime dt:dt="string" xml:space="preserve">2011-10-10T19:18:51</DateTime>
+        <Result dt:dt="string" xml:space="preserve" IntVal="1"></Result>
+        <ResultLineNumber dt:dt="i4">9</ResultLineNumber>
+        <TestLineNumber dt:dt="i4">9</TestLineNumber>
+        <Actions dt:dt="string" xml:space="preserve">Select button 'pushButton2'</Actions>
+        <ResultDetail dt:dt="string" xml:space="preserve"></ResultDetail>
+        <CommandDetails dt:dt="string" xml:space="preserve"></CommandDetails>
+        <UserName dt:dt="string" xml:space="preserve">Admin</UserName>
+        <MachineName dt:dt="string" xml:space="preserve">LNZ-VMWINXP32-E</MachineName>
+        <MilliSeconds dt:dt="i2">852</MilliSeconds>
+        <Properties>
+          <Category Name="Result details" Value="" />
+          <Category Name="Result" Value="">
+            <Level1 Name="Steps" Value="Make 'calculator' active" />
+            <Level1 Name="Result" Value="" />
+            <Level1 Name="Result detail" Value="" />
+          </Category>
+          <Category Name="Playback details" Value="" />
+          <Category Name="Extended properties" Value="">
+            <Level1 Name="Locator" Value="calculator" />
+          </Category>
+        </Properties>
+      </ResultEntry>
+      <ResultEntry>
+        <AssetName dt:dt="string" xml:space="preserve" AssociatedProject="Common">calc_failed</AssetName>
+        <TestName dt:dt="string" xml:space="preserve">calc_failed</TestName>
+        <DateTime dt:dt="string" xml:space="preserve">2011-10-10T19:18:51</DateTime>
+        <Result dt:dt="string" xml:space="preserve" IntVal="1"></Result>
+        <ResultLineNumber dt:dt="i4">10</ResultLineNumber>
+        <TestLineNumber dt:dt="i4">10</TestLineNumber>
+        <Actions dt:dt="string" xml:space="preserve">Select button 'pushButton1'</Actions>
+        <ResultDetail dt:dt="string" xml:space="preserve"></ResultDetail>
+        <CommandDetails dt:dt="string" xml:space="preserve"></CommandDetails>
+        <UserName dt:dt="string" xml:space="preserve">Admin</UserName>
+        <MachineName dt:dt="string" xml:space="preserve">LNZ-VMWINXP32-E</MachineName>
+        <MilliSeconds dt:dt="i2">961</MilliSeconds>
+        <Properties>
+          <Category Name="Result details" Value="" />
+          <Category Name="Result" Value="">
+            <Level1 Name="Steps" Value="Make 'calculator' active" />
+            <Level1 Name="Result" Value="" />
+            <Level1 Name="Result detail" Value="" />
+          </Category>
+          <Category Name="Playback details" Value="" />
+          <Category Name="Extended properties" Value="">
+            <Level1 Name="Locator" Value="calculator" />
+          </Category>
+        </Properties>
+      </ResultEntry>
+      <ResultEntry>
+        <AssetName dt:dt="string" xml:space="preserve" AssociatedProject="Common">calc_failed</AssetName>
+        <TestName dt:dt="string" xml:space="preserve">calc_failed</TestName>
+        <DateTime dt:dt="string" xml:space="preserve">2011-10-10T19:18:52</DateTime>
+        <Result dt:dt="string" xml:space="preserve" IntVal="1"></Result>
+        <ResultLineNumber dt:dt="i4">11</ResultLineNumber>
+        <TestLineNumber dt:dt="i4">11</TestLineNumber>
+        <Actions dt:dt="string" xml:space="preserve">Select button 'pushButton4'</Actions>
+        <ResultDetail dt:dt="string" xml:space="preserve"></ResultDetail>
+        <CommandDetails dt:dt="string" xml:space="preserve"></CommandDetails>
+        <UserName dt:dt="string" xml:space="preserve">Admin</UserName>
+        <MachineName dt:dt="string" xml:space="preserve">LNZ-VMWINXP32-E</MachineName>
+        <MilliSeconds dt:dt="i2">133</MilliSeconds>
+        <Properties>
+          <Category Name="Result details" Value="" />
+          <Category Name="Result" Value="">
+            <Level1 Name="Steps" Value="Make 'calculator' active" />
+            <Level1 Name="Result" Value="" />
+            <Level1 Name="Result detail" Value="" />
+          </Category>
+          <Category Name="Playback details" Value="" />
+          <Category Name="Extended properties" Value="">
+            <Level1 Name="Locator" Value="calculator" />
+          </Category>
+        </Properties>
+      </ResultEntry>
+      <ResultEntry>
+        <AssetName dt:dt="string" xml:space="preserve" AssociatedProject="Common">calc_failed</AssetName>
+        <TestName dt:dt="string" xml:space="preserve">calc_failed</TestName>
+        <DateTime dt:dt="string" xml:space="preserve">2011-10-10T19:18:52</DateTime>
+        <Result dt:dt="string" xml:space="preserve" IntVal="2">Failed</Result>
+        <ResultLineNumber dt:dt="i4">12</ResultLineNumber>
+        <TestLineNumber dt:dt="i4">12</TestLineNumber>
+        <Actions dt:dt="string" xml:space="preserve">Verify "calculator.textField"."Text" Is Equal to "0, "</Actions>
+        <ResultDetail dt:dt="string" xml:space="preserve">Verification failed</ResultDetail>
+        <CommandDetails dt:dt="string" xml:space="preserve"></CommandDetails>
+        <UserName dt:dt="string" xml:space="preserve">Admin</UserName>
+        <MachineName dt:dt="string" xml:space="preserve">LNZ-VMWINXP32-E</MachineName>
+        <MilliSeconds dt:dt="i2">165</MilliSeconds>
+        <Properties>
+          <Category Name="Result details" Value="" />
+          <Category Name="Result" Value="">
+            <Level1 Name="Steps" Value="Make 'calculator' active" />
+            <Level1 Name="Result" Value="" />
+            <Level1 Name="Result detail" Value="" />
+          </Category>
+          <Category Name="Playback details" Value="" />
+          <Category Name="Extended properties" Value="">
+            <Level1 Name="Locator" Value="calculator" />
+          </Category>
+        </Properties>
+      </ResultEntry>
+      <ResultEntry>
+        <AssetName dt:dt="string" xml:space="preserve" AssociatedProject="Common">calc_failed</AssetName>
+        <TestName dt:dt="string" xml:space="preserve">calc_failed</TestName>
+        <DateTime dt:dt="string" xml:space="preserve">2011-10-10T19:18:52</DateTime>
+        <Result dt:dt="string" xml:space="preserve" IntVal="1"></Result>
+        <ResultLineNumber dt:dt="i4">13</ResultLineNumber>
+        <TestLineNumber dt:dt="i4">13</TestLineNumber>
+        <Actions dt:dt="string" xml:space="preserve">Make 'calculator' active</Actions>
+        <ResultDetail dt:dt="string" xml:space="preserve"></ResultDetail>
+        <CommandDetails dt:dt="string" xml:space="preserve"></CommandDetails>
+        <UserName dt:dt="string" xml:space="preserve">Admin</UserName>
+        <MachineName dt:dt="string" xml:space="preserve">LNZ-VMWINXP32-E</MachineName>
+        <MilliSeconds dt:dt="i2">258</MilliSeconds>
+        <Properties>
+          <Category Name="Result details" Value="" />
+          <Category Name="Result" Value="">
+            <Level1 Name="Steps" Value="Make 'calculator' active" />
+            <Level1 Name="Result" Value="" />
+            <Level1 Name="Result detail" Value="" />
+          </Category>
+          <Category Name="Playback details" Value="" />
+          <Category Name="Extended properties" Value="">
+            <Level1 Name="Locator" Value="calculator" />
+          </Category>
+        </Properties>
+      </ResultEntry>
+      <ResultEntry>
+        <AssetName dt:dt="string" xml:space="preserve" AssociatedProject="Common">calc_failed</AssetName>
+        <TestName dt:dt="string" xml:space="preserve">calc_failed</TestName>
+        <DateTime dt:dt="string" xml:space="preserve">2011-10-10T19:18:52</DateTime>
+        <Result dt:dt="string" xml:space="preserve" IntVal="1"></Result>
+        <ResultLineNumber dt:dt="i4">14</ResultLineNumber>
+        <TestLineNumber dt:dt="i4">14</TestLineNumber>
+        <Actions dt:dt="string" xml:space="preserve">Close 'calculator'</Actions>
+        <ResultDetail dt:dt="string" xml:space="preserve"></ResultDetail>
+        <CommandDetails dt:dt="string" xml:space="preserve"></CommandDetails>
+        <UserName dt:dt="string" xml:space="preserve">Admin</UserName>
+        <MachineName dt:dt="string" xml:space="preserve">LNZ-VMWINXP32-E</MachineName>
+        <MilliSeconds dt:dt="i2">368</MilliSeconds>
+        <Properties>
+          <Category Name="Result details" Value="" />
+          <Category Name="Result" Value="">
+            <Level1 Name="Steps" Value="Make 'calculator' active" />
+            <Level1 Name="Result" Value="" />
+            <Level1 Name="Result detail" Value="" />
+          </Category>
+          <Category Name="Playback details" Value="" />
+          <Category Name="Extended properties" Value="">
+            <Level1 Name="Locator" Value="calculator" />
+          </Category>
+        </Properties>
+      </ResultEntry>
+      <ResultEntry>
+        <AssetName dt:dt="string" xml:space="preserve" AssociatedProject="Common">calc_failed</AssetName>
+        <TestName dt:dt="string" xml:space="preserve">calc_failed</TestName>
+        <DateTime dt:dt="string" xml:space="preserve">2011-10-10T19:18:52</DateTime>
+        <Result dt:dt="string" xml:space="preserve" IntVal="1"></Result>
+        <ResultLineNumber dt:dt="i4">15</ResultLineNumber>
+        <TestLineNumber dt:dt="i4">15</TestLineNumber>
+        <Actions dt:dt="string" xml:space="preserve">&lt;&lt;End&gt;&gt;</Actions>
+        <ResultDetail dt:dt="string" xml:space="preserve"></ResultDetail>
+        <CommandDetails dt:dt="string" xml:space="preserve"></CommandDetails>
+        <UserName dt:dt="string" xml:space="preserve">Admin</UserName>
+        <MachineName dt:dt="string" xml:space="preserve">LNZ-VMWINXP32-E</MachineName>
+        <MilliSeconds dt:dt="i2">383</MilliSeconds>
+        <Properties>
+          <Category Name="Result details" Value="" />
+          <Category Name="Result" Value="">
+            <Level1 Name="Steps" Value="Make 'calculator' active" />
+            <Level1 Name="Result" Value="" />
+            <Level1 Name="Result detail" Value="" />
+          </Category>
+          <Category Name="Playback details" Value="" />
+          <Category Name="Extended properties" Value="">
+            <Level1 Name="Locator" Value="calculator" />
+          </Category>
+        </Properties>
+      </ResultEntry>
+    </Result>
+  </Execution>
+</ExternalReferenceModel>
