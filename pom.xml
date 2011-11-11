@@ -1,10 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>org.jvnet.hudson.plugins</groupId>
+    <groupId>org.jenkins-ci.plugins</groupId>
     <artifactId>plugin</artifactId>
-    <version>1.395</version><!-- which version of Hudson is this plugin built against? -->
-    <relativePath />
+    <version>1.409</version><!-- which version of Hudson is this plugin built against? -->
+    <relativePath>..\pom.xml</relativePath>
   </parent>
   <groupId>org.jenkins.plugins</groupId>
   <artifactId>silktestsuite</artifactId>
@@ -52,6 +52,16 @@
       <id>m.g.o-public</id>
       <url>http://maven.glassfish.org/content/groups/public/</url>
     </repository>
+    <repository>
+      <id>maven.jenkins-ci.org</id>
+      <url>http://maven.jenkins-ci.org:8081/content/repositories/releases/</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
   </repositories>
   <pluginRepositories>
     <pluginRepository>
@@ -60,20 +70,6 @@
     </pluginRepository>
   </pluginRepositories>
   <dependencies>
-    <dependency>
-      <groupId>com.segue.silktest</groupId>
-      <artifactId>stCtrl</artifactId>
-      <version>1.0.0</version>
-      <type>jar</type>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.segue.silktest</groupId>
-      <artifactId>core</artifactId>
-      <version>1.0.0</version>
-      <type>jar</type>
-      <scope>compile</scope>
-    </dependency>
     <dependency>
       <groupId>org.jvnet.com4j</groupId>
       <artifactId>com4j</artifactId>
@@ -84,8 +80,7 @@
     <dependency>
       <groupId>commons-lang</groupId>
       <artifactId>commons-lang</artifactId>
-      <version>2.4</version>
-      <type>jar</type>
+      <version>[2.4,)</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
@@ -139,5 +134,106 @@
   </distributionManagement>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <externals>D:\workspace\trunk\SilkTestClassic\lib\performer</externals>
   </properties>
+  <build>
+  	<pluginManagement>
+  		<plugins>
+  			<!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
+  			<plugin>
+  				<groupId>org.eclipse.m2e</groupId>
+  				<artifactId>lifecycle-mapping</artifactId>
+  				<version>1.0.0</version>
+  				<configuration>
+  					<lifecycleMappingMetadata>
+  						<pluginExecutions>
+  							<pluginExecution>
+  								<pluginExecutionFilter>
+  									<groupId>org.apache.maven.plugins</groupId>
+  									<artifactId>maven-enforcer-plugin</artifactId>
+  									<versionRange>[1.0,)</versionRange>
+  									<goals>
+  										<goal>display-info</goal>
+  									</goals>
+  								</pluginExecutionFilter>
+  								<action>
+  									<ignore></ignore>
+  								</action>
+  							</pluginExecution>
+  							<pluginExecution>
+  								<pluginExecutionFilter>
+  									<groupId>org.jenkins-ci.tools</groupId>
+  									<artifactId>maven-hpi-plugin</artifactId>
+  									<versionRange>[1.67,)</versionRange>
+  									<goals>
+  										<goal>resolve-test-dependencies</goal>
+  										<goal>apt-compile</goal>
+  										<goal>insert-test</goal>
+  										<goal>test-hpl</goal>
+  									</goals>
+  								</pluginExecutionFilter>
+  								<action>
+  									<ignore></ignore>
+  								</action>
+  							</pluginExecution>
+  							<pluginExecution>
+  								<pluginExecutionFilter>
+  									<groupId>org.kohsuke</groupId>
+  									<artifactId>access-modifier-checker</artifactId>
+  									<versionRange>[1.0,)</versionRange>
+  									<goals>
+  										<goal>enforce</goal>
+  									</goals>
+  								</pluginExecutionFilter>
+  								<action>
+  									<ignore></ignore>
+  								</action>
+  							</pluginExecution>
+  							<pluginExecution>
+  								<pluginExecutionFilter>
+  									<groupId>org.codehaus.groovy.maven</groupId>
+  									<artifactId>gmaven-plugin</artifactId>
+  									<versionRange>[1.0-rc-5,)</versionRange>
+  									<goals>
+  										<goal>generateTestStubs</goal>
+  										<goal>testCompile</goal>
+  									</goals>
+  								</pluginExecutionFilter>
+  								<action>
+  									<ignore></ignore>
+  								</action>
+  							</pluginExecution>
+  							<pluginExecution>
+  								<pluginExecutionFilter>
+  									<groupId>com.cloudbees</groupId>
+  									<artifactId>maven-license-plugin</artifactId>
+  									<versionRange>[1.1,)</versionRange>
+  									<goals>
+  										<goal>process</goal>
+  									</goals>
+  								</pluginExecutionFilter>
+  								<action>
+  									<ignore></ignore>
+  								</action>
+  							</pluginExecution>
+  							<pluginExecution>
+  								<pluginExecutionFilter>
+  									<groupId>org.jvnet.localizer</groupId>
+  									<artifactId>maven-localizer-plugin</artifactId>
+  									<versionRange>[1.12,)</versionRange>
+  									<goals>
+  										<goal>generate</goal>
+  									</goals>
+  								</pluginExecutionFilter>
+  								<action>
+  									<ignore></ignore>
+  								</action>
+  							</pluginExecution>
+  						</pluginExecutions>
+  					</lifecycleMappingMetadata>
+  				</configuration>
+  			</plugin>
+  		</plugins>
+  	</pluginManagement>
+  </build>
 </project>

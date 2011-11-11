@@ -4,29 +4,27 @@ import java.io.PrintStream;
 import java.text.MessageFormat;
 import java.util.logging.Level;
 
-import com.segue.silktest.controller.ISilkTestEventHandler;
-
-public final class SilkTestEventHandler implements ISilkTestEventHandler {
+public final class SilkTestEventHandler { // implements ISilkTestEventHandler {
 
   private boolean testRunFinished;
   private boolean failed;
   private final PrintStream logger;
 
-  public SilkTestEventHandler(PrintStream logger) {
+  public SilkTestEventHandler(final PrintStream logger) {
     this.logger = logger;
   }
 
-  @Override
+  // @Override
   public void indicateDisconnection() {
   }
 
-  @Override
-  public void indicateInfo(int severity, String msg) {
-    Level level = getLogLevel(severity);
+  // @Override
+  public void indicateInfo(final int severity, final String msg) {
+    final Level level = getLogLevel(severity);
     logger.println(MessageFormat.format("{0}: {1}", level, msg));
   }
 
-  private Level getLogLevel(int severity) {
+  private Level getLogLevel(final int severity) {
     Level level;
     switch (severity) {
     case 1:
@@ -41,17 +39,17 @@ public final class SilkTestEventHandler implements ISilkTestEventHandler {
     return level;
   }
 
-  @Override
+  // @Override
   public void indicateTestcaseEnd() {
     testRunFinished = true;
   }
 
-  @Override
-  public void indicateTimer(String timer, long value) {
+  // @Override
+  public void indicateTimer(final String timer, final long value) {
   }
 
-  @Override
-  public boolean raiseErrorArg(int iError, String sError, int iArg, int iSeverity) {
+  // @Override
+  public boolean raiseErrorArg(final int iError, final String sError, final int iArg, final int iSeverity) {
     this.logger.println(MessageFormat.format("{0}: {1} - {2} ({3})", getLogLevel(iSeverity), iError, sError, iArg));
     failed = true;
     return true;
