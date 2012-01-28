@@ -1,6 +1,7 @@
 package org.jenkins.plugins.silktestsuite.classic;
 
 import hudson.FilePath;
+import hudson.Functions;
 import hudson.Launcher;
 import hudson.Launcher.ProcStarter;
 import hudson.Proc;
@@ -73,6 +74,12 @@ public final class Silk4TestBuilder extends Builder {
   @Override
   public boolean perform(final AbstractBuild<?, ?> build, final Launcher launcher, final BuildListener listener)
       throws InterruptedException, IOException {
+    if (!Functions.isWindows()) {
+      listener.error("Only available on Windows systems.");
+      build.setResult(Result.ABORTED);
+      return true;
+    }
+
     listener.getLogger().println(MessageFormat.format("[SilkTestSuite:Classic] Run {0}.", testScript));
 
     FilePath workDir = new FilePath(Hudson.getInstance().getRootPath(), "plugin/silktestsuite");
