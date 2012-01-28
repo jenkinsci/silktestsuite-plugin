@@ -9,6 +9,12 @@
   <f:entry title="Option File:">
     <f:textbox field="optionFile" value="${instance.optionFile}" />
   </f:entry>
+  <f:entry title="Project File:">
+    <f:textbox field="projectFile" value="${instance.projectFile}" />
+  </f:entry>
+  <f:entry title="ini File:">
+    <f:textbox field="iniFile" value="${instance.iniFile}" />
+  </f:entry>
   <f:entry title="Query:">
     <f:textbox field="query" value="${instance.query}" />
   </f:entry>

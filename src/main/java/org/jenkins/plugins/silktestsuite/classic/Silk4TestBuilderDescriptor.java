@@ -16,7 +16,7 @@ public final class Silk4TestBuilderDescriptor extends BuildStepDescriptor<Builde
 
   @Override
   public String getDisplayName() {
-    return "Borland SilkTest 4Test Execution";
+    return "SilkTest 4Test Configuration";
   }
 
   @Override
