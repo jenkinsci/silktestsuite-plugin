@@ -1,6 +1,5 @@
 package org.jenkins.plugins.silktestsuite.autotoolinstaller;
 
-import hudson.Extension;
 import hudson.tools.DownloadFromUrlInstaller;
 import hudson.tools.ToolInstallation;
 
@@ -13,7 +12,7 @@ public class SilkTestAutoInstaller extends DownloadFromUrlInstaller {
     super(id);
   }
 
-  @Extension
+  // @Extension
   public static final class DesciptorImpl extends DownloadFromUrlInstaller.DescriptorImpl<SilkTestAutoInstaller> {
     @Override
     public String getDisplayName() {

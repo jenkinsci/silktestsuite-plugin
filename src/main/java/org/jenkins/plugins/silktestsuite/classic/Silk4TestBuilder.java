@@ -127,6 +127,7 @@ public final class Silk4TestBuilder extends Builder {
     addOptionToCommandLine(cmd, "-o", optionFile);
     addOptionToCommandLine(cmd, "-p", projectFile);
     addOptionToCommandLine(cmd, "-i", iniFile);
+    addOptionToCommandLine(cmd, "-r", build.getWorkspace().toURI().toURL().getPath() + "/SilkTestResults/Classic");
     return cmd;
   }
 

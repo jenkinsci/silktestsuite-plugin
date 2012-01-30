@@ -1,6 +1,5 @@
 package org.jenkins.plugins.silktestsuite.autotoolinstaller;
 
-import hudson.Extension;
 import hudson.tools.ToolDescriptor;
 import hudson.tools.ToolInstaller;
 import hudson.tools.ToolProperty;
@@ -19,7 +18,7 @@ public class SilkTestInstallation extends ToolInstallation {
     super(name, home, properties);
   }
 
-  @Extension
+  // @Extension
   public static final class DescriptorImpl extends ToolDescriptor<SilkTestInstallation> {
 
     @Override
