@@ -18,8 +18,10 @@ import java.net.MalformedURLException;
 import java.text.MessageFormat;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 import java.util.logging.Logger;
 
+import org.jenkins.plugins.silktestsuite.common.Utils;
 import org.kohsuke.stapler.DataBoundConstructor;
 
 import com.google.common.base.Strings;
@@ -31,19 +33,19 @@ public final class Silk4TestBuilder extends Builder {
 
   private final String testScript;
   private final String optionFile;
-  private final String iniFile;
   private final String query;
-  private final String projectFile;
+  private final String configFile;
+  private final long timeout;
 
   @DataBoundConstructor
-  public Silk4TestBuilder(final String testScript, final String optionFile, final String projectFile,
-      final String iniFile, final String query) {
+  public Silk4TestBuilder(final String testScript, final String optionFile, final String configFile,
+      final String query, final String timeout) {
     super();
     this.testScript = testScript;
     this.optionFile = optionFile;
-    this.projectFile = projectFile;
-    this.iniFile = iniFile;
+    this.configFile = configFile;
     this.query = query;
+    this.timeout = Long.parseLong(timeout);
   }
 
   public String getTestScript() {
@@ -54,16 +56,16 @@ public final class Silk4TestBuilder extends Builder {
     return optionFile;
   }
 
-  public String getProjectFile() {
-    return projectFile;
-  }
-
-  public String getIniFile() {
-    return iniFile;
+  public String getConfigFile() {
+    return configFile;
   }
 
   public String getQuery() {
     return query;
+  }
+
+  public String getTimeout() {
+    return String.valueOf(timeout);
   }
 
   @Override
@@ -76,18 +78,26 @@ public final class Silk4TestBuilder extends Builder {
       throws InterruptedException, IOException {
     if (!Functions.isWindows()) {
       listener.error("Only available on Windows systems.");
+      LOGGER.severe("Windows is not supported for Silktest.");
       build.setResult(Result.ABORTED);
       return true;
     }
 
-    listener.getLogger().println(MessageFormat.format("[SilkTestSuite:Classic] Run {0}.", testScript));
+    if (!Utils.cleanupWorkspace(build.getWorkspace(), build.getTimestamp())) {
+      build.setResult(Result.FAILURE);
+      listener.error("[SilkTest Classic] Deleting the result folder failed.");
+      LOGGER.severe("Deleting result folder failed.");
+      return false;
+    }
+
+    listener.getLogger().println(MessageFormat.format("[SilkTest Classic] Run {0}.", testScript));
 
     FilePath workDir = new FilePath(Hudson.getInstance().getRootPath(), "plugin/silktestsuite");
     List<String> cmd = createCommandLine(build, workDir.toURI().toURL().getPath());
 
     ProcStarter silktestClassicDriver = launcher.launch().cmds(cmd).stdout(listener.getLogger());
     Proc launch = launcher.launch(silktestClassicDriver);
-    int exitCode = launch.join(); // TODO: use timeout
+    int exitCode = launch.joinWithTimeout(timeout, TimeUnit.SECONDS, listener);
 
     switch (exitCode) {
     case 0:
@@ -115,7 +125,9 @@ public final class Silk4TestBuilder extends Builder {
     });
 
     String pathOfSilkTestClassicDriver = listFiles != null ? listFiles[0].getAbsolutePath()
-        : "G:/jenkinsSVN/silktestsuite/src/main/webapp/silktestclassic-0.0.1-SNAPSHOT-jar-with-dependencies.jar";
+        : "G:/jenkinsSVN/silktestsuite/src/main/webapp/silktestclassic-0.0.1-SNAPSHOT-jar-with-dependencies.jar"; // FIXME:
+    // remove absolute path referencing the classic driver in case of debug mode
+    String pathToWorkspace = build.getWorkspace().toURI().getPath().replaceFirst("/", "");
 
     List<String> cmd = new ArrayList<String>();
     cmd.add(JAVA_HOME + "/bin/java.exe");
@@ -123,18 +135,23 @@ public final class Silk4TestBuilder extends Builder {
     cmd.add(pathOfSilkTestClassicDriver + ";" + SEGUE_HOME + "ClassFiles\\stCtrl.jar;" + SEGUE_HOME
         + "ClassFiles\\core.jar");
     cmd.add("at.tfuerer.silktest.classic.SilkTestClassicDriver");
-    addOptionToCommandLine(cmd, "-t", testScript);
-    addOptionToCommandLine(cmd, "-o", optionFile);
-    addOptionToCommandLine(cmd, "-p", projectFile);
-    addOptionToCommandLine(cmd, "-i", iniFile);
-    addOptionToCommandLine(cmd, "-r", build.getWorkspace().toURI().toURL().getPath() + "/SilkTestResults/Classic");
+    addOptionToCommandLine(cmd, "-t", pathToWorkspace, testScript);
+    addOptionToCommandLine(cmd, "-o", pathToWorkspace, optionFile);
+    if (Silk4TestBuilderDescriptor.isIniFile(configFile))
+      addOptionToCommandLine(cmd, "-i", pathToWorkspace, configFile);
+    else if (Silk4TestBuilderDescriptor.isProjectFile(configFile))
+      addOptionToCommandLine(cmd, "-p", pathToWorkspace, configFile);
+    else
+      LOGGER.warning(MessageFormat.format("Specified configuration file [{0}] is not valid.", configFile));
+    addOptionToCommandLine(cmd, "-r", pathToWorkspace, "/SilkTestResults/Classic");
     return cmd;
   }
 
-  private void addOptionToCommandLine(final List<String> cmd, final String option, final String optionValue) {
+  private void addOptionToCommandLine(final List<String> cmd, final String option, final String pathToWorkspace,
+      final String optionValue) {
     if (!Strings.isNullOrEmpty(optionValue)) {
       cmd.add(option);
-      cmd.add(optionValue);
+      cmd.add(pathToWorkspace + optionValue);
     }
   }
 }

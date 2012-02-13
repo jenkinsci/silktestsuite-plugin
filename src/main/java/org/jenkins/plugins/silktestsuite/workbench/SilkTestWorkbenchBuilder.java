@@ -20,6 +20,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import org.apache.commons.lang.StringUtils;
+import org.jenkins.plugins.silktestsuite.common.Utils;
 import org.kohsuke.stapler.DataBoundConstructor;
 
 import com.borland.silktest.workbench.generated.ClassFactory;
@@ -77,10 +78,15 @@ public class SilkTestWorkbenchBuilder extends Builder {
   @Override
   public boolean perform(final AbstractBuild<?, ?> build, final Launcher launcher, final BuildListener listener)
       throws InterruptedException {
-    cleanupWorkspace(build, listener);
+    if (!Utils.cleanupWorkspace(build.getWorkspace(), build.getTimestamp())) {
+      listener.error("[SilkTest Workbench] Deleting the result folder failed.");
+      build.setResult(Result.FAILURE);
+      return false;
+    }
 
     final ISTWApp stWorkbench = login(build, listener);
     if (stWorkbench == null) {
+      build.setResult(Result.FAILURE);
       return false;
     }
 
@@ -184,20 +190,6 @@ public class SilkTestWorkbenchBuilder extends Builder {
       build.setResult(Result.FAILURE);
     }
     return stWorkbench;
-  }
-
-  private void cleanupWorkspace(final AbstractBuild<?, ?> build, final BuildListener listener)
-      throws InterruptedException {
-    try {
-      final FilePath resultDir = new FilePath(build.getWorkspace(), "SilkTestResults/Workbench");
-      if (!resultDir.exists() || (resultDir.lastModified() < build.getTimestamp().getTimeInMillis())) {
-        resultDir.deleteRecursive();
-      }
-    } catch (final IOException e) {
-      listener.error("[SilkTest Workbench] Deleting the result folder failed because of %s.", e.getLocalizedMessage());
-      LOGGER.log(Level.SEVERE, "Deleting the result folder failed.", e);
-      build.setResult(Result.FAILURE);
-    }
   }
 
   private Result lastTestResult(final ISTWExecutionResult lastResult) {
