@@ -16,7 +16,7 @@
       <name>GPLv3</name>
       <distribution>repo</distribution>
       <comments>
-    Copyright (C) 2011 Thomas FÃ¼rer
+    Copyright (C) 2011 Thomas FŸrer
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -49,8 +49,8 @@
   </organization>
   <repositories>
     <repository>
-      <id>m.g.o-public</id>
-      <url>http://maven.glassfish.org/content/groups/public/</url>
+      <id>repo.jenkins-ci.org</id>
+      <url>http://repo.jenkins-ci.org/public/</url>
     </repository>
     <repository>
       <id>maven.jenkins-ci.org</id>
@@ -65,8 +65,8 @@
   </repositories>
   <pluginRepositories>
     <pluginRepository>
-      <id>m.g.o-public</id>
-      <url>http://maven.glassfish.org/content/groups/public/</url>
+      <id>repo.jenkins-ci.org</id>
+      <url>http://repo.jenkins-ci.org/public/</url>
     </pluginRepository>
   </pluginRepositories>
   <dependencies>
