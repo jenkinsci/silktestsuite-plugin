@@ -10,13 +10,10 @@
     <f:textbox field="optionFile" value="${instance.optionFile}" />
   </f:entry>
   <f:entry title="Configuration File:">
-    <f:textbox field="projectFile" value="${instance.configFile}" />
+    <f:textbox field="configFile" value="${instance.configFile}" />
   </f:entry>
   <f:entry title="Query:">
     <f:textbox field="query" value="${instance.query}" />
-  </f:entry>
-  <f:entry title="Configuration File:">
-    <f:textbox field="projectFile" value="${instance.configFile}" />
   </f:entry>
   <f:advanced>
 	  <f:entry title="Time-out [s]:" field="${instance.timeout}" >
