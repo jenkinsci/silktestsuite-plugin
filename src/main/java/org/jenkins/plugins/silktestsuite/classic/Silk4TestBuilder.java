@@ -154,7 +154,7 @@ public final class Silk4TestBuilder extends Builder {
       addOptionToCommandLine(cmd, "-p", pathToWorkspace, configFile);
     else
       LOGGER.warning(MessageFormat.format("Specified configuration file [{0}] is not valid.", configFile));
-    addOptionToCommandLine(cmd, "-r", pathToWorkspace, "SilkTestResults/Classic");
+    addOptionToCommandLine(cmd, "-r", pathToWorkspace, "SilkTestResults\\Classic");
     return cmd;
   }
 
@@ -196,7 +196,7 @@ public final class Silk4TestBuilder extends Builder {
   private void addOptionToCommandLine(final List<String> cmd, final String option, final String pathToWorkspace, final String optionValue) {
     if (!Strings.isNullOrEmpty(optionValue)) {
       cmd.add(option);
-      cmd.add(pathToWorkspace + "/"+ optionValue);
+      cmd.add(pathToWorkspace + "\\"+ optionValue);
     }
   }
 }
