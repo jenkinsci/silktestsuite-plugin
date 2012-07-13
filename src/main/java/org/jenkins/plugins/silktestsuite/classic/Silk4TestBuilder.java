@@ -17,7 +17,10 @@ import java.io.IOException;
 import java.net.MalformedURLException;
 import java.text.MessageFormat;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Logger;
 
@@ -27,8 +30,6 @@ import org.kohsuke.stapler.DataBoundConstructor;
 import com.google.common.base.Strings;
 
 public final class Silk4TestBuilder extends Builder {
-  private static final String JAVA_HOME = System.getenv("JAVA_HOME");
-  private static final String SEGUE_HOME = System.getenv("SEGUE_HOME");
   private static final Logger LOGGER = Logger.getLogger("org.jenkins.plugins.silktestsuite.classic");
 
   private final String testScript;
@@ -38,8 +39,7 @@ public final class Silk4TestBuilder extends Builder {
   private final long timeout;
 
   @DataBoundConstructor
-  public Silk4TestBuilder(final String testScript, final String optionFile, final String configFile,
-      final String query, final String timeout) {
+  public Silk4TestBuilder(final String testScript, final String optionFile, final String configFile, final String query, final String timeout) {
     super();
     this.testScript = testScript;
     this.optionFile = optionFile;
@@ -74,11 +74,10 @@ public final class Silk4TestBuilder extends Builder {
   }
 
   @Override
-  public boolean perform(final AbstractBuild<?, ?> build, final Launcher launcher, final BuildListener listener)
-      throws InterruptedException, IOException {
+  public boolean perform(final AbstractBuild<?, ?> build, final Launcher launcher, final BuildListener listener) throws InterruptedException, IOException {
     if (!Functions.isWindows()) {
       listener.error("Only available on Windows systems.");
-      LOGGER.severe("Windows is not supported for Silktest.");
+      LOGGER.severe("This operation system is not supported with SilkTest.");
       build.setResult(Result.ABORTED);
       return true;
     }
@@ -92,8 +91,9 @@ public final class Silk4TestBuilder extends Builder {
 
     listener.getLogger().println(MessageFormat.format("[SilkTest Classic] Run {0}.", testScript));
 
-    FilePath workDir = new FilePath(Hudson.getInstance().getRootPath(), "plugin/silktestsuite");
-    List<String> cmd = createCommandLine(build, workDir.toURI().toURL().getPath());
+    Map<String,String> environment = launcher.getChannel().call(new RemoteEnvironmentVariables());
+    
+    List<String> cmd = createCommandLine(build, environment, findSilkTestClassicDriver(build));
 
     ProcStarter silktestClassicDriver = launcher.launch().cmds(cmd).stdout(listener.getLogger());
     Proc launch = launcher.launch(silktestClassicDriver);
@@ -114,26 +114,37 @@ public final class Silk4TestBuilder extends Builder {
     return true;
   }
 
-  private List<String> createCommandLine(final AbstractBuild<?, ?> build, String pluginDirPath)
-      throws MalformedURLException, IOException, InterruptedException {
-    File pluginDir = new File(pluginDirPath);
+  private String findSilkTestClassicDriver(AbstractBuild<?, ?> build) throws IOException, InterruptedException {
+    File pluginDir = new File(Hudson.getInstance().getRootDir(), "plugin/silktestsuite");
+    
     File[] listFiles = pluginDir.listFiles(new FilenameFilter() {
       @Override
       public boolean accept(File dir, String name) {
         return name.startsWith("silktestclassic") && name.endsWith(".jar");
       }
     });
-
-    String pathOfSilkTestClassicDriver = listFiles != null ? listFiles[0].getAbsolutePath()
-        : "G:/jenkinsSVN/silktestsuite/src/main/webapp/silktestclassic-0.0.1-SNAPSHOT-jar-with-dependencies.jar"; // FIXME:
+    String root = new File(".").getAbsolutePath();    
+    File localSilkTestDriver = listFiles != null ? listFiles[0] : new File(root.substring(0, root.lastIndexOf('.')),
+        "src/main/webapp/silktestclassic-0.0.1-SNAPSHOT-jar-with-dependencies.jar"); // FIXME:
     // remove absolute path referencing the classic driver in case of debug mode
-    String pathToWorkspace = build.getWorkspace().toURI().getPath().replaceFirst("/", "");
+    
+    FilePath remoteWorkspace = build.getWorkspace();
+    new FilePath(localSilkTestDriver).copyTo(new FilePath(remoteWorkspace, "silktestclassic.jar"));
+    
+    FilePath[] list = remoteWorkspace.list("silktestclassic.jar");
+    assert (list.length == 1);
+    return list[0].getRemote();
+  }
+
+  private List<String> createCommandLine(final AbstractBuild<?, ?> build, Map<String,String> environment, String pathOfSilkTestClassicDriver) throws MalformedURLException, IOException,
+      InterruptedException {
+    String pathToWorkspace = build.getWorkspace().getRemote();
 
     List<String> cmd = new ArrayList<String>();
-    cmd.add(JAVA_HOME + "/bin/java.exe");
+    cmd.add(findJavaHomeDirectory(environment) + "bin/java.exe");
     cmd.add("-cp");
-    cmd.add(pathOfSilkTestClassicDriver + ";" + SEGUE_HOME + "ClassFiles\\stCtrl.jar;" + SEGUE_HOME
-        + "ClassFiles\\core.jar");
+    String segueHome = environment.get("SEGUE_HOME");
+    cmd.add(pathOfSilkTestClassicDriver + ";" + segueHome + "ClassFiles\\stCtrl.jar;" + segueHome + "ClassFiles\\core.jar");
     cmd.add("at.tfuerer.silktest.classic.SilkTestClassicDriver");
     addOptionToCommandLine(cmd, "-t", pathToWorkspace, testScript);
     addOptionToCommandLine(cmd, "-o", pathToWorkspace, optionFile);
@@ -143,15 +154,49 @@ public final class Silk4TestBuilder extends Builder {
       addOptionToCommandLine(cmd, "-p", pathToWorkspace, configFile);
     else
       LOGGER.warning(MessageFormat.format("Specified configuration file [{0}] is not valid.", configFile));
-    addOptionToCommandLine(cmd, "-r", pathToWorkspace, "/SilkTestResults/Classic");
+    addOptionToCommandLine(cmd, "-r", pathToWorkspace, "SilkTestResults/Classic");
     return cmd;
   }
 
-  private void addOptionToCommandLine(final List<String> cmd, final String option, final String pathToWorkspace,
-      final String optionValue) {
+  private String findJavaHomeDirectory(Map<String,String> environment) {
+    String javaHome = environment.get("JAVA_HOME");
+    if (Strings.isNullOrEmpty(javaHome))
+      javaHome = searchJREInProgramFiles(environment, javaHome, "ProgramFiles");
+    if (Strings.isNullOrEmpty(javaHome))
+      javaHome = searchJREInProgramFiles(environment, javaHome, "ProgramFiles(x86)");
+    if (Strings.isNullOrEmpty(javaHome))
+      javaHome = "";
+
+    return javaHome + "/";
+  }
+
+  private String searchJREInProgramFiles(Map<String,String> environment, String javaHome, String env) {
+    File javaRoot = new File(environment.get(env) + "/java");
+    String latestJRE = latestAvailableJavaRuntime(javaRoot, "jre");
+    if (Strings.isNullOrEmpty(latestJRE))
+      latestJRE = latestAvailableJavaRuntime(javaRoot, "jdk");
+    javaHome = new File(javaRoot, latestJRE).getAbsolutePath();
+    return javaHome;
+  }
+
+  private String latestAvailableJavaRuntime(File javaRoot, final String searchString) {
+    List<String> runtimes = Arrays.asList(javaRoot.list(new FilenameFilter() {
+      @Override
+      public boolean accept(File dir, String name) {
+        if (name.toLowerCase().startsWith(searchString.toLowerCase()))
+          return true;
+        return false;
+      }
+    }));
+    
+    Collections.sort(runtimes);
+    return runtimes.get(runtimes.size()-1);
+  }
+
+  private void addOptionToCommandLine(final List<String> cmd, final String option, final String pathToWorkspace, final String optionValue) {
     if (!Strings.isNullOrEmpty(optionValue)) {
       cmd.add(option);
-      cmd.add(pathToWorkspace + optionValue);
+      cmd.add(pathToWorkspace + "/"+ optionValue);
     }
   }
 }

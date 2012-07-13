@@ -69,11 +69,15 @@ public final class Silk4TestBuilderDescriptor extends BuildStepDescriptor<Builde
   }
 
   static boolean isIniFile(String configFile) {
+    if (Strings.isNullOrEmpty(configFile))
+      return false;
     return configFile.endsWith(".ini");
   }
 
-  static boolean isProjectFile(String configFile) {
-    return fitsFileFormat(PROJECT_POSTFIXES, configFile);
+  static boolean isProjectFile(String projectFile) {
+    if (Strings.isNullOrEmpty(projectFile))
+      return false;
+    return fitsFileFormat(PROJECT_POSTFIXES, projectFile);
   }
 
   static boolean isTestSciptFile(String testScriptFile) {
