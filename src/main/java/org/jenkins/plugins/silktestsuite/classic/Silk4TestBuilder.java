@@ -154,6 +154,10 @@ public final class Silk4TestBuilder extends Builder {
       addOptionToCommandLine(cmd, "-p", pathToWorkspace, configFile);
     else
       LOGGER.warning(MessageFormat.format("Specified configuration file [{0}] is not valid.", configFile));
+    if (!Strings.isNullOrEmpty(query)) {
+      cmd.add("-q");
+      cmd.add(query);
+    }
     addOptionToCommandLine(cmd, "-r", pathToWorkspace, "SilkTestResults\\Classic");
     return cmd;
   }

@@ -15,7 +15,11 @@ import java.text.MessageFormat;
 import java.util.Arrays;
 import java.util.List;
 
+import net.sf.json.JSONObject;
+
+import org.kohsuke.stapler.AncestorInPath;
 import org.kohsuke.stapler.QueryParameter;
+import org.kohsuke.stapler.StaplerRequest;
 
 import com.google.common.base.Strings;
 
@@ -23,6 +27,7 @@ import com.google.common.base.Strings;
 public final class Silk4TestBuilderDescriptor extends BuildStepDescriptor<Builder> {
   private static final List<String> PROJECT_POSTFIXES = Arrays.asList(".vtp", ".vts", ".stp");
   private static final List<String> TESTSCRIPT_POSTFIXES = Arrays.asList(".t", ".g.t", ".pln");
+  private Silk4TestBuilder currentInstance;
 
   public Silk4TestBuilderDescriptor() {
     super(Silk4TestBuilder.class);
@@ -39,26 +44,26 @@ public final class Silk4TestBuilderDescriptor extends BuildStepDescriptor<Builde
     return FreeStyleProject.class.equals(jobType) || MatrixProject.class.equals(jobType);
   }
 
-  public FormValidation doCheckTestScript(@QueryParameter String value) {
+  public FormValidation doCheckTestScript(@AncestorInPath AbstractProject project, @QueryParameter String value) {
     if (Strings.isNullOrEmpty(value))
       return FormValidation.validateRequired(value);
     if (isTestSciptFile(value))
-      return validateFileExistInWorkspace(value);
+      return validateFileExistInWorkspace(project.getSomeWorkspace(), value);
     else
       return FormValidation.error(MessageFormat.format("Not a valid test script file. Valid postfixes are {0}",
           TESTSCRIPT_POSTFIXES.toString()));
   }
 
-  public FormValidation doCheckOptionFile(@QueryParameter String value) {
+  public FormValidation doCheckOptionFile(@AncestorInPath AbstractProject project, @QueryParameter String value) {
     if (Strings.isNullOrEmpty(value) || value.endsWith(".opt"))
-      return validateFileExistInWorkspace(value);
+      return validateFileExistInWorkspace(project.getSomeWorkspace(), value);
     else
       return FormValidation.error("Not a valid option file. Valid postfixe is [*.opt]");
   }
 
-  public FormValidation doCheckConfigFile(@QueryParameter String value) {
+  public FormValidation doCheckConfigFile(@AncestorInPath AbstractProject project, @QueryParameter String value) {
     if (Strings.isNullOrEmpty(value) || isIniFile(value) || isProjectFile(value))
-      return validateFileExistInWorkspace(value);
+      return validateFileExistInWorkspace(project.getSomeWorkspace(), value);
     else
       return FormValidation.error(MessageFormat.format(
           "not a valid configuration file. Valid postfixes are [*.ini] or {0}.", PROJECT_POSTFIXES.toString()));
@@ -67,7 +72,7 @@ public final class Silk4TestBuilderDescriptor extends BuildStepDescriptor<Builde
   public FormValidation doCheckTimeout(@QueryParameter String value) {
     return FormValidation.validatePositiveInteger(value);
   }
-
+  
   static boolean isIniFile(String configFile) {
     if (Strings.isNullOrEmpty(configFile))
       return false;
@@ -92,10 +97,9 @@ public final class Silk4TestBuilderDescriptor extends BuildStepDescriptor<Builde
     return false;
   }
 
-  private FormValidation validateFileExistInWorkspace(String workspaceRelativePath) {
-    if (!Strings.isNullOrEmpty(workspaceRelativePath)) {
-      TopLevelItem item = Hudson.getInstance().getItem("classic");
-      FilePath filePath = new FilePath(Hudson.getInstance().getWorkspaceFor(item), workspaceRelativePath);
+  private FormValidation validateFileExistInWorkspace(FilePath workspace, String workspaceRelativePath) {
+    if (workspace != null && !Strings.isNullOrEmpty(workspaceRelativePath)) {
+      FilePath filePath = new FilePath(workspace, workspaceRelativePath);
       try {
         if (filePath.exists())
           return FormValidation.ok();
