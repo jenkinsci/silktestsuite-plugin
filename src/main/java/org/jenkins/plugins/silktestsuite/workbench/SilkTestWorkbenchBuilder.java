@@ -1,7 +1,10 @@
 package org.jenkins.plugins.silktestsuite.workbench;
 
 import hudson.FilePath;
+import hudson.Functions;
 import hudson.Launcher;
+import hudson.Proc;
+import hudson.Launcher.ProcStarter;
 import hudson.model.BuildListener;
 import hudson.model.Result;
 import hudson.model.AbstractBuild;
@@ -16,10 +19,13 @@ import java.text.MessageFormat;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Map;
+import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import org.apache.commons.lang.StringUtils;
+import org.jenkins.plugins.silktestsuite.common.RemoteEnvironmentVariables;
 import org.jenkins.plugins.silktestsuite.common.Utils;
 import org.kohsuke.stapler.DataBoundConstructor;
 
@@ -30,6 +36,8 @@ import com.borland.silktest.workbench.generated.ISTWExecutionResult;
 import com.borland.silktest.workbench.generated.ISTWProjects;
 import com.borland.silktest.workbench.generated.ISTWResult;
 import com.borland.silktest.workbench.generated.ISTWVisualTests;
+import com.google.common.base.Strings;
+
 import com4j.ComException;
 import com4j.Holder;
 
@@ -77,157 +85,209 @@ public class SilkTestWorkbenchBuilder extends Builder {
 
   @Override
   public boolean perform(final AbstractBuild<?, ?> build, final Launcher launcher, final BuildListener listener)
-      throws InterruptedException {
+      throws InterruptedException, IOException {
+    if (!Functions.isWindows()) {
+      listener.error("Only available on Windows systems.");
+      LOGGER.severe("This operation system is not supported with SilkTest.");
+      build.setResult(Result.ABORTED);
+      return true;
+    }
+    
     if (!Utils.cleanupWorkspace(build.getWorkspace(), build.getTimestamp())) {
       listener.error("[SilkTest Workbench] Deleting the result folder failed.");
       build.setResult(Result.FAILURE);
       return false;
     }
+    
+    FilePath resultPath = createResultFolders(build.getWorkspace());
+    String resultFileName = calculateResultName(dsn, projectsCsv, namesCsv);
+    FilePath resultFile = new FilePath(resultPath, resultFileName+".txt");
+    Map<String,String> environment = launcher.getChannel().call(new RemoteEnvironmentVariables());
+    List<String> cmd = createCommandLine(environment, resultFile.getRemote());
+    ProcStarter silktestworkbench = launcher.launch().cmds(cmd).stdout(listener.getLogger());
+    Proc launch = launcher.launch(silktestworkbench);
+    int exitCode = launch.join();
+    Result result = exitCode == 0 ? Result.SUCCESS : Result.UNSTABLE;
+    
+    FilePath junitResultFile = new FilePath(resultPath, resultFileName+".xml");
+    new STWTestResultConverter().convert(resultFile, junitResultFile);
 
-    final ISTWApp stWorkbench = login(build, listener);
-    if (stWorkbench == null) {
-      build.setResult(Result.FAILURE);
-      return false;
-    }
-
-    final List<String> projectNames = new ArrayList<String>();
-    final ISTWProjects projects = stWorkbench.projects();
-    if (StringUtils.isEmpty(projectsCsv)) {
-      for (int i = 1; i <= projects.count(); i++) {
-        projectNames.add(projects.item(i).name());
-      }
-    } else {
-      Collections.addAll(projectNames, StringUtils.splitByWholeSeparator(projectsCsv, ","));
-    }
-
-    Result result = build.getResult() == null ? Result.SUCCESS : build.getResult();
-    for (final String projectName : projectNames) {
-      final List<String> testNames = new ArrayList<String>();
-      listTestsForExecution(projectNames, projects, projectName, testNames);
-
-      for (final String name : testNames) {
-        final String normalizedTestName = StringUtils.chomp(name);
-        listener.getLogger().println(
-            MessageFormat.format("[SilkTest Workbench] Execute test {0} in project {1}.", normalizedTestName,
-                projectName));
-        try {
-          executeTest(stWorkbench, projectName, normalizedTestName);
-          result = writeResult(build, stWorkbench, result);
-        } catch (final ComException e) {
-          listener
-              .error(
-                  "[SilkTest Workbench] Execute test %s in project %s failed. Please verify if the configuration is correct.",
-                  normalizedTestName, projectName);
-          LOGGER.log(Level.SEVERE, "SilkTest Workbench execution failed.", e);
-          result = result.combine(Result.FAILURE);
-        } catch (final IOException e) {
-          listener.error("[SilkTest Workbench] Writting the result of test %s failed because of %s.",
-              normalizedTestName, e.getLocalizedMessage());
-          LOGGER.log(Level.SEVERE, "Writting result for SilkTest Workbench execution failed.", e);
-          result = result.combine(Result.FAILURE);
-        }
-        LOGGER.fine("New result :" + result.toString());
-      }
-    }
+//    final ISTWApp stWorkbench = login(build, listener);
+//    if (stWorkbench == null) {
+//      build.setResult(Result.FAILURE);
+//      return false;
+//    }
+//
+//    final List<String> projectNames = new ArrayList<String>();
+//    final ISTWProjects projects = stWorkbench.projects();
+//    if (StringUtils.isEmpty(projectsCsv)) {
+//      for (int i = 1; i <= projects.count(); i++) {
+//        projectNames.add(projects.item(i).name());
+//      }
+//    } else {
+//      Collections.addAll(projectNames, StringUtils.splitByWholeSeparator(projectsCsv, ","));
+//    }
+//
+//    Result result = build.getResult() == null ? Result.SUCCESS : build.getResult();
+//    for (final String projectName : projectNames) {
+//      final List<String> testNames = new ArrayList<String>();
+//      listTestsForExecution(projectNames, projects, projectName, testNames);
+//
+//      for (final String name : testNames) {
+//        final String normalizedTestName = StringUtils.chomp(name);
+//        listener.getLogger().println(
+//            MessageFormat.format("[SilkTest Workbench] Execute test {0} in project {1}.", normalizedTestName,
+//                projectName));
+//        try {
+//          executeTest(stWorkbench, projectName, normalizedTestName);
+//          result = writeResult(build, stWorkbench, result);
+//        } catch (final ComException e) {
+//          listener
+//              .error(
+//                  "[SilkTest Workbench] Execute test %s in project %s failed. Please verify if the configuration is correct.",
+//                  normalizedTestName, projectName);
+//          LOGGER.log(Level.SEVERE, "SilkTest Workbench execution failed.", e);
+//          result = result.combine(Result.FAILURE);
+//        } catch (final IOException e) {
+//          listener.error("[SilkTest Workbench] Writting the result of test %s failed because of %s.",
+//              normalizedTestName, e.getLocalizedMessage());
+//          LOGGER.log(Level.SEVERE, "Writting result for SilkTest Workbench execution failed.", e);
+//          result = result.combine(Result.FAILURE);
+//        }
+//        LOGGER.fine("New result :" + result.toString());
+//      }
+//    }
     build.setResult(result);
 
     return result.isBetterThan(Result.FAILURE);
   }
 
-  private Result writeResult(final AbstractBuild<?, ?> build, final ISTWApp stWorkbench, Result result)
-      throws IOException, InterruptedException {
-    final ISTWExecutionResult lastResult = stWorkbench.lastResult();
-    final ISTWResult resultObject = lastResult.resultObject();
-    writeResultFile(build.getWorkspace(), resultObject);
-    result = result.combine(lastTestResult(lastResult)); // FIXME: after executed test
-                                                         // lastResult.verificationsExecuted(); returns 0, do we
-                                                         // need a delay?
-    if (result.isWorseThan(Result.SUCCESS)) {
-      writeErrorScreen(new FilePath(build.getRootDir()), resultObject);
-    }
-    return result;
+  private String calculateResultName(String dsn2, String projectsCsv2, String namesCsv2) {
+    return "xy";
   }
 
-  private void executeTest(final ISTWApp stWorkbench, final String projectName, final String normalizedTestName)
-      throws InterruptedException {
-    stWorkbench.execute(projectName, normalizedTestName, null, null, playbackenv);
-
-    while (stWorkbench.playbackInProgress()) {
-      Thread.sleep(WAIT_FOR_STWIDLE_TIMEOUT);
+  private List<String> createCommandLine(Map<String, String> environment, String resultPath) {
+    String oaHome = environment.get("OPEN_AGENT_HOME");
+    List<String> cli = new ArrayList<String>();
+    cli.add(oaHome+"/gui/stw.exe");
+    cli.add("-u");
+    cli.add(this.user);
+    cli.add("-p");
+    cli.add(password);
+    cli.add("-d");
+    cli.add(dsn);
+    cli.add("-o");
+    cli.add(resultPath);
+    if (!Strings.isNullOrEmpty(projectsCsv)) {
+      cli.add("-r");
+      cli.add(projectsCsv); // FIXME: allows only one project
     }
+    if (!Strings.isNullOrEmpty(namesCsv)) {
+      cli.add("-s");
+      cli.add(namesCsv); // FIXME: allows only one script name
+    }
+    if (!Strings.isNullOrEmpty(playbackenv)) {
+      cli.add("-e");
+      cli.add(playbackenv);
+    }
+    
+    return cli;
   }
 
-  private void listTestsForExecution(final List<String> projectNames, final ISTWProjects projects,
-      final String projectName, final List<String> testNames) {
-    if ((projectNames.size() == 1) && !StringUtils.isEmpty(namesCsv)) {
-      Collections.addAll(testNames, StringUtils.splitByWholeSeparator(namesCsv, ","));
-    } else {
-      final ISTWDotNETScripts dotNETScripts = projects.item(projectName).dotNETScripts();
-      final ISTWVisualTests visualTests = projects.item(projectName).visualTests();
-      for (int i = 1; i <= dotNETScripts.count(); i++) {
-        testNames.add(dotNETScripts.item(i).name());
-      }
-      for (int i = 1; i <= visualTests.count(); i++) {
-        testNames.add(visualTests.item(i).name());
-      }
-    }
-  }
+//  private Result writeResult(final AbstractBuild<?, ?> build, final ISTWApp stWorkbench, Result result)
+//      throws IOException, InterruptedException {
+//    final ISTWExecutionResult lastResult = stWorkbench.lastResult();
+//    final ISTWResult resultObject = lastResult.resultObject();
+//    writeResultFile(build.getWorkspace(), resultObject);
+//    result = result.combine(lastTestResult(lastResult)); // FIXME: after executed test
+//                                                         // lastResult.verificationsExecuted(); returns 0, do we
+//                                                         // need a delay?
+//    if (result.isWorseThan(Result.SUCCESS)) {
+//      writeErrorScreen(new FilePath(build.getRootDir()), resultObject);
+//    }
+//    return result;
+//  }
+//
+//  private void executeTest(final ISTWApp stWorkbench, final String projectName, final String normalizedTestName)
+//      throws InterruptedException {
+//    stWorkbench.execute(projectName, normalizedTestName, null, null, playbackenv);
+//
+//    while (stWorkbench.playbackInProgress()) {
+//      Thread.sleep(WAIT_FOR_STWIDLE_TIMEOUT);
+//    }
+//  }
+//
+//  private void listTestsForExecution(final List<String> projectNames, final ISTWProjects projects,
+//      final String projectName, final List<String> testNames) {
+//    if ((projectNames.size() == 1) && !StringUtils.isEmpty(namesCsv)) {
+//      Collections.addAll(testNames, StringUtils.splitByWholeSeparator(namesCsv, ","));
+//    } else {
+//      final ISTWDotNETScripts dotNETScripts = projects.item(projectName).dotNETScripts();
+//      final ISTWVisualTests visualTests = projects.item(projectName).visualTests();
+//      for (int i = 1; i <= dotNETScripts.count(); i++) {
+//        testNames.add(dotNETScripts.item(i).name());
+//      }
+//      for (int i = 1; i <= visualTests.count(); i++) {
+//        testNames.add(visualTests.item(i).name());
+//      }
+//    }
+//  }
 
-  private ISTWApp login(final AbstractBuild<?, ?> build, final BuildListener listener) {
-    ISTWApp stWorkbench = null;
-    try {
-      stWorkbench = ClassFactory.createSTWApp();
-      if (!stWorkbench.login(user, password, dsn, Boolean.TRUE, Boolean.FALSE)) {
-        listener.error("[SilkTest Workbench] Log-in at SilkTest Workbench failed.");
-        LOGGER.warning("log in to Silktest Workbench failed.");
-        build.setResult(Result.FAILURE);
-        stWorkbench = null;
-      }
-    } catch (final Exception e) {
-      listener
-          .error("[SilkTest Workbench] Cannot find SilkTest Workbench. Verify if the installation is completed successfully.");
-      LOGGER.log(Level.SEVERE, "SilkTEst Workbench is not installed.", e);
-      build.setResult(Result.FAILURE);
-    }
-    return stWorkbench;
-  }
-
-  private Result lastTestResult(final ISTWExecutionResult lastResult) {
-    final int passCriteria = lastResult.verificationPassCriteria();
-    final int executed = lastResult.verificationsExecuted();
-    final int passed = lastResult.verificationsPassed();
-    if (!StringUtils.isEmpty(lastResult.playbackErrorString())) {
-      return Result.FAILURE;
-    }
-
-    if (executed <= 0) {
-      return Result.SUCCESS; // no verifications in the test
-    }
-    if (passCriteria <= ((passed * 100) / executed)) {
-      return Result.SUCCESS;
-    } else {
-      return Result.UNSTABLE;
-    }
-  }
-
-  private void writeResultFile(final FilePath filePath, final ISTWResult lastResult) throws IOException,
-      InterruptedException {
-    final FilePath workbenchResults = createResultFolders(filePath);
-    final FilePath result = new FilePath(workbenchResults, lastResult.name() + "_" + lastResult.assetID() + ".xml");
-
-    final Holder<String> xmlFileName = new Holder<String>();
-    lastResult.getXML(lastResult.currentVersion(), 1, xmlFileName, null);
-    moveFileToDestination(result, xmlFileName.value);
-  }
-
-  private void writeErrorScreen(final FilePath filePath, final ISTWResult lastResult) throws IOException,
-      InterruptedException {
-    final FilePath workbenchResults = createResultFolders(filePath);
-    final FilePath errorScreen = new FilePath(workbenchResults, lastResult.name() + "_" + lastResult.assetID() + ".png");
-    final Holder<String> errorScreenFileName = new Holder<String>();
-    lastResult.getErrorScreen(lastResult.currentVersion(), errorScreenFileName);
-    moveFileToDestination(errorScreen, errorScreenFileName.value);
-  }
+//  private ISTWApp login(final AbstractBuild<?, ?> build, final BuildListener listener) {
+//    ISTWApp stWorkbench = null;
+//    try {
+//      stWorkbench = ClassFactory.createSTWApp();
+//      if (!stWorkbench.login(user, password, dsn, Boolean.TRUE, Boolean.FALSE)) {
+//        listener.error("[SilkTest Workbench] Log-in at SilkTest Workbench failed.");
+//        LOGGER.warning("log in to Silktest Workbench failed.");
+//        build.setResult(Result.FAILURE);
+//        stWorkbench = null;
+//      }
+//    } catch (final Exception e) {
+//      listener
+//          .error("[SilkTest Workbench] Cannot find SilkTest Workbench. Verify if the installation is completed successfully.");
+//      LOGGER.log(Level.SEVERE, "SilkTEst Workbench is not installed.", e);
+//      build.setResult(Result.FAILURE);
+//    }
+//    return stWorkbench;
+//  }
+//
+//  private Result lastTestResult(final ISTWExecutionResult lastResult) {
+//    final int passCriteria = lastResult.verificationPassCriteria();
+//    final int executed = lastResult.verificationsExecuted();
+//    final int passed = lastResult.verificationsPassed();
+//    if (!StringUtils.isEmpty(lastResult.playbackErrorString())) {
+//      return Result.FAILURE;
+//    }
+//
+//    if (executed <= 0) {
+//      return Result.SUCCESS; // no verifications in the test
+//    }
+//    if (passCriteria <= ((passed * 100) / executed)) {
+//      return Result.SUCCESS;
+//    } else {
+//      return Result.UNSTABLE;
+//    }
+//  }
+//
+//  private void writeResultFile(final FilePath filePath, final ISTWResult lastResult) throws IOException,
+//      InterruptedException {
+//    final FilePath workbenchResults = createResultFolders(filePath);
+//    final FilePath result = new FilePath(workbenchResults, lastResult.name() + "_" + lastResult.assetID() + ".xml");
+//
+//    final Holder<String> xmlFileName = new Holder<String>();
+//    lastResult.getXML(lastResult.currentVersion(), 1, xmlFileName, null);
+//    moveFileToDestination(result, xmlFileName.value);
+//  }
+//
+//  private void writeErrorScreen(final FilePath filePath, final ISTWResult lastResult) throws IOException,
+//      InterruptedException {
+//    final FilePath workbenchResults = createResultFolders(filePath);
+//    final FilePath errorScreen = new FilePath(workbenchResults, lastResult.name() + "_" + lastResult.assetID() + ".png");
+//    final Holder<String> errorScreenFileName = new Holder<String>();
+//    lastResult.getErrorScreen(lastResult.currentVersion(), errorScreenFileName);
+//    moveFileToDestination(errorScreen, errorScreenFileName.value);
+//  }
 
   private FilePath createResultFolders(final FilePath filePath) throws IOException, InterruptedException {
     final FilePath silktestResultRoot = new FilePath(filePath, "SilkTestResults");
@@ -242,18 +302,18 @@ public class SilkTestWorkbenchBuilder extends Builder {
     return workbenchResults;
   }
 
-  private void moveFileToDestination(final FilePath result, final String fileName) throws FileNotFoundException,
-      IOException, InterruptedException {
-    InputStream is = null;
-    try {
-      final File source = new File(fileName);
-      is = new FileInputStream(source);
-      result.copyFrom(is);
-      source.delete();
-    } finally {
-      if (is != null) {
-        is.close();
-      }
-    }
-  }
+//  private void moveFileToDestination(final FilePath result, final String fileName) throws FileNotFoundException,
+//      IOException, InterruptedException {
+//    InputStream is = null;
+//    try {
+//      final File source = new File(fileName);
+//      is = new FileInputStream(source);
+//      result.copyFrom(is);
+//      source.delete();
+//    } finally {
+//      if (is != null) {
+//        is.close();
+//      }
+//    }
+//  }
 }

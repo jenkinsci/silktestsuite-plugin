@@ -24,6 +24,7 @@ import java.util.Map;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Logger;
 
+import org.jenkins.plugins.silktestsuite.common.RemoteEnvironmentVariables;
 import org.jenkins.plugins.silktestsuite.common.Utils;
 import org.kohsuke.stapler.DataBoundConstructor;
 
