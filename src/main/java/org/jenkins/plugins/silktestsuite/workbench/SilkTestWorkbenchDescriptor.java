@@ -23,7 +23,7 @@ public class SilkTestWorkbenchDescriptor extends BuildStepDescriptor<Builder> {
   private static final Logger LOGGER = Logger.getLogger("org.jenkins.plugins.silktestsuite.visualtest");
 
   public SilkTestWorkbenchDescriptor() {
-    super(SilkTestWorkbenchBuilder.class);
+    super(SilkTestWorkbenchCOMBuilder.class);
     load();
   }
 

@@ -83,7 +83,7 @@ public final class Silk4TestBuilder extends Builder {
       return true;
     }
 
-    if (!Utils.cleanupWorkspace(build.getWorkspace(), build.getTimestamp())) {
+    if (!Utils.cleanupWorkspace(launcher, build.getWorkspace().getRemote(), build.getTimestamp())) {
       build.setResult(Result.FAILURE);
       listener.error("[SilkTest Classic] Deleting the result folder failed.");
       LOGGER.severe("Deleting result folder failed.");
