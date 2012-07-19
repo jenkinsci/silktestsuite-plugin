@@ -1,11 +1,9 @@
 package org.jenkins.plugins.silktestsuite.workbench;
 
-import hudson.Functions;
 import hudson.Launcher;
 import hudson.model.BuildListener;
 import hudson.model.Result;
 import hudson.model.AbstractBuild;
-import hudson.remoting.Callable;
 import hudson.tasks.Builder;
 
 import java.io.IOException;

@@ -24,11 +24,13 @@ public class Utils {
         }
 
         private void deleteRecursive(File file) {
-          if (file.isFile() && (file.lastModified() < startTime.getTimeInMillis()))
-            file.delete();
-          else {
-            for (File f : file.listFiles()) {
-              deleteRecursive(f);
+          if (file != null) {
+            if (file.isFile() && (file.lastModified() < startTime.getTimeInMillis()))
+              file.delete();
+            else {
+              for (File f : file.listFiles()) {
+                deleteRecursive(f);
+              }
             }
           }
         }

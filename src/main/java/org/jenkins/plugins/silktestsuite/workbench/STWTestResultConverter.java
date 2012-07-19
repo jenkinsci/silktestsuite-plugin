@@ -51,7 +51,7 @@ final class STWTestResultConverter {
 
   private Element addTestSuite(Element parent, String name) {
     Element newElement = new Element("testsuite");
-    newElement.setAttribute("name", name);
+    newElement.setAttribute("name", name.replace(".xml", ""));
     newElement.setAttribute("tests", "0");
     newElement.setAttribute("failures", "0");
     newElement.setAttribute("errors", "0");
@@ -119,16 +119,24 @@ final class STWTestResultConverter {
 
 
   private void convertLine(Element suite, String[] line) {
-    String projectName = line[1];
-    Element projectSuite = this.suites.get(projectName);
-    if (projectSuite == null)
-      projectSuite = addTestSuite(suite, projectName);
-    addTestCase(projectSuite, line);
+    if (line.length == 7) {
+      String projectName = line[1];
+      Element projectSuite = this.suites.get(projectName);
+      if (projectSuite == null)
+        projectSuite = addTestSuite(suite, projectName);
+      addTestCase(projectSuite, line);
+    } else {
+      // TODO: handle error, at leased report it to the user
+    }
   }
 
   private static void increaseCount(Element suite, String attribute) {
     if (suite != null) {
-      int value = Integer.parseInt(suite.getAttributeValue(attribute));
+      String attributeValue = suite.getAttributeValue(attribute);
+      int value = 0;
+      if (Strings.isNullOrEmpty(attributeValue))
+        value = Integer.parseInt(attributeValue);
+      
       suite.setAttribute(attribute, String.valueOf(value+1));
       increaseCount(suite.getParentElement(), attribute);
     }
