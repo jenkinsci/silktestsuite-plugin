@@ -27,21 +27,21 @@ final class STWTestResultConverter {
     BufferedReader reader = null;
     OutputStream out = null;
     try {
-    reader = new BufferedReader(new InputStreamReader(source.read()));
-    out = target.write();
-    
-    Document targetDocument = new Document();
-    Element suite = addTestSuite(null, "SilkTestWorkbench");
-    targetDocument.setRootElement(suite);
-    String line = null;
-    do {
-      line = reader.readLine();
-      if (line != null)
-        convertLine(suite, line.split("\t"));
-    } while(line  != null);
-    
-    XMLOutputter xmlOut = new XMLOutputter(Format.getPrettyFormat());
-    xmlOut.output(targetDocument, out);
+      reader = new BufferedReader(new InputStreamReader(source.read()));
+      out = target.write();
+      
+      Document targetDocument = new Document();
+      Element suite = addTestSuite(null, "SilkTestWorkbench");
+      targetDocument.setRootElement(suite);
+      String line = null;
+      do {
+        line = reader.readLine();
+        if (line != null)
+          convertLine(suite, line.split("\t"));
+      } while(line  != null);
+      
+      XMLOutputter xmlOut = new XMLOutputter(Format.getPrettyFormat());
+      xmlOut.output(targetDocument, out);
     } finally {
       if (reader != null) reader.close();
       if (out != null) out.close();
@@ -77,21 +77,21 @@ final class STWTestResultConverter {
     if (line.length == 8)
       playbackError = line[7];
     else
-      playbackError = "";
+      playbackError = "The script failed with playback errors.";
     
     switch (scriptStatus) {
     case 0:
       break;
     case 9:
-      addErrorElement(element, "The script did not complete execution. It may have stopped before it reached the end but not a result of a playback error.", null);
+      addErrorElement(element, "The script did not complete execution. It may have stopped before it reached the end but not a result of a playback error.");
       increaseCount(suite, "error");
       break;
     case 10:
-      addErrorElement(element, "The script failed with playback errors.", playbackError);
+      addErrorElement(element, playbackError);
       increaseCount(suite, "error");
       break;
     case 11:
-      addErrorElement(element, "The script failed to execute or the script contained verifications that failed.", null);
+      addFailureElement(element, "The script failed to execute or the script contained verifications that failed.");
       increaseCount(suite, "failures");
       break;
     default:
@@ -103,13 +103,18 @@ final class STWTestResultConverter {
     increaseCount(suite, "tests");
   }
   
-  private static void addErrorElement(Element testcase, String message, String playbackError) {
+  private static void addFailureElement(Element testcase, String message) {
     StringBuilder msg = new StringBuilder(message);
-    if (Strings.isNullOrEmpty(playbackError)) {
-      msg.append("\n\n");
-      msg.append(playbackError);
-    }
     
+    Element failure = new Element("failure");
+    failure.setAttribute("message", msg.toString());
+    failure.setAttribute("type", "junit.framework.AssertionFailedError");
+    
+    testcase.addContent(failure);
+  }
+
+  private static void addErrorElement(Element testcase, String message) {
+    StringBuilder msg = new StringBuilder(message);    
     Element error = new Element("error");
     error.setAttribute("message", msg.toString());
     error.setAttribute("type", "Error");
@@ -119,7 +124,7 @@ final class STWTestResultConverter {
 
 
   private void convertLine(Element suite, String[] line) {
-    if (line.length == 7) {
+    if (line.length >= 7) {
       String projectName = line[1];
       Element projectSuite = this.suites.get(projectName);
       if (projectSuite == null)
@@ -134,7 +139,7 @@ final class STWTestResultConverter {
     if (suite != null) {
       String attributeValue = suite.getAttributeValue(attribute);
       int value = 0;
-      if (Strings.isNullOrEmpty(attributeValue))
+      if (!Strings.isNullOrEmpty(attributeValue))
         value = Integer.parseInt(attributeValue);
       
       suite.setAttribute(attribute, String.valueOf(value+1));
