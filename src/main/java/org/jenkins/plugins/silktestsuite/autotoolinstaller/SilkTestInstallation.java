@@ -1,5 +1,6 @@
 package org.jenkins.plugins.silktestsuite.autotoolinstaller;
 
+import hudson.Extension;
 import hudson.tools.ToolDescriptor;
 import hudson.tools.ToolInstaller;
 import hudson.tools.ToolProperty;
@@ -17,13 +18,13 @@ public class SilkTestInstallation extends ToolInstallation {
   public SilkTestInstallation(String name, String home, List<? extends ToolProperty<?>> properties) {
     super(name, home, properties);
   }
-
-  // @Extension
+  
+  @Extension
   public static final class DescriptorImpl extends ToolDescriptor<SilkTestInstallation> {
 
     @Override
     public String getDisplayName() {
-      return "Borland SilkTest";
+      return "Borland SilkTest Classic Driver";
     }
 
     @Override

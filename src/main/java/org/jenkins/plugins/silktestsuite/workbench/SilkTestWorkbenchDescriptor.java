@@ -57,20 +57,21 @@ public class SilkTestWorkbenchDescriptor extends BuildStepDescriptor<Builder> {
   }
 
   public FormValidation doCheckProjectsCsv(StaplerRequest rep, StaplerResponse rsp,
-      @QueryParameter("projectsCsv") final String projects) {
-    if (StringUtils.isEmpty(projects))
-      return FormValidation.ok();
-    else
+      @QueryParameter("projectsCsv") final String projects, @QueryParameter("namesCsv") final String testNames) {
+    if (StringUtils.isEmpty(projects)) {
+      if (StringUtils.isEmpty(testNames))
+        return FormValidation.warning("You need to specifiy at least one project.");
+      else
+        return FormValidation.error("You need to specify also a project name if you enter test names.");
+    } else
       return projects.matches("[\\p{Alnum}-_,.(\\x20)]*") ? FormValidation.ok() : FormValidation
           .error("Invalid characters found! Enter a list of project names separated by a comma.");
   }
 
   public FormValidation doCheckNamesCsv(StaplerRequest rep, StaplerResponse rsp,
-      @QueryParameter("namesCsv") final String testNames, @QueryParameter("projectsCsv") final String projects) {
+      @QueryParameter("namesCsv") final String testNames) {
     if (StringUtils.isEmpty(testNames))
       return FormValidation.ok();
-    else if (StringUtils.isEmpty(projects))
-      return FormValidation.error("You need to specify also a project name if you enter test names.");
     else
       return testNames.matches("[\\p{Alnum}-_,.(\\x20)]*") ? FormValidation.ok() : FormValidation
           .error("Invalid characters found! Enter a list of test names separated by a comma.");

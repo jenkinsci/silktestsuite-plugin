@@ -3,10 +3,8 @@ package org.jenkins.plugins.silktestsuite.classic;
 import hudson.Extension;
 import hudson.FilePath;
 import hudson.matrix.MatrixProject;
-import hudson.model.TopLevelItem;
 import hudson.model.AbstractProject;
 import hudson.model.FreeStyleProject;
-import hudson.model.Hudson;
 import hudson.tasks.BuildStepDescriptor;
 import hudson.tasks.Builder;
 import hudson.util.FormValidation;
@@ -15,11 +13,8 @@ import java.text.MessageFormat;
 import java.util.Arrays;
 import java.util.List;
 
-import net.sf.json.JSONObject;
-
 import org.kohsuke.stapler.AncestorInPath;
 import org.kohsuke.stapler.QueryParameter;
-import org.kohsuke.stapler.StaplerRequest;
 
 import com.google.common.base.Strings;
 

@@ -1,7 +1,6 @@
 package org.jenkins.plugins.silktestsuite.workbench;
 
 import hudson.FilePath;
-import hudson.Functions;
 import hudson.Launcher;
 import hudson.Launcher.ProcStarter;
 import hudson.Proc;
@@ -10,8 +9,6 @@ import hudson.model.Result;
 import hudson.model.AbstractBuild;
 import hudson.tasks.Builder;
 
-import java.io.File;
-import java.io.FileFilter;
 import java.io.IOException;
 import java.io.PrintStream;
 import java.text.MessageFormat;
@@ -73,6 +70,7 @@ public class SilkTestWorkbenchCLIBuilder extends Builder {
       throws InterruptedException, IOException {
     if (!Utils.cleanupWorkspace(launcher, build.getWorkspace().getRemote(), build.getTimestamp())) {
       listener.error("[SilkTest Workbench] Deleting the result folder failed.");
+      LOGGER.severe("Cannot cleanup the result folder in the workspace of the job.");
       build.setResult(Result.FAILURE);
       return false;
     }

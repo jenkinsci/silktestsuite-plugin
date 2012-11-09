@@ -1,7 +1,6 @@
 package org.jenkins.plugins.silktestsuite.classic;
 
 import hudson.FilePath;
-import hudson.Functions;
 import hudson.Launcher;
 import hudson.Launcher.ProcStarter;
 import hudson.Proc;
@@ -76,17 +75,10 @@ public final class Silk4TestBuilder extends Builder {
 
   @Override
   public boolean perform(final AbstractBuild<?, ?> build, final Launcher launcher, final BuildListener listener) throws InterruptedException, IOException {
-    if (!Functions.isWindows()) {
-      listener.error("Only available on Windows systems.");
-      LOGGER.severe("This operation system is not supported with SilkTest.");
-      build.setResult(Result.ABORTED);
-      return true;
-    }
-
     if (!Utils.cleanupWorkspace(launcher, build.getWorkspace().getRemote(), build.getTimestamp())) {
       build.setResult(Result.FAILURE);
       listener.error("[SilkTest Classic] Deleting the result folder failed.");
-      LOGGER.severe("Deleting result folder failed.");
+      LOGGER.severe("Cannot cleanup the result folder in the workspace of the job.");
       return false;
     }
 
@@ -116,7 +108,7 @@ public final class Silk4TestBuilder extends Builder {
   }
 
   private String findSilkTestClassicDriver(AbstractBuild<?, ?> build) throws IOException, InterruptedException {
-    File pluginDir = new File(Hudson.getInstance().getRootDir(), "plugin/silktestsuite");
+    File pluginDir = new File(build.getRootDir(), "plugin/silktestsuite");
     
     File[] listFiles = pluginDir.listFiles(new FilenameFilter() {
       @Override

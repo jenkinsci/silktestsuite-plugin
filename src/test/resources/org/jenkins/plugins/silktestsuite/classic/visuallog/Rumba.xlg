@@ -1,0 +1,2651 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<SilkPerformerLog version="1"
+                  buildInfo="Generated with SilkPerformer 8.0.0.3831" script=""
+                  usergroup="" profile="" perspective="TruelogViewer"
+                  interfaces="SILKTEST">
+  <Transaction id="3" time="2012-02-18; 20:45:54"
+               timeStamp="|54|45|20|18|1|112|6|48|0|" tick="30748750"
+               file="..\..\..\..\..\..\..\..\Temp\Rumba\Rumba.pln" bdlLine="0"
+               transidx="1">
+    Plan ..\..\..\..\..\..\..\..\Temp\Rumba\Rumba.pln
+  </Transaction>
+  <SilkTestDoc id="4" time="2012-02-18; 20:45:54"
+               timeStamp="|54|45|20|18|1|112|6|48|0|" tick="30748750"
+               ApiHandle="" file="" bdlLine="3" status="0" ApiCtxt="//*/*[3]"
+               ApiRefType="parent">
+    Testcase FieldTest
+  </SilkTestDoc>
+  <SilkTestDoc id="295" time="2012-02-18; 20:47:32"
+               timeStamp="|32|47|20|18|1|112|6|48|0|" tick="30847000"
+               ApiHandle="" file="" bdlLine="5" status="0" ApiCtxt="//*/*[3]"
+               ApiRefType="parent">
+    Testcase CharacterAttributesTest
+  </SilkTestDoc>
+  <SilkTestDoc id="296" time="2012-02-18; 20:47:32"
+               timeStamp="|32|47|20|18|1|112|6|48|0|" tick="30847015"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[295]"
+               ApiRefType="parent">
+    Application State FieldTestBaseState
+  </SilkTestDoc>
+  <SilkTestDoc id="297" time="2012-02-18; 20:47:32"
+               timeStamp="|32|47|20|18|1|112|6|48|0|" tick="30847015"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[296]"
+               ApiRefType="parent">
+    Application State MainframeBasestate
+  </SilkTestDoc>
+  <SilkTestDoc id="298" time="2012-02-18; 20:47:36"
+               timeStamp="|36|47|20|18|1|112|6|48|0|" tick="30850984"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[297]"
+               ApiRefType="parent">
+    Print
+  </SilkTestDoc>
+  <Apiinfo id="299" time="2012-02-18; 20:47:36"
+           timeStamp="|36|47|20|18|1|112|6|48|0|" idx="//*/*[298]" severity="0">
+    Message: MainframeBasestate
+  </Apiinfo>
+  <SilkTestDoc id="300" time="2012-02-18; 20:47:36"
+               timeStamp="|36|47|20|18|1|112|6|48|0|" tick="30851109"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[297]"
+               ApiRefType="parent">
+    ReleaseKeys
+  </SilkTestDoc>
+  <Apiinfo id="301" time="2012-02-18; 20:47:36"
+           timeStamp="|36|47|20|18|1|112|6|48|0|" idx="//*/*[300]" severity="0">
+    WPFWindow.ReleaseKeys(keys: &lt;Alt&gt;&lt;Ctrl&gt;&lt;Shift&gt;)
+  </Apiinfo>
+  <ApiProp id="302" apicall="//*/*[300]" propId="0" propName="CS">MainframeBasestate|c:\Temp\Rumba\frame.inc|40|FieldTestBaseState|c:\Temp\Rumba\frame.inc|46|DefaultTestCaseEnter|C:\Program Files (x86)\Silk\SilkTest\defaults.inc|543|CallEnterHook|c:\Temp\common.inc|57|TestCaseEnter|c:\Temp\common.inc|73|CharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|15|</ApiProp>
+  <ApiProp id="303" apicall="//*/*[300]" propId="20247" propName="ROOT"></ApiProp>
+  <ApiProp id="304" apicall="//*/*[300]" propId="20247" propName="CID">20247</ApiProp>
+  <ApiProp id="305" apicall="//*/*[300]" propId="20247" propName="ID"></ApiProp>
+  <ApiProp id="306" apicall="//*/*[300]" propId="20247" propName="V"></ApiProp>
+  <ApiProp id="307" apicall="//*/*[300]" propId="20247" propName="TN"></ApiProp>
+  <ApiProp id="308" apicall="//*/*[300]" propId="20247" propName="T">0</ApiProp>
+  <ApiProp id="309" apicall="//*/*[300]" propId="20247" propName="BID"></ApiProp>
+  <ApiProp id="310" apicall="//*/*[300]" propId="20247" propName="PID">0</ApiProp>
+  <SilkTestDoc id="311" time="2012-02-18; 20:47:36"
+               timeStamp="|36|47|20|18|1|112|6|48|0|" tick="30851234"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[297]"
+               ApiRefType="parent">
+    Find
+  </SilkTestDoc>
+  <Apiinfo id="312" time="2012-02-18; 20:47:36"
+           timeStamp="|36|47|20|18|1|112|6|48|0|" idx="//*/*[311]" severity="0">
+    WPFWindow.Find(locator: //WPFMenuItem[@automationId=&apos;mainframeDsp1&apos;])
+  </Apiinfo>
+  <ApiProp id="313" apicall="//*/*[311]" propId="0" propName="CS">MainframeBasestate|c:\Temp\Rumba\frame.inc|41|FieldTestBaseState|c:\Temp\Rumba\frame.inc|46|DefaultTestCaseEnter|C:\Program Files (x86)\Silk\SilkTest\defaults.inc|543|CallEnterHook|c:\Temp\common.inc|57|TestCaseEnter|c:\Temp\common.inc|73|CharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|15|</ApiProp>
+  <ApiProp id="314" apicall="//*/*[311]" propId="20248" propName="ROOT"></ApiProp>
+  <ApiProp id="315" apicall="//*/*[311]" propId="20248" propName="CID">20248</ApiProp>
+  <ApiProp id="316" apicall="//*/*[311]" propId="20248" propName="ID"></ApiProp>
+  <ApiProp id="317" apicall="//*/*[311]" propId="20248" propName="V"></ApiProp>
+  <ApiProp id="318" apicall="//*/*[311]" propId="20248" propName="TN"></ApiProp>
+  <ApiProp id="319" apicall="//*/*[311]" propId="20248" propName="T">0</ApiProp>
+  <ApiProp id="320" apicall="//*/*[311]" propId="20248" propName="BID"></ApiProp>
+  <ApiProp id="321" apicall="//*/*[311]" propId="20248" propName="PID">0</ApiProp>
+  <SilkTestDoc id="322" time="2012-02-18; 20:47:58"
+               timeStamp="|58|47|20|18|1|112|6|48|0|" tick="30873109"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[297]"
+               ApiRefType="parent">
+    Select
+  </SilkTestDoc>
+  <Apiinfo id="323" time="2012-02-18; 20:47:58"
+           timeStamp="|58|47|20|18|1|112|6|48|0|" idx="//*/*[322]" severity="0">
+    WPFMenuItem.Select()
+  </Apiinfo>
+  <ApiProp id="324" apicall="//*/*[322]" propId="0" propName="CS">MainframeBasestate|c:\Temp\Rumba\frame.inc|41|FieldTestBaseState|c:\Temp\Rumba\frame.inc|46|DefaultTestCaseEnter|C:\Program Files (x86)\Silk\SilkTest\defaults.inc|543|CallEnterHook|c:\Temp\common.inc|57|TestCaseEnter|c:\Temp\common.inc|73|CharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|15|</ApiProp>
+  <ApiProp id="325" apicall="//*/*[322]" propId="20249" propName="ROOT"></ApiProp>
+  <ApiProp id="326" apicall="//*/*[322]" propId="20249" propName="CID">20249</ApiProp>
+  <ApiProp id="327" apicall="//*/*[322]" propId="20249" propName="ID"></ApiProp>
+  <ApiProp id="328" apicall="//*/*[322]" propId="20249" propName="V"></ApiProp>
+  <ApiProp id="329" apicall="//*/*[322]" propId="20249" propName="TN"></ApiProp>
+  <ApiProp id="330" apicall="//*/*[322]" propId="20249" propName="T">0</ApiProp>
+  <ApiProp id="331" apicall="//*/*[322]" propId="20249" propName="BID"></ApiProp>
+  <ApiProp id="332" apicall="//*/*[322]" propId="20249" propName="PID">0</ApiProp>
+  <SilkTestDoc id="333" time="2012-02-18; 20:48:18"
+               timeStamp="|18|48|20|18|1|112|6|48|0|" tick="30893453"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[297]"
+               ApiRefType="parent">
+    Find
+  </SilkTestDoc>
+  <Apiinfo id="334" time="2012-02-18; 20:48:18"
+           timeStamp="|18|48|20|18|1|112|6|48|0|" idx="//*/*[333]" severity="0">
+    WPFWindow.Find(locator: //WPFMenuItem[@automationId=&apos;Menubar_Connect&apos;])
+  </Apiinfo>
+  <ApiProp id="335" apicall="//*/*[333]" propId="0" propName="CS">MainframeBasestate|c:\Temp\Rumba\frame.inc|42|FieldTestBaseState|c:\Temp\Rumba\frame.inc|46|DefaultTestCaseEnter|C:\Program Files (x86)\Silk\SilkTest\defaults.inc|543|CallEnterHook|c:\Temp\common.inc|57|TestCaseEnter|c:\Temp\common.inc|73|CharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|15|</ApiProp>
+  <ApiProp id="336" apicall="//*/*[333]" propId="20250" propName="ROOT"></ApiProp>
+  <ApiProp id="337" apicall="//*/*[333]" propId="20250" propName="CID">20250</ApiProp>
+  <ApiProp id="338" apicall="//*/*[333]" propId="20250" propName="ID"></ApiProp>
+  <ApiProp id="339" apicall="//*/*[333]" propId="20250" propName="V"></ApiProp>
+  <ApiProp id="340" apicall="//*/*[333]" propId="20250" propName="TN"></ApiProp>
+  <ApiProp id="341" apicall="//*/*[333]" propId="20250" propName="T">0</ApiProp>
+  <ApiProp id="342" apicall="//*/*[333]" propId="20250" propName="BID"></ApiProp>
+  <ApiProp id="343" apicall="//*/*[333]" propId="20250" propName="PID">0</ApiProp>
+  <SilkTestDoc id="344" time="2012-02-18; 20:48:19"
+               timeStamp="|19|48|20|18|1|112|6|48|0|" tick="30894062"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[297]"
+               ApiRefType="parent">
+    Select
+  </SilkTestDoc>
+  <Apiinfo id="345" time="2012-02-18; 20:48:19"
+           timeStamp="|19|48|20|18|1|112|6|48|0|" idx="//*/*[344]" severity="0">
+    WPFMenuItem.Select()
+  </Apiinfo>
+  <ApiProp id="346" apicall="//*/*[344]" propId="0" propName="CS">MainframeBasestate|c:\Temp\Rumba\frame.inc|42|FieldTestBaseState|c:\Temp\Rumba\frame.inc|46|DefaultTestCaseEnter|C:\Program Files (x86)\Silk\SilkTest\defaults.inc|543|CallEnterHook|c:\Temp\common.inc|57|TestCaseEnter|c:\Temp\common.inc|73|CharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|15|</ApiProp>
+  <ApiProp id="347" apicall="//*/*[344]" propId="20251" propName="ROOT"></ApiProp>
+  <ApiProp id="348" apicall="//*/*[344]" propId="20251" propName="CID">20251</ApiProp>
+  <ApiProp id="349" apicall="//*/*[344]" propId="20251" propName="ID"></ApiProp>
+  <ApiProp id="350" apicall="//*/*[344]" propId="20251" propName="V"></ApiProp>
+  <ApiProp id="351" apicall="//*/*[344]" propId="20251" propName="TN"></ApiProp>
+  <ApiProp id="352" apicall="//*/*[344]" propId="20251" propName="T">0</ApiProp>
+  <ApiProp id="353" apicall="//*/*[344]" propId="20251" propName="BID"></ApiProp>
+  <ApiProp id="354" apicall="//*/*[344]" propId="20251" propName="PID">0</ApiProp>
+  <SilkTestDoc id="355" time="2012-02-18; 20:48:19"
+               timeStamp="|19|48|20|18|1|112|6|48|0|" tick="30894218"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[297]"
+               ApiRefType="parent">
+    Find
+  </SilkTestDoc>
+  <Apiinfo id="356" time="2012-02-18; 20:48:19"
+           timeStamp="|19|48|20|18|1|112|6|48|0|" idx="//*/*[355]" severity="0">
+    WPFWindow.Find(locator: //RumbaScreen)
+  </Apiinfo>
+  <ApiProp id="357" apicall="//*/*[355]" propId="0" propName="CS">MainframeBasestate|c:\Temp\Rumba\frame.inc|43|FieldTestBaseState|c:\Temp\Rumba\frame.inc|46|DefaultTestCaseEnter|C:\Program Files (x86)\Silk\SilkTest\defaults.inc|543|CallEnterHook|c:\Temp\common.inc|57|TestCaseEnter|c:\Temp\common.inc|73|CharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|15|</ApiProp>
+  <ApiProp id="358" apicall="//*/*[355]" propId="20252" propName="ROOT"></ApiProp>
+  <ApiProp id="359" apicall="//*/*[355]" propId="20252" propName="CID">20252</ApiProp>
+  <ApiProp id="360" apicall="//*/*[355]" propId="20252" propName="ID"></ApiProp>
+  <ApiProp id="361" apicall="//*/*[355]" propId="20252" propName="V"></ApiProp>
+  <ApiProp id="362" apicall="//*/*[355]" propId="20252" propName="TN"></ApiProp>
+  <ApiProp id="363" apicall="//*/*[355]" propId="20252" propName="T">0</ApiProp>
+  <ApiProp id="364" apicall="//*/*[355]" propId="20252" propName="BID"></ApiProp>
+  <ApiProp id="365" apicall="//*/*[355]" propId="20252" propName="PID">0</ApiProp>
+  <SilkTestDoc id="366" time="2012-02-18; 20:48:26"
+               timeStamp="|26|48|20|18|1|112|6|48|0|" tick="30900671"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[297]"
+               ApiRefType="parent">
+    WaitForProperty
+  </SilkTestDoc>
+  <Apiinfo id="367" time="2012-02-18; 20:48:26"
+           timeStamp="|26|48|20|18|1|112|6|48|0|" idx="//*/*[366]" severity="0">
+    RumbaScreen.WaitForProperty(propertyName: HostConnected, expectedValue: true, timeout: 60)
+  </Apiinfo>
+  <ApiProp id="368" apicall="//*/*[366]" propId="0" propName="CS">MainframeBasestate|c:\Temp\Rumba\frame.inc|44|FieldTestBaseState|c:\Temp\Rumba\frame.inc|46|DefaultTestCaseEnter|C:\Program Files (x86)\Silk\SilkTest\defaults.inc|543|CallEnterHook|c:\Temp\common.inc|57|TestCaseEnter|c:\Temp\common.inc|73|CharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|15|</ApiProp>
+  <ApiProp id="369" apicall="//*/*[366]" propId="20253" propName="ROOT"></ApiProp>
+  <ApiProp id="370" apicall="//*/*[366]" propId="20253" propName="CID">20253</ApiProp>
+  <ApiProp id="371" apicall="//*/*[366]" propId="20253" propName="ID"></ApiProp>
+  <ApiProp id="372" apicall="//*/*[366]" propId="20253" propName="V"></ApiProp>
+  <ApiProp id="373" apicall="//*/*[366]" propId="20253" propName="TN"></ApiProp>
+  <ApiProp id="374" apicall="//*/*[366]" propId="20253" propName="T">0</ApiProp>
+  <ApiProp id="375" apicall="//*/*[366]" propId="20253" propName="BID"></ApiProp>
+  <ApiProp id="376" apicall="//*/*[366]" propId="20253" propName="PID">0</ApiProp>
+  <Apiinfo id="377" time="2012-02-18; 20:48:26"
+           timeStamp="|26|48|20|18|1|112|6|48|0|" idx="//*/*[297]" severity="0">
+    Elapsed Time: 00:00:54
+  </Apiinfo>
+  <SilkTestDoc id="378" time="2012-02-18; 20:48:26"
+               timeStamp="|26|48|20|18|1|112|6|48|0|" tick="30900750"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[296]"
+               ApiRefType="parent">
+    Print
+  </SilkTestDoc>
+  <Apiinfo id="379" time="2012-02-18; 20:48:26"
+           timeStamp="|26|48|20|18|1|112|6|48|0|" idx="//*/*[378]" severity="0">
+    Message: FieldTestBaseState
+  </Apiinfo>
+  <SilkTestDoc id="380" time="2012-02-18; 20:48:26"
+               timeStamp="|26|48|20|18|1|112|6|48|0|" tick="30901125"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[296]"
+               ApiRefType="parent">
+    Find
+  </SilkTestDoc>
+  <Apiinfo id="381" time="2012-02-18; 20:48:26"
+           timeStamp="|26|48|20|18|1|112|6|48|0|" idx="//*/*[380]" severity="0">
+    RumbaScreen.Find(locator: //RumbaTextField)
+  </Apiinfo>
+  <ApiProp id="382" apicall="//*/*[380]" propId="0" propName="CS">FieldTestBaseState|c:\Temp\Rumba\frame.inc|51|DefaultTestCaseEnter|C:\Program Files (x86)\Silk\SilkTest\defaults.inc|543|CallEnterHook|c:\Temp\common.inc|57|TestCaseEnter|c:\Temp\common.inc|73|CharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|15|</ApiProp>
+  <ApiProp id="383" apicall="//*/*[380]" propId="20254" propName="ROOT"></ApiProp>
+  <ApiProp id="384" apicall="//*/*[380]" propId="20254" propName="CID">20254</ApiProp>
+  <ApiProp id="385" apicall="//*/*[380]" propId="20254" propName="ID"></ApiProp>
+  <ApiProp id="386" apicall="//*/*[380]" propId="20254" propName="V"></ApiProp>
+  <ApiProp id="387" apicall="//*/*[380]" propId="20254" propName="TN"></ApiProp>
+  <ApiProp id="388" apicall="//*/*[380]" propId="20254" propName="T">0</ApiProp>
+  <ApiProp id="389" apicall="//*/*[380]" propId="20254" propName="BID"></ApiProp>
+  <ApiProp id="390" apicall="//*/*[380]" propId="20254" propName="PID">0</ApiProp>
+  <SilkTestDoc id="391" time="2012-02-18; 20:48:27"
+               timeStamp="|27|48|20|18|1|112|6|48|0|" tick="30901593"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[296]"
+               ApiRefType="parent">
+    SynchSendKeys
+  </SilkTestDoc>
+  <Apiinfo id="392" time="2012-02-18; 20:48:27"
+           timeStamp="|27|48|20|18|1|112|6|48|0|" idx="//*/*[391]" severity="0">
+    RumbaTextField.SynchSendKeys(keys: tso dvtest8@E)
+  </Apiinfo>
+  <ApiProp id="393" apicall="//*/*[391]" propId="0" propName="CS">FieldTestBaseState|c:\Temp\Rumba\frame.inc|51|DefaultTestCaseEnter|C:\Program Files (x86)\Silk\SilkTest\defaults.inc|543|CallEnterHook|c:\Temp\common.inc|57|TestCaseEnter|c:\Temp\common.inc|73|CharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|15|</ApiProp>
+  <ApiProp id="394" apicall="//*/*[391]" propId="20255" propName="ROOT"></ApiProp>
+  <ApiProp id="395" apicall="//*/*[391]" propId="20255" propName="CID">20255</ApiProp>
+  <ApiProp id="396" apicall="//*/*[391]" propId="20255" propName="ID"></ApiProp>
+  <ApiProp id="397" apicall="//*/*[391]" propId="20255" propName="V"></ApiProp>
+  <ApiProp id="398" apicall="//*/*[391]" propId="20255" propName="TN"></ApiProp>
+  <ApiProp id="399" apicall="//*/*[391]" propId="20255" propName="T">0</ApiProp>
+  <ApiProp id="400" apicall="//*/*[391]" propId="20255" propName="BID"></ApiProp>
+  <ApiProp id="401" apicall="//*/*[391]" propId="20255" propName="PID">0</ApiProp>
+  <SilkTestDoc id="402" time="2012-02-18; 20:48:27"
+               timeStamp="|27|48|20|18|1|112|6|48|0|" tick="30901859"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[296]"
+               ApiRefType="parent">
+    Find
+  </SilkTestDoc>
+  <Apiinfo id="403" time="2012-02-18; 20:48:27"
+           timeStamp="|27|48|20|18|1|112|6|48|0|" idx="//*/*[402]" severity="0">
+    RumbaScreen.Find(locator: //RumbaTextField[@priorlabel=&apos;Password  ===&gt;&apos;])
+  </Apiinfo>
+  <ApiProp id="404" apicall="//*/*[402]" propId="0" propName="CS">FieldTestBaseState|c:\Temp\Rumba\frame.inc|52|DefaultTestCaseEnter|C:\Program Files (x86)\Silk\SilkTest\defaults.inc|543|CallEnterHook|c:\Temp\common.inc|57|TestCaseEnter|c:\Temp\common.inc|73|CharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|15|</ApiProp>
+  <ApiProp id="405" apicall="//*/*[402]" propId="20256" propName="ROOT"></ApiProp>
+  <ApiProp id="406" apicall="//*/*[402]" propId="20256" propName="CID">20256</ApiProp>
+  <ApiProp id="407" apicall="//*/*[402]" propId="20256" propName="ID"></ApiProp>
+  <ApiProp id="408" apicall="//*/*[402]" propId="20256" propName="V"></ApiProp>
+  <ApiProp id="409" apicall="//*/*[402]" propId="20256" propName="TN"></ApiProp>
+  <ApiProp id="410" apicall="//*/*[402]" propId="20256" propName="T">0</ApiProp>
+  <ApiProp id="411" apicall="//*/*[402]" propId="20256" propName="BID"></ApiProp>
+  <ApiProp id="412" apicall="//*/*[402]" propId="20256" propName="PID">0</ApiProp>
+  <SilkTestDoc id="413" time="2012-02-18; 20:48:31"
+               timeStamp="|31|48|20|18|1|112|6|48|0|" tick="30906312"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[296]"
+               ApiRefType="parent">
+    SynchSendKeys
+  </SilkTestDoc>
+  <Apiinfo id="414" time="2012-02-18; 20:48:31"
+           timeStamp="|31|48|20|18|1|112|6|48|0|" idx="//*/*[413]" severity="0">
+    RumbaTextField.SynchSendKeys(keys: dvtest@E)
+  </Apiinfo>
+  <ApiProp id="415" apicall="//*/*[413]" propId="0" propName="CS">FieldTestBaseState|c:\Temp\Rumba\frame.inc|52|DefaultTestCaseEnter|C:\Program Files (x86)\Silk\SilkTest\defaults.inc|543|CallEnterHook|c:\Temp\common.inc|57|TestCaseEnter|c:\Temp\common.inc|73|CharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|15|</ApiProp>
+  <ApiProp id="416" apicall="//*/*[413]" propId="20257" propName="ROOT"></ApiProp>
+  <ApiProp id="417" apicall="//*/*[413]" propId="20257" propName="CID">20257</ApiProp>
+  <ApiProp id="418" apicall="//*/*[413]" propId="20257" propName="ID"></ApiProp>
+  <ApiProp id="419" apicall="//*/*[413]" propId="20257" propName="V"></ApiProp>
+  <ApiProp id="420" apicall="//*/*[413]" propId="20257" propName="TN"></ApiProp>
+  <ApiProp id="421" apicall="//*/*[413]" propId="20257" propName="T">0</ApiProp>
+  <ApiProp id="422" apicall="//*/*[413]" propId="20257" propName="BID"></ApiProp>
+  <ApiProp id="423" apicall="//*/*[413]" propId="20257" propName="PID">0</ApiProp>
+  <SilkTestDoc id="424" time="2012-02-18; 20:48:31"
+               timeStamp="|31|48|20|18|1|112|6|48|0|" tick="30906437"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[296]"
+               ApiRefType="parent">
+    Find
+  </SilkTestDoc>
+  <Apiinfo id="425" time="2012-02-18; 20:48:31"
+           timeStamp="|31|48|20|18|1|112|6|48|0|" idx="//*/*[424]" severity="0">
+    RumbaScreen.Find(locator: //RumbaTextField[@Text=&apos;*LAST ACCESS AT*&apos;], options: [2, false])
+  </Apiinfo>
+  <ApiProp id="426" apicall="//*/*[424]" propId="0" propName="CS">FieldTestBaseState|c:\Temp\Rumba\frame.inc|59|DefaultTestCaseEnter|C:\Program Files (x86)\Silk\SilkTest\defaults.inc|543|CallEnterHook|c:\Temp\common.inc|57|TestCaseEnter|c:\Temp\common.inc|73|CharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|15|</ApiProp>
+  <ApiProp id="427" apicall="//*/*[424]" propId="20258" propName="ROOT"></ApiProp>
+  <ApiProp id="428" apicall="//*/*[424]" propId="20258" propName="CID">20258</ApiProp>
+  <ApiProp id="429" apicall="//*/*[424]" propId="20258" propName="ID"></ApiProp>
+  <ApiProp id="430" apicall="//*/*[424]" propId="20258" propName="V"></ApiProp>
+  <ApiProp id="431" apicall="//*/*[424]" propId="20258" propName="TN"></ApiProp>
+  <ApiProp id="432" apicall="//*/*[424]" propId="20258" propName="T">0</ApiProp>
+  <ApiProp id="433" apicall="//*/*[424]" propId="20258" propName="BID"></ApiProp>
+  <ApiProp id="434" apicall="//*/*[424]" propId="20258" propName="PID">0</ApiProp>
+  <SilkTestDoc id="435" time="2012-02-18; 20:48:32"
+               timeStamp="|32|48|20|18|1|112|6|48|0|" tick="30906578"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[296]"
+               ApiRefType="parent">
+    WaitForProperty
+  </SilkTestDoc>
+  <Apiinfo id="436" time="2012-02-18; 20:48:32"
+           timeStamp="|32|48|20|18|1|112|6|48|0|" idx="//*/*[435]" severity="0">
+    RumbaScreen.WaitForProperty(propertyName: CursorColumn, expectedValue: 6)
+  </Apiinfo>
+  <ApiProp id="437" apicall="//*/*[435]" propId="0" propName="CS">FieldTestBaseState|c:\Temp\Rumba\frame.inc|61|DefaultTestCaseEnter|C:\Program Files (x86)\Silk\SilkTest\defaults.inc|543|CallEnterHook|c:\Temp\common.inc|57|TestCaseEnter|c:\Temp\common.inc|73|CharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|15|</ApiProp>
+  <ApiProp id="438" apicall="//*/*[435]" propId="20259" propName="ROOT"></ApiProp>
+  <ApiProp id="439" apicall="//*/*[435]" propId="20259" propName="CID">20259</ApiProp>
+  <ApiProp id="440" apicall="//*/*[435]" propId="20259" propName="ID"></ApiProp>
+  <ApiProp id="441" apicall="//*/*[435]" propId="20259" propName="V"></ApiProp>
+  <ApiProp id="442" apicall="//*/*[435]" propId="20259" propName="TN"></ApiProp>
+  <ApiProp id="443" apicall="//*/*[435]" propId="20259" propName="T">0</ApiProp>
+  <ApiProp id="444" apicall="//*/*[435]" propId="20259" propName="BID"></ApiProp>
+  <ApiProp id="445" apicall="//*/*[435]" propId="20259" propName="PID">0</ApiProp>
+  <SilkTestDoc id="446" time="2012-02-18; 20:48:44"
+               timeStamp="|44|48|20|18|1|112|6|48|0|" tick="30919328"
+               ApiHandle="" file="" bdlLine="0" status="3" ApiCtxt="//*/*[296]"
+               ApiRefType="parent">
+    Submit
+  </SilkTestDoc>
+  <Apiinfo id="447" time="2012-02-18; 20:48:44"
+           timeStamp="|44|48|20|18|1|112|6|48|0|" idx="//*/*[446]" severity="3">
+    RumbaScreen.Submit()
+  </Apiinfo>
+  <ApiProp id="448" apicall="//*/*[446]" propId="0" propName="CS">CallExitHook|c:\Temp\common.inc|64|TestCaseExit|c:\Temp\common.inc|80|CharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|15|</ApiProp>
+  <Apiinfo id="449" time="2012-02-18; 20:48:44"
+           timeStamp="|44|48|20|18|1|112|6|48|0|" idx="//*/*[446]" severity="3">
+    Error during executing the method/property &apos;Submit&apos;. Could not execute synchSendKeys: APITimedOut.
+  </Apiinfo>
+  <ApiProp id="450" apicall="//*/*[446]" propId="20260" propName="ROOT"></ApiProp>
+  <ApiProp id="451" apicall="//*/*[446]" propId="20260" propName="CID">20260</ApiProp>
+  <ApiProp id="452" apicall="//*/*[446]" propId="20260" propName="ID"></ApiProp>
+  <ApiProp id="453" apicall="//*/*[446]" propId="20260" propName="V"></ApiProp>
+  <ApiProp id="454" apicall="//*/*[446]" propId="20260" propName="TN"></ApiProp>
+  <ApiProp id="455" apicall="//*/*[446]" propId="20260" propName="T">0</ApiProp>
+  <ApiProp id="456" apicall="//*/*[446]" propId="20260" propName="BID"></ApiProp>
+  <ApiProp id="457" apicall="//*/*[446]" propId="20260" propName="PID">0</ApiProp>
+  <SilkTestDoc id="458" time="2012-02-18; 20:48:45"
+               timeStamp="|45|48|20|18|1|112|6|48|0|" tick="30919656"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[296]"
+               ApiRefType="parent">
+    CaptureBitmap
+  </SilkTestDoc>
+  <Apiinfo id="459" time="2012-02-18; 20:48:45"
+           timeStamp="|45|48|20|18|1|112|6|48|0|" idx="//*/*[458]" severity="0">
+    AnyWin.CaptureBitmap(fileName: C:\Users\ADMINI~1\AppData\Local\Temp\SCC_ExecServer_19124_19125\PerfProjects\PerfPrj_23_1329594348909\CharacterAttributesTest_20-48-44.bmp)
+  </Apiinfo>
+  <ApiProp id="460" apicall="//*/*[458]" propId="0" propName="CS">CaptureDesktop|c:\Temp\common.inc|302|CallExitHook|c:\Temp\common.inc|65|TestCaseExit|c:\Temp\common.inc|80|CharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|15|</ApiProp>
+  <ApiProp id="461" apicall="//*/*[458]" propId="20261" propName="ROOT"></ApiProp>
+  <ApiProp id="462" apicall="//*/*[458]" propId="20261" propName="CID">20261</ApiProp>
+  <ApiProp id="463" apicall="//*/*[458]" propId="20261" propName="ID"></ApiProp>
+  <ApiProp id="464" apicall="//*/*[458]" propId="20261" propName="V"></ApiProp>
+  <ApiProp id="465" apicall="//*/*[458]" propId="20261" propName="TN"></ApiProp>
+  <ApiProp id="466" apicall="//*/*[458]" propId="20261" propName="T">0</ApiProp>
+  <ApiProp id="467" apicall="//*/*[458]" propId="20261" propName="BID"></ApiProp>
+  <ApiProp id="468" apicall="//*/*[458]" propId="20261" propName="PID">0</ApiProp>
+  <SilkTestDoc id="469" time="2012-02-18; 20:48:45"
+               timeStamp="|45|48|20|18|1|112|6|48|0|" tick="30919656"
+               ApiHandle="" file="" bdlLine="0" status="3" ApiCtxt="//*/*[296]"
+               ApiRefType="parent">
+    Error
+  </SilkTestDoc>
+  <ApiProp id="470" apicall="//*/*[469]" propId="0" propName="CS">GenerateError|c:\Temp\common.inc|261|CaptureDesktop|c:\Temp\common.inc|309|CallExitHook|c:\Temp\common.inc|65|TestCaseExit|c:\Temp\common.inc|80|CharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|15|</ApiProp>
+  <Apiinfo id="471" time="2012-02-18; 20:48:45"
+           timeStamp="|45|48|20|18|1|112|6|48|0|" idx="//*/*[469]" severity="3">
+    &lt;&lt;&lt;&lt; &lt;click me&gt; for screen capture of the current error
+  </Apiinfo>
+  <ApiProp id="472" apicall="//*/*[469]" propId="20262" propName="ROOT"></ApiProp>
+  <ApiProp id="473" apicall="//*/*[469]" propId="20262" propName="CID">20262</ApiProp>
+  <ApiProp id="474" apicall="//*/*[469]" propId="20262" propName="ID"></ApiProp>
+  <ApiProp id="475" apicall="//*/*[469]" propId="20262" propName="V"></ApiProp>
+  <ApiProp id="476" apicall="//*/*[469]" propId="20262" propName="TN"></ApiProp>
+  <ApiProp id="477" apicall="//*/*[469]" propId="20262" propName="T">0</ApiProp>
+  <ApiProp id="478" apicall="//*/*[469]" propId="20262" propName="BID"></ApiProp>
+  <ApiProp id="479" apicall="//*/*[469]" propId="20262" propName="PID">0</ApiProp>
+  <SilkTestDoc id="480" time="2012-02-18; 20:48:45"
+               timeStamp="|45|48|20|18|1|112|6|48|0|" tick="30919671"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[296]"
+               ApiRefType="parent">
+    Print
+  </SilkTestDoc>
+  <Apiinfo id="481" time="2012-02-18; 20:48:45"
+           timeStamp="|45|48|20|18|1|112|6|48|0|" idx="//*/*[480]" severity="0">
+    Message: CloseRumbaMainframe
+  </Apiinfo>
+  <SilkTestDoc id="482" time="2012-02-18; 20:48:45"
+               timeStamp="|45|48|20|18|1|112|6|48|0|" tick="30919734"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[296]"
+               ApiRefType="parent">
+    Find
+  </SilkTestDoc>
+  <Apiinfo id="483" time="2012-02-18; 20:48:45"
+           timeStamp="|45|48|20|18|1|112|6|48|0|" idx="//*/*[482]" severity="0">
+    WPFWindow.Find(locator: //WPFMenuItem[@automationId=&apos;Menubar_Disconnect&apos;])
+  </Apiinfo>
+  <ApiProp id="484" apicall="//*/*[482]" propId="0" propName="CS">CloseRumbaMainframe|c:\Temp\Rumba\frame.inc|126|CallExitHook|c:\Temp\common.inc|68|TestCaseExit|c:\Temp\common.inc|80|CharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|15|</ApiProp>
+  <ApiProp id="485" apicall="//*/*[482]" propId="20263" propName="ROOT"></ApiProp>
+  <ApiProp id="486" apicall="//*/*[482]" propId="20263" propName="CID">20263</ApiProp>
+  <ApiProp id="487" apicall="//*/*[482]" propId="20263" propName="ID"></ApiProp>
+  <ApiProp id="488" apicall="//*/*[482]" propId="20263" propName="V"></ApiProp>
+  <ApiProp id="489" apicall="//*/*[482]" propId="20263" propName="TN"></ApiProp>
+  <ApiProp id="490" apicall="//*/*[482]" propId="20263" propName="T">0</ApiProp>
+  <ApiProp id="491" apicall="//*/*[482]" propId="20263" propName="BID"></ApiProp>
+  <ApiProp id="492" apicall="//*/*[482]" propId="20263" propName="PID">0</ApiProp>
+  <SilkTestDoc id="493" time="2012-02-18; 20:48:45"
+               timeStamp="|45|48|20|18|1|112|6|48|0|" tick="30920156"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[296]"
+               ApiRefType="parent">
+    Select
+  </SilkTestDoc>
+  <Apiinfo id="494" time="2012-02-18; 20:48:45"
+           timeStamp="|45|48|20|18|1|112|6|48|0|" idx="//*/*[493]" severity="0">
+    WPFMenuItem.Select()
+  </Apiinfo>
+  <ApiProp id="495" apicall="//*/*[493]" propId="0" propName="CS">CloseRumbaMainframe|c:\Temp\Rumba\frame.inc|126|CallExitHook|c:\Temp\common.inc|68|TestCaseExit|c:\Temp\common.inc|80|CharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|15|</ApiProp>
+  <ApiProp id="496" apicall="//*/*[493]" propId="20264" propName="ROOT"></ApiProp>
+  <ApiProp id="497" apicall="//*/*[493]" propId="20264" propName="CID">20264</ApiProp>
+  <ApiProp id="498" apicall="//*/*[493]" propId="20264" propName="ID"></ApiProp>
+  <ApiProp id="499" apicall="//*/*[493]" propId="20264" propName="V"></ApiProp>
+  <ApiProp id="500" apicall="//*/*[493]" propId="20264" propName="TN"></ApiProp>
+  <ApiProp id="501" apicall="//*/*[493]" propId="20264" propName="T">0</ApiProp>
+  <ApiProp id="502" apicall="//*/*[493]" propId="20264" propName="BID"></ApiProp>
+  <ApiProp id="503" apicall="//*/*[493]" propId="20264" propName="PID">0</ApiProp>
+  <SilkTestDoc id="504" time="2012-02-18; 20:48:45"
+               timeStamp="|45|48|20|18|1|112|6|48|0|" tick="30920250"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[296]"
+               ApiRefType="parent">
+    Find
+  </SilkTestDoc>
+  <Apiinfo id="505" time="2012-02-18; 20:48:45"
+           timeStamp="|45|48|20|18|1|112|6|48|0|" idx="//*/*[504]" severity="0">
+    WPFWindow.Find(locator: //WPFButton[@automationId=&apos;PART_CloseButton&apos;], options: [1, false])
+  </Apiinfo>
+  <ApiProp id="506" apicall="//*/*[504]" propId="0" propName="CS">CloseRumbaMainframe|c:\Temp\Rumba\frame.inc|127|CallExitHook|c:\Temp\common.inc|68|TestCaseExit|c:\Temp\common.inc|80|CharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|15|</ApiProp>
+  <ApiProp id="507" apicall="//*/*[504]" propId="20265" propName="ROOT"></ApiProp>
+  <ApiProp id="508" apicall="//*/*[504]" propId="20265" propName="CID">20265</ApiProp>
+  <ApiProp id="509" apicall="//*/*[504]" propId="20265" propName="ID"></ApiProp>
+  <ApiProp id="510" apicall="//*/*[504]" propId="20265" propName="V"></ApiProp>
+  <ApiProp id="511" apicall="//*/*[504]" propId="20265" propName="TN"></ApiProp>
+  <ApiProp id="512" apicall="//*/*[504]" propId="20265" propName="T">0</ApiProp>
+  <ApiProp id="513" apicall="//*/*[504]" propId="20265" propName="BID"></ApiProp>
+  <ApiProp id="514" apicall="//*/*[504]" propId="20265" propName="PID">0</ApiProp>
+  <SilkTestDoc id="515" time="2012-02-18; 20:48:46"
+               timeStamp="|46|48|20|18|1|112|6|48|0|" tick="30920609"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[296]"
+               ApiRefType="parent">
+    Select
+  </SilkTestDoc>
+  <Apiinfo id="516" time="2012-02-18; 20:48:46"
+           timeStamp="|46|48|20|18|1|112|6|48|0|" idx="//*/*[515]" severity="0">
+    WPFButton.Select()
+  </Apiinfo>
+  <ApiProp id="517" apicall="//*/*[515]" propId="0" propName="CS">CloseRumbaMainframe|c:\Temp\Rumba\frame.inc|129|CallExitHook|c:\Temp\common.inc|68|TestCaseExit|c:\Temp\common.inc|80|CharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|15|</ApiProp>
+  <ApiProp id="518" apicall="//*/*[515]" propId="20266" propName="ROOT"></ApiProp>
+  <ApiProp id="519" apicall="//*/*[515]" propId="20266" propName="CID">20266</ApiProp>
+  <ApiProp id="520" apicall="//*/*[515]" propId="20266" propName="ID"></ApiProp>
+  <ApiProp id="521" apicall="//*/*[515]" propId="20266" propName="V"></ApiProp>
+  <ApiProp id="522" apicall="//*/*[515]" propId="20266" propName="TN"></ApiProp>
+  <ApiProp id="523" apicall="//*/*[515]" propId="20266" propName="T">0</ApiProp>
+  <ApiProp id="524" apicall="//*/*[515]" propId="20266" propName="BID"></ApiProp>
+  <ApiProp id="525" apicall="//*/*[515]" propId="20266" propName="PID">0</ApiProp>
+  <SilkTestDoc id="526" time="2012-02-18; 20:49:07"
+               timeStamp="|7|49|20|18|1|112|6|48|0|" tick="30941843"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[296]"
+               ApiRefType="parent">
+    Find
+  </SilkTestDoc>
+  <Apiinfo id="527" time="2012-02-18; 20:49:07"
+           timeStamp="|7|49|20|18|1|112|6|48|0|" idx="//*/*[526]" severity="0">
+    WPFWindow.Find(locator: //Dialog//Label[@caption=&apos;*save*Session Profile*&apos;]/../PushButton[@caption=&apos;No&apos;], options: [1, false])
+  </Apiinfo>
+  <ApiProp id="528" apicall="//*/*[526]" propId="0" propName="CS">CloseRumbaMainframe|c:\Temp\Rumba\frame.inc|130|CallExitHook|c:\Temp\common.inc|68|TestCaseExit|c:\Temp\common.inc|80|CharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|15|</ApiProp>
+  <ApiProp id="529" apicall="//*/*[526]" propId="20267" propName="ROOT"></ApiProp>
+  <ApiProp id="530" apicall="//*/*[526]" propId="20267" propName="CID">20267</ApiProp>
+  <ApiProp id="531" apicall="//*/*[526]" propId="20267" propName="ID"></ApiProp>
+  <ApiProp id="532" apicall="//*/*[526]" propId="20267" propName="V"></ApiProp>
+  <ApiProp id="533" apicall="//*/*[526]" propId="20267" propName="TN"></ApiProp>
+  <ApiProp id="534" apicall="//*/*[526]" propId="20267" propName="T">0</ApiProp>
+  <ApiProp id="535" apicall="//*/*[526]" propId="20267" propName="BID"></ApiProp>
+  <ApiProp id="536" apicall="//*/*[526]" propId="20267" propName="PID">0</ApiProp>
+  <SilkTestDoc id="537" time="2012-02-18; 20:49:08"
+               timeStamp="|8|49|20|18|1|112|6|48|0|" tick="30942859"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[296]"
+               ApiRefType="parent">
+    Click
+  </SilkTestDoc>
+  <Apiinfo id="538" time="2012-02-18; 20:49:08"
+           timeStamp="|8|49|20|18|1|112|6|48|0|" idx="//*/*[537]" severity="0">
+    PushButton.Click()
+  </Apiinfo>
+  <ApiProp id="539" apicall="//*/*[537]" propId="0" propName="CS">CloseRumbaMainframe|c:\Temp\Rumba\frame.inc|132|CallExitHook|c:\Temp\common.inc|68|TestCaseExit|c:\Temp\common.inc|80|CharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|15|</ApiProp>
+  <ApiProp id="540" apicall="//*/*[537]" propId="20268" propName="ROOT"></ApiProp>
+  <ApiProp id="541" apicall="//*/*[537]" propId="20268" propName="CID">20268</ApiProp>
+  <ApiProp id="542" apicall="//*/*[537]" propId="20268" propName="ID"></ApiProp>
+  <ApiProp id="543" apicall="//*/*[537]" propId="20268" propName="V"></ApiProp>
+  <ApiProp id="544" apicall="//*/*[537]" propId="20268" propName="TN"></ApiProp>
+  <ApiProp id="545" apicall="//*/*[537]" propId="20268" propName="T">0</ApiProp>
+  <ApiProp id="546" apicall="//*/*[537]" propId="20268" propName="BID"></ApiProp>
+  <ApiProp id="547" apicall="//*/*[537]" propId="20268" propName="PID">0</ApiProp>
+  <SilkTestDoc id="548" time="2012-02-18; 20:49:08"
+               timeStamp="|8|49|20|18|1|112|6|48|0|" tick="30943046"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[296]"
+               ApiRefType="parent">
+    Close
+  </SilkTestDoc>
+  <Apiinfo id="549" time="2012-02-18; 20:49:08"
+           timeStamp="|8|49|20|18|1|112|6|48|0|" idx="//*/*[548]" severity="0">
+    WPFWindow.Close()
+  </Apiinfo>
+  <ApiProp id="550" apicall="//*/*[548]" propId="0" propName="CS">Close|C:\Program Files (x86)\Silk\SilkTest\extend\WPF\WPF.inc|1167|CloseRumbaMainframe|c:\Temp\Rumba\frame.inc|133|CallExitHook|c:\Temp\common.inc|68|TestCaseExit|c:\Temp\common.inc|80|CharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|15|</ApiProp>
+  <ApiProp id="551" apicall="//*/*[548]" propId="20269" propName="ROOT"></ApiProp>
+  <ApiProp id="552" apicall="//*/*[548]" propId="20269" propName="CID">20269</ApiProp>
+  <ApiProp id="553" apicall="//*/*[548]" propId="20269" propName="ID"></ApiProp>
+  <ApiProp id="554" apicall="//*/*[548]" propId="20269" propName="V"></ApiProp>
+  <ApiProp id="555" apicall="//*/*[548]" propId="20269" propName="TN"></ApiProp>
+  <ApiProp id="556" apicall="//*/*[548]" propId="20269" propName="T">0</ApiProp>
+  <ApiProp id="557" apicall="//*/*[548]" propId="20269" propName="BID"></ApiProp>
+  <ApiProp id="558" apicall="//*/*[548]" propId="20269" propName="PID">0</ApiProp>
+  <SilkTestDoc id="559" time="2012-02-18; 20:49:08"
+               timeStamp="|8|49|20|18|1|112|6|48|0|" tick="30943062"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[296]"
+               ApiRefType="parent">
+    Print
+  </SilkTestDoc>
+  <Apiinfo id="560" time="2012-02-18; 20:49:08"
+           timeStamp="|8|49|20|18|1|112|6|48|0|" idx="//*/*[559]" severity="0">
+    Message: Test case CharacterAttributesTest started at 20:47:32 and ended at 20:49:08 and took time elapsed: 1:36.062 secs.
+  </Apiinfo>
+  <Apiinfo id="561" time="2012-02-18; 20:49:11"
+           timeStamp="|11|49|20|18|1|112|6|48|0|" idx="//*/*[296]" severity="3">
+    Elapsed Time: 00:01:39
+  </Apiinfo>
+  <Apiinfo id="562" time="2012-02-18; 20:49:11"
+           timeStamp="|11|49|20|18|1|112|6|48|0|" idx="//*/*[295]" severity="3">
+    Elapsed Time: 00:01:39
+  </Apiinfo>
+  <SilkTestDoc id="563" time="2012-02-18; 20:49:13"
+               timeStamp="|13|49|20|18|1|112|6|48|0|" tick="30947546"
+               ApiHandle="" file="" bdlLine="7" status="0" ApiCtxt="//*/*[3]"
+               ApiRefType="parent">
+    Testcase TextFieldCharacterAttributesTest
+  </SilkTestDoc>
+  <SilkTestDoc id="564" time="2012-02-18; 20:49:13"
+               timeStamp="|13|49|20|18|1|112|6|48|0|" tick="30947562"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[563]"
+               ApiRefType="parent">
+    Application State FieldTestBaseState
+  </SilkTestDoc>
+  <SilkTestDoc id="565" time="2012-02-18; 20:49:13"
+               timeStamp="|13|49|20|18|1|112|6|48|0|" tick="30947562"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[564]"
+               ApiRefType="parent">
+    Application State MainframeBasestate
+  </SilkTestDoc>
+  <SilkTestDoc id="566" time="2012-02-18; 20:49:17"
+               timeStamp="|17|49|20|18|1|112|6|48|0|" tick="30952296"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[565]"
+               ApiRefType="parent">
+    Print
+  </SilkTestDoc>
+  <Apiinfo id="567" time="2012-02-18; 20:49:17"
+           timeStamp="|17|49|20|18|1|112|6|48|0|" idx="//*/*[566]" severity="0">
+    Message: MainframeBasestate
+  </Apiinfo>
+  <SilkTestDoc id="568" time="2012-02-18; 20:49:17"
+               timeStamp="|17|49|20|18|1|112|6|48|0|" tick="30952359"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[565]"
+               ApiRefType="parent">
+    ReleaseKeys
+  </SilkTestDoc>
+  <Apiinfo id="569" time="2012-02-18; 20:49:17"
+           timeStamp="|17|49|20|18|1|112|6|48|0|" idx="//*/*[568]" severity="0">
+    WPFWindow.ReleaseKeys(keys: &lt;Alt&gt;&lt;Ctrl&gt;&lt;Shift&gt;)
+  </Apiinfo>
+  <ApiProp id="570" apicall="//*/*[568]" propId="0" propName="CS">MainframeBasestate|c:\Temp\Rumba\frame.inc|40|FieldTestBaseState|c:\Temp\Rumba\frame.inc|46|DefaultTestCaseEnter|C:\Program Files (x86)\Silk\SilkTest\defaults.inc|543|CallEnterHook|c:\Temp\common.inc|57|TestCaseEnter|c:\Temp\common.inc|73|TextFieldCharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|34|</ApiProp>
+  <ApiProp id="571" apicall="//*/*[568]" propId="20270" propName="ROOT"></ApiProp>
+  <ApiProp id="572" apicall="//*/*[568]" propId="20270" propName="CID">20270</ApiProp>
+  <ApiProp id="573" apicall="//*/*[568]" propId="20270" propName="ID"></ApiProp>
+  <ApiProp id="574" apicall="//*/*[568]" propId="20270" propName="V"></ApiProp>
+  <ApiProp id="575" apicall="//*/*[568]" propId="20270" propName="TN"></ApiProp>
+  <ApiProp id="576" apicall="//*/*[568]" propId="20270" propName="T">0</ApiProp>
+  <ApiProp id="577" apicall="//*/*[568]" propId="20270" propName="BID"></ApiProp>
+  <ApiProp id="578" apicall="//*/*[568]" propId="20270" propName="PID">0</ApiProp>
+  <SilkTestDoc id="579" time="2012-02-18; 20:49:18"
+               timeStamp="|18|49|20|18|1|112|6|48|0|" tick="30952500"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[565]"
+               ApiRefType="parent">
+    Find
+  </SilkTestDoc>
+  <Apiinfo id="580" time="2012-02-18; 20:49:18"
+           timeStamp="|18|49|20|18|1|112|6|48|0|" idx="//*/*[579]" severity="0">
+    WPFWindow.Find(locator: //WPFMenuItem[@automationId=&apos;mainframeDsp1&apos;])
+  </Apiinfo>
+  <ApiProp id="581" apicall="//*/*[579]" propId="0" propName="CS">MainframeBasestate|c:\Temp\Rumba\frame.inc|41|FieldTestBaseState|c:\Temp\Rumba\frame.inc|46|DefaultTestCaseEnter|C:\Program Files (x86)\Silk\SilkTest\defaults.inc|543|CallEnterHook|c:\Temp\common.inc|57|TestCaseEnter|c:\Temp\common.inc|73|TextFieldCharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|34|</ApiProp>
+  <ApiProp id="582" apicall="//*/*[579]" propId="20271" propName="ROOT"></ApiProp>
+  <ApiProp id="583" apicall="//*/*[579]" propId="20271" propName="CID">20271</ApiProp>
+  <ApiProp id="584" apicall="//*/*[579]" propId="20271" propName="ID"></ApiProp>
+  <ApiProp id="585" apicall="//*/*[579]" propId="20271" propName="V"></ApiProp>
+  <ApiProp id="586" apicall="//*/*[579]" propId="20271" propName="TN"></ApiProp>
+  <ApiProp id="587" apicall="//*/*[579]" propId="20271" propName="T">0</ApiProp>
+  <ApiProp id="588" apicall="//*/*[579]" propId="20271" propName="BID"></ApiProp>
+  <ApiProp id="589" apicall="//*/*[579]" propId="20271" propName="PID">0</ApiProp>
+  <SilkTestDoc id="590" time="2012-02-18; 20:49:39"
+               timeStamp="|39|49|20|18|1|112|6|48|0|" tick="30974328"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[565]"
+               ApiRefType="parent">
+    Select
+  </SilkTestDoc>
+  <Apiinfo id="591" time="2012-02-18; 20:49:39"
+           timeStamp="|39|49|20|18|1|112|6|48|0|" idx="//*/*[590]" severity="0">
+    WPFMenuItem.Select()
+  </Apiinfo>
+  <ApiProp id="592" apicall="//*/*[590]" propId="0" propName="CS">MainframeBasestate|c:\Temp\Rumba\frame.inc|41|FieldTestBaseState|c:\Temp\Rumba\frame.inc|46|DefaultTestCaseEnter|C:\Program Files (x86)\Silk\SilkTest\defaults.inc|543|CallEnterHook|c:\Temp\common.inc|57|TestCaseEnter|c:\Temp\common.inc|73|TextFieldCharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|34|</ApiProp>
+  <ApiProp id="593" apicall="//*/*[590]" propId="20272" propName="ROOT"></ApiProp>
+  <ApiProp id="594" apicall="//*/*[590]" propId="20272" propName="CID">20272</ApiProp>
+  <ApiProp id="595" apicall="//*/*[590]" propId="20272" propName="ID"></ApiProp>
+  <ApiProp id="596" apicall="//*/*[590]" propId="20272" propName="V"></ApiProp>
+  <ApiProp id="597" apicall="//*/*[590]" propId="20272" propName="TN"></ApiProp>
+  <ApiProp id="598" apicall="//*/*[590]" propId="20272" propName="T">0</ApiProp>
+  <ApiProp id="599" apicall="//*/*[590]" propId="20272" propName="BID"></ApiProp>
+  <ApiProp id="600" apicall="//*/*[590]" propId="20272" propName="PID">0</ApiProp>
+  <SilkTestDoc id="601" time="2012-02-18; 20:50:00"
+               timeStamp="|0|50|20|18|1|112|6|48|0|" tick="30994515"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[565]"
+               ApiRefType="parent">
+    Find
+  </SilkTestDoc>
+  <Apiinfo id="602" time="2012-02-18; 20:50:00"
+           timeStamp="|0|50|20|18|1|112|6|48|0|" idx="//*/*[601]" severity="0">
+    WPFWindow.Find(locator: //WPFMenuItem[@automationId=&apos;Menubar_Connect&apos;])
+  </Apiinfo>
+  <ApiProp id="603" apicall="//*/*[601]" propId="0" propName="CS">MainframeBasestate|c:\Temp\Rumba\frame.inc|42|FieldTestBaseState|c:\Temp\Rumba\frame.inc|46|DefaultTestCaseEnter|C:\Program Files (x86)\Silk\SilkTest\defaults.inc|543|CallEnterHook|c:\Temp\common.inc|57|TestCaseEnter|c:\Temp\common.inc|73|TextFieldCharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|34|</ApiProp>
+  <ApiProp id="604" apicall="//*/*[601]" propId="20273" propName="ROOT"></ApiProp>
+  <ApiProp id="605" apicall="//*/*[601]" propId="20273" propName="CID">20273</ApiProp>
+  <ApiProp id="606" apicall="//*/*[601]" propId="20273" propName="ID"></ApiProp>
+  <ApiProp id="607" apicall="//*/*[601]" propId="20273" propName="V"></ApiProp>
+  <ApiProp id="608" apicall="//*/*[601]" propId="20273" propName="TN"></ApiProp>
+  <ApiProp id="609" apicall="//*/*[601]" propId="20273" propName="T">0</ApiProp>
+  <ApiProp id="610" apicall="//*/*[601]" propId="20273" propName="BID"></ApiProp>
+  <ApiProp id="611" apicall="//*/*[601]" propId="20273" propName="PID">0</ApiProp>
+  <SilkTestDoc id="612" time="2012-02-18; 20:50:00"
+               timeStamp="|0|50|20|18|1|112|6|48|0|" tick="30995000"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[565]"
+               ApiRefType="parent">
+    Select
+  </SilkTestDoc>
+  <Apiinfo id="613" time="2012-02-18; 20:50:00"
+           timeStamp="|0|50|20|18|1|112|6|48|0|" idx="//*/*[612]" severity="0">
+    WPFMenuItem.Select()
+  </Apiinfo>
+  <ApiProp id="614" apicall="//*/*[612]" propId="0" propName="CS">MainframeBasestate|c:\Temp\Rumba\frame.inc|42|FieldTestBaseState|c:\Temp\Rumba\frame.inc|46|DefaultTestCaseEnter|C:\Program Files (x86)\Silk\SilkTest\defaults.inc|543|CallEnterHook|c:\Temp\common.inc|57|TestCaseEnter|c:\Temp\common.inc|73|TextFieldCharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|34|</ApiProp>
+  <ApiProp id="615" apicall="//*/*[612]" propId="20274" propName="ROOT"></ApiProp>
+  <ApiProp id="616" apicall="//*/*[612]" propId="20274" propName="CID">20274</ApiProp>
+  <ApiProp id="617" apicall="//*/*[612]" propId="20274" propName="ID"></ApiProp>
+  <ApiProp id="618" apicall="//*/*[612]" propId="20274" propName="V"></ApiProp>
+  <ApiProp id="619" apicall="//*/*[612]" propId="20274" propName="TN"></ApiProp>
+  <ApiProp id="620" apicall="//*/*[612]" propId="20274" propName="T">0</ApiProp>
+  <ApiProp id="621" apicall="//*/*[612]" propId="20274" propName="BID"></ApiProp>
+  <ApiProp id="622" apicall="//*/*[612]" propId="20274" propName="PID">0</ApiProp>
+  <SilkTestDoc id="623" time="2012-02-18; 20:50:00"
+               timeStamp="|0|50|20|18|1|112|6|48|0|" tick="30995140"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[565]"
+               ApiRefType="parent">
+    Find
+  </SilkTestDoc>
+  <Apiinfo id="624" time="2012-02-18; 20:50:00"
+           timeStamp="|0|50|20|18|1|112|6|48|0|" idx="//*/*[623]" severity="0">
+    WPFWindow.Find(locator: //RumbaScreen)
+  </Apiinfo>
+  <ApiProp id="625" apicall="//*/*[623]" propId="0" propName="CS">MainframeBasestate|c:\Temp\Rumba\frame.inc|43|FieldTestBaseState|c:\Temp\Rumba\frame.inc|46|DefaultTestCaseEnter|C:\Program Files (x86)\Silk\SilkTest\defaults.inc|543|CallEnterHook|c:\Temp\common.inc|57|TestCaseEnter|c:\Temp\common.inc|73|TextFieldCharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|34|</ApiProp>
+  <ApiProp id="626" apicall="//*/*[623]" propId="20275" propName="ROOT"></ApiProp>
+  <ApiProp id="627" apicall="//*/*[623]" propId="20275" propName="CID">20275</ApiProp>
+  <ApiProp id="628" apicall="//*/*[623]" propId="20275" propName="ID"></ApiProp>
+  <ApiProp id="629" apicall="//*/*[623]" propId="20275" propName="V"></ApiProp>
+  <ApiProp id="630" apicall="//*/*[623]" propId="20275" propName="TN"></ApiProp>
+  <ApiProp id="631" apicall="//*/*[623]" propId="20275" propName="T">0</ApiProp>
+  <ApiProp id="632" apicall="//*/*[623]" propId="20275" propName="BID"></ApiProp>
+  <ApiProp id="633" apicall="//*/*[623]" propId="20275" propName="PID">0</ApiProp>
+  <SilkTestDoc id="634" time="2012-02-18; 20:50:07"
+               timeStamp="|7|50|20|18|1|112|6|48|0|" tick="31001531"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[565]"
+               ApiRefType="parent">
+    WaitForProperty
+  </SilkTestDoc>
+  <Apiinfo id="635" time="2012-02-18; 20:50:07"
+           timeStamp="|7|50|20|18|1|112|6|48|0|" idx="//*/*[634]" severity="0">
+    RumbaScreen.WaitForProperty(propertyName: HostConnected, expectedValue: true, timeout: 60)
+  </Apiinfo>
+  <ApiProp id="636" apicall="//*/*[634]" propId="0" propName="CS">MainframeBasestate|c:\Temp\Rumba\frame.inc|44|FieldTestBaseState|c:\Temp\Rumba\frame.inc|46|DefaultTestCaseEnter|C:\Program Files (x86)\Silk\SilkTest\defaults.inc|543|CallEnterHook|c:\Temp\common.inc|57|TestCaseEnter|c:\Temp\common.inc|73|TextFieldCharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|34|</ApiProp>
+  <ApiProp id="637" apicall="//*/*[634]" propId="20276" propName="ROOT"></ApiProp>
+  <ApiProp id="638" apicall="//*/*[634]" propId="20276" propName="CID">20276</ApiProp>
+  <ApiProp id="639" apicall="//*/*[634]" propId="20276" propName="ID"></ApiProp>
+  <ApiProp id="640" apicall="//*/*[634]" propId="20276" propName="V"></ApiProp>
+  <ApiProp id="641" apicall="//*/*[634]" propId="20276" propName="TN"></ApiProp>
+  <ApiProp id="642" apicall="//*/*[634]" propId="20276" propName="T">0</ApiProp>
+  <ApiProp id="643" apicall="//*/*[634]" propId="20276" propName="BID"></ApiProp>
+  <ApiProp id="644" apicall="//*/*[634]" propId="20276" propName="PID">0</ApiProp>
+  <Apiinfo id="645" time="2012-02-18; 20:50:07"
+           timeStamp="|7|50|20|18|1|112|6|48|0|" idx="//*/*[565]" severity="0">
+    Elapsed Time: 00:00:54
+  </Apiinfo>
+  <SilkTestDoc id="646" time="2012-02-18; 20:50:07"
+               timeStamp="|7|50|20|18|1|112|6|48|0|" tick="31001578"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[564]"
+               ApiRefType="parent">
+    Print
+  </SilkTestDoc>
+  <Apiinfo id="647" time="2012-02-18; 20:50:07"
+           timeStamp="|7|50|20|18|1|112|6|48|0|" idx="//*/*[646]" severity="0">
+    Message: FieldTestBaseState
+  </Apiinfo>
+  <SilkTestDoc id="648" time="2012-02-18; 20:50:07"
+               timeStamp="|7|50|20|18|1|112|6|48|0|" tick="31001859"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[564]"
+               ApiRefType="parent">
+    Find
+  </SilkTestDoc>
+  <Apiinfo id="649" time="2012-02-18; 20:50:07"
+           timeStamp="|7|50|20|18|1|112|6|48|0|" idx="//*/*[648]" severity="0">
+    RumbaScreen.Find(locator: //RumbaTextField)
+  </Apiinfo>
+  <ApiProp id="650" apicall="//*/*[648]" propId="0" propName="CS">FieldTestBaseState|c:\Temp\Rumba\frame.inc|51|DefaultTestCaseEnter|C:\Program Files (x86)\Silk\SilkTest\defaults.inc|543|CallEnterHook|c:\Temp\common.inc|57|TestCaseEnter|c:\Temp\common.inc|73|TextFieldCharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|34|</ApiProp>
+  <ApiProp id="651" apicall="//*/*[648]" propId="20277" propName="ROOT"></ApiProp>
+  <ApiProp id="652" apicall="//*/*[648]" propId="20277" propName="CID">20277</ApiProp>
+  <ApiProp id="653" apicall="//*/*[648]" propId="20277" propName="ID"></ApiProp>
+  <ApiProp id="654" apicall="//*/*[648]" propId="20277" propName="V"></ApiProp>
+  <ApiProp id="655" apicall="//*/*[648]" propId="20277" propName="TN"></ApiProp>
+  <ApiProp id="656" apicall="//*/*[648]" propId="20277" propName="T">0</ApiProp>
+  <ApiProp id="657" apicall="//*/*[648]" propId="20277" propName="BID"></ApiProp>
+  <ApiProp id="658" apicall="//*/*[648]" propId="20277" propName="PID">0</ApiProp>
+  <SilkTestDoc id="659" time="2012-02-18; 20:50:08"
+               timeStamp="|8|50|20|18|1|112|6|48|0|" tick="31002500"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[564]"
+               ApiRefType="parent">
+    SynchSendKeys
+  </SilkTestDoc>
+  <Apiinfo id="660" time="2012-02-18; 20:50:08"
+           timeStamp="|8|50|20|18|1|112|6|48|0|" idx="//*/*[659]" severity="0">
+    RumbaTextField.SynchSendKeys(keys: tso dvtest8@E)
+  </Apiinfo>
+  <ApiProp id="661" apicall="//*/*[659]" propId="0" propName="CS">FieldTestBaseState|c:\Temp\Rumba\frame.inc|51|DefaultTestCaseEnter|C:\Program Files (x86)\Silk\SilkTest\defaults.inc|543|CallEnterHook|c:\Temp\common.inc|57|TestCaseEnter|c:\Temp\common.inc|73|TextFieldCharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|34|</ApiProp>
+  <ApiProp id="662" apicall="//*/*[659]" propId="20278" propName="ROOT"></ApiProp>
+  <ApiProp id="663" apicall="//*/*[659]" propId="20278" propName="CID">20278</ApiProp>
+  <ApiProp id="664" apicall="//*/*[659]" propId="20278" propName="ID"></ApiProp>
+  <ApiProp id="665" apicall="//*/*[659]" propId="20278" propName="V"></ApiProp>
+  <ApiProp id="666" apicall="//*/*[659]" propId="20278" propName="TN"></ApiProp>
+  <ApiProp id="667" apicall="//*/*[659]" propId="20278" propName="T">0</ApiProp>
+  <ApiProp id="668" apicall="//*/*[659]" propId="20278" propName="BID"></ApiProp>
+  <ApiProp id="669" apicall="//*/*[659]" propId="20278" propName="PID">0</ApiProp>
+  <SilkTestDoc id="670" time="2012-02-18; 20:50:08"
+               timeStamp="|8|50|20|18|1|112|6|48|0|" tick="31002890"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[564]"
+               ApiRefType="parent">
+    Find
+  </SilkTestDoc>
+  <Apiinfo id="671" time="2012-02-18; 20:50:08"
+           timeStamp="|8|50|20|18|1|112|6|48|0|" idx="//*/*[670]" severity="0">
+    RumbaScreen.Find(locator: //RumbaTextField[@priorlabel=&apos;Password  ===&gt;&apos;])
+  </Apiinfo>
+  <ApiProp id="672" apicall="//*/*[670]" propId="0" propName="CS">FieldTestBaseState|c:\Temp\Rumba\frame.inc|52|DefaultTestCaseEnter|C:\Program Files (x86)\Silk\SilkTest\defaults.inc|543|CallEnterHook|c:\Temp\common.inc|57|TestCaseEnter|c:\Temp\common.inc|73|TextFieldCharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|34|</ApiProp>
+  <ApiProp id="673" apicall="//*/*[670]" propId="20279" propName="ROOT"></ApiProp>
+  <ApiProp id="674" apicall="//*/*[670]" propId="20279" propName="CID">20279</ApiProp>
+  <ApiProp id="675" apicall="//*/*[670]" propId="20279" propName="ID"></ApiProp>
+  <ApiProp id="676" apicall="//*/*[670]" propId="20279" propName="V"></ApiProp>
+  <ApiProp id="677" apicall="//*/*[670]" propId="20279" propName="TN"></ApiProp>
+  <ApiProp id="678" apicall="//*/*[670]" propId="20279" propName="T">0</ApiProp>
+  <ApiProp id="679" apicall="//*/*[670]" propId="20279" propName="BID"></ApiProp>
+  <ApiProp id="680" apicall="//*/*[670]" propId="20279" propName="PID">0</ApiProp>
+  <SilkTestDoc id="681" time="2012-02-18; 20:50:13"
+               timeStamp="|13|50|20|18|1|112|6|48|0|" tick="31007546"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[564]"
+               ApiRefType="parent">
+    SynchSendKeys
+  </SilkTestDoc>
+  <Apiinfo id="682" time="2012-02-18; 20:50:13"
+           timeStamp="|13|50|20|18|1|112|6|48|0|" idx="//*/*[681]" severity="0">
+    RumbaTextField.SynchSendKeys(keys: dvtest@E)
+  </Apiinfo>
+  <ApiProp id="683" apicall="//*/*[681]" propId="0" propName="CS">FieldTestBaseState|c:\Temp\Rumba\frame.inc|52|DefaultTestCaseEnter|C:\Program Files (x86)\Silk\SilkTest\defaults.inc|543|CallEnterHook|c:\Temp\common.inc|57|TestCaseEnter|c:\Temp\common.inc|73|TextFieldCharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|34|</ApiProp>
+  <ApiProp id="684" apicall="//*/*[681]" propId="20280" propName="ROOT"></ApiProp>
+  <ApiProp id="685" apicall="//*/*[681]" propId="20280" propName="CID">20280</ApiProp>
+  <ApiProp id="686" apicall="//*/*[681]" propId="20280" propName="ID"></ApiProp>
+  <ApiProp id="687" apicall="//*/*[681]" propId="20280" propName="V"></ApiProp>
+  <ApiProp id="688" apicall="//*/*[681]" propId="20280" propName="TN"></ApiProp>
+  <ApiProp id="689" apicall="//*/*[681]" propId="20280" propName="T">0</ApiProp>
+  <ApiProp id="690" apicall="//*/*[681]" propId="20280" propName="BID"></ApiProp>
+  <ApiProp id="691" apicall="//*/*[681]" propId="20280" propName="PID">0</ApiProp>
+  <SilkTestDoc id="692" time="2012-02-18; 20:50:13"
+               timeStamp="|13|50|20|18|1|112|6|48|0|" tick="31007640"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[564]"
+               ApiRefType="parent">
+    Find
+  </SilkTestDoc>
+  <Apiinfo id="693" time="2012-02-18; 20:50:13"
+           timeStamp="|13|50|20|18|1|112|6|48|0|" idx="//*/*[692]" severity="0">
+    RumbaScreen.Find(locator: //RumbaTextField[@Text=&apos;*LAST ACCESS AT*&apos;], options: [2, false])
+  </Apiinfo>
+  <ApiProp id="694" apicall="//*/*[692]" propId="0" propName="CS">FieldTestBaseState|c:\Temp\Rumba\frame.inc|59|DefaultTestCaseEnter|C:\Program Files (x86)\Silk\SilkTest\defaults.inc|543|CallEnterHook|c:\Temp\common.inc|57|TestCaseEnter|c:\Temp\common.inc|73|TextFieldCharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|34|</ApiProp>
+  <ApiProp id="695" apicall="//*/*[692]" propId="20281" propName="ROOT"></ApiProp>
+  <ApiProp id="696" apicall="//*/*[692]" propId="20281" propName="CID">20281</ApiProp>
+  <ApiProp id="697" apicall="//*/*[692]" propId="20281" propName="ID"></ApiProp>
+  <ApiProp id="698" apicall="//*/*[692]" propId="20281" propName="V"></ApiProp>
+  <ApiProp id="699" apicall="//*/*[692]" propId="20281" propName="TN"></ApiProp>
+  <ApiProp id="700" apicall="//*/*[692]" propId="20281" propName="T">0</ApiProp>
+  <ApiProp id="701" apicall="//*/*[692]" propId="20281" propName="BID"></ApiProp>
+  <ApiProp id="702" apicall="//*/*[692]" propId="20281" propName="PID">0</ApiProp>
+  <SilkTestDoc id="703" time="2012-02-18; 20:50:13"
+               timeStamp="|13|50|20|18|1|112|6|48|0|" tick="31007765"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[564]"
+               ApiRefType="parent">
+    WaitForProperty
+  </SilkTestDoc>
+  <Apiinfo id="704" time="2012-02-18; 20:50:13"
+           timeStamp="|13|50|20|18|1|112|6|48|0|" idx="//*/*[703]" severity="0">
+    RumbaScreen.WaitForProperty(propertyName: CursorColumn, expectedValue: 6)
+  </Apiinfo>
+  <ApiProp id="705" apicall="//*/*[703]" propId="0" propName="CS">FieldTestBaseState|c:\Temp\Rumba\frame.inc|61|DefaultTestCaseEnter|C:\Program Files (x86)\Silk\SilkTest\defaults.inc|543|CallEnterHook|c:\Temp\common.inc|57|TestCaseEnter|c:\Temp\common.inc|73|TextFieldCharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|34|</ApiProp>
+  <ApiProp id="706" apicall="//*/*[703]" propId="20282" propName="ROOT"></ApiProp>
+  <ApiProp id="707" apicall="//*/*[703]" propId="20282" propName="CID">20282</ApiProp>
+  <ApiProp id="708" apicall="//*/*[703]" propId="20282" propName="ID"></ApiProp>
+  <ApiProp id="709" apicall="//*/*[703]" propId="20282" propName="V"></ApiProp>
+  <ApiProp id="710" apicall="//*/*[703]" propId="20282" propName="TN"></ApiProp>
+  <ApiProp id="711" apicall="//*/*[703]" propId="20282" propName="T">0</ApiProp>
+  <ApiProp id="712" apicall="//*/*[703]" propId="20282" propName="BID"></ApiProp>
+  <ApiProp id="713" apicall="//*/*[703]" propId="20282" propName="PID">0</ApiProp>
+  <SilkTestDoc id="714" time="2012-02-18; 20:50:25"
+               timeStamp="|25|50|20|18|1|112|6|48|0|" tick="31019734"
+               ApiHandle="" file="" bdlLine="0" status="3" ApiCtxt="//*/*[564]"
+               ApiRefType="parent">
+    Submit
+  </SilkTestDoc>
+  <Apiinfo id="715" time="2012-02-18; 20:50:25"
+           timeStamp="|25|50|20|18|1|112|6|48|0|" idx="//*/*[714]" severity="3">
+    RumbaScreen.Submit()
+  </Apiinfo>
+  <ApiProp id="716" apicall="//*/*[714]" propId="0" propName="CS">CallExitHook|c:\Temp\common.inc|64|TestCaseExit|c:\Temp\common.inc|80|TextFieldCharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|34|</ApiProp>
+  <Apiinfo id="717" time="2012-02-18; 20:50:25"
+           timeStamp="|25|50|20|18|1|112|6|48|0|" idx="//*/*[714]" severity="3">
+    Error during executing the method/property &apos;Submit&apos;. Could not execute synchSendKeys: APITimedOut.
+  </Apiinfo>
+  <ApiProp id="718" apicall="//*/*[714]" propId="20283" propName="ROOT"></ApiProp>
+  <ApiProp id="719" apicall="//*/*[714]" propId="20283" propName="CID">20283</ApiProp>
+  <ApiProp id="720" apicall="//*/*[714]" propId="20283" propName="ID"></ApiProp>
+  <ApiProp id="721" apicall="//*/*[714]" propId="20283" propName="V"></ApiProp>
+  <ApiProp id="722" apicall="//*/*[714]" propId="20283" propName="TN"></ApiProp>
+  <ApiProp id="723" apicall="//*/*[714]" propId="20283" propName="T">0</ApiProp>
+  <ApiProp id="724" apicall="//*/*[714]" propId="20283" propName="BID"></ApiProp>
+  <ApiProp id="725" apicall="//*/*[714]" propId="20283" propName="PID">0</ApiProp>
+  <SilkTestDoc id="726" time="2012-02-18; 20:50:25"
+               timeStamp="|25|50|20|18|1|112|6|48|0|" tick="31020031"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[564]"
+               ApiRefType="parent">
+    CaptureBitmap
+  </SilkTestDoc>
+  <Apiinfo id="727" time="2012-02-18; 20:50:25"
+           timeStamp="|25|50|20|18|1|112|6|48|0|" idx="//*/*[726]" severity="0">
+    AnyWin.CaptureBitmap(fileName: C:\Users\ADMINI~1\AppData\Local\Temp\SCC_ExecServer_19124_19125\PerfProjects\PerfPrj_23_1329594348909\TextFieldCharacterAttributesTest_20-50-25.bmp)
+  </Apiinfo>
+  <ApiProp id="728" apicall="//*/*[726]" propId="0" propName="CS">CaptureDesktop|c:\Temp\common.inc|302|CallExitHook|c:\Temp\common.inc|65|TestCaseExit|c:\Temp\common.inc|80|TextFieldCharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|34|</ApiProp>
+  <ApiProp id="729" apicall="//*/*[726]" propId="20284" propName="ROOT"></ApiProp>
+  <ApiProp id="730" apicall="//*/*[726]" propId="20284" propName="CID">20284</ApiProp>
+  <ApiProp id="731" apicall="//*/*[726]" propId="20284" propName="ID"></ApiProp>
+  <ApiProp id="732" apicall="//*/*[726]" propId="20284" propName="V"></ApiProp>
+  <ApiProp id="733" apicall="//*/*[726]" propId="20284" propName="TN"></ApiProp>
+  <ApiProp id="734" apicall="//*/*[726]" propId="20284" propName="T">0</ApiProp>
+  <ApiProp id="735" apicall="//*/*[726]" propId="20284" propName="BID"></ApiProp>
+  <ApiProp id="736" apicall="//*/*[726]" propId="20284" propName="PID">0</ApiProp>
+  <SilkTestDoc id="737" time="2012-02-18; 20:50:25"
+               timeStamp="|25|50|20|18|1|112|6|48|0|" tick="31020046"
+               ApiHandle="" file="" bdlLine="0" status="3" ApiCtxt="//*/*[564]"
+               ApiRefType="parent">
+    Error
+  </SilkTestDoc>
+  <ApiProp id="738" apicall="//*/*[737]" propId="0" propName="CS">GenerateError|c:\Temp\common.inc|261|CaptureDesktop|c:\Temp\common.inc|309|CallExitHook|c:\Temp\common.inc|65|TestCaseExit|c:\Temp\common.inc|80|TextFieldCharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|34|</ApiProp>
+  <Apiinfo id="739" time="2012-02-18; 20:50:25"
+           timeStamp="|25|50|20|18|1|112|6|48|0|" idx="//*/*[737]" severity="3">
+    &lt;&lt;&lt;&lt; &lt;click me&gt; for screen capture of the current error
+  </Apiinfo>
+  <ApiProp id="740" apicall="//*/*[737]" propId="20285" propName="ROOT"></ApiProp>
+  <ApiProp id="741" apicall="//*/*[737]" propId="20285" propName="CID">20285</ApiProp>
+  <ApiProp id="742" apicall="//*/*[737]" propId="20285" propName="ID"></ApiProp>
+  <ApiProp id="743" apicall="//*/*[737]" propId="20285" propName="V"></ApiProp>
+  <ApiProp id="744" apicall="//*/*[737]" propId="20285" propName="TN"></ApiProp>
+  <ApiProp id="745" apicall="//*/*[737]" propId="20285" propName="T">0</ApiProp>
+  <ApiProp id="746" apicall="//*/*[737]" propId="20285" propName="BID"></ApiProp>
+  <ApiProp id="747" apicall="//*/*[737]" propId="20285" propName="PID">0</ApiProp>
+  <SilkTestDoc id="748" time="2012-02-18; 20:50:25"
+               timeStamp="|25|50|20|18|1|112|6|48|0|" tick="31020046"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[564]"
+               ApiRefType="parent">
+    Print
+  </SilkTestDoc>
+  <Apiinfo id="749" time="2012-02-18; 20:50:25"
+           timeStamp="|25|50|20|18|1|112|6|48|0|" idx="//*/*[748]" severity="0">
+    Message: CloseRumbaMainframe
+  </Apiinfo>
+  <SilkTestDoc id="750" time="2012-02-18; 20:50:25"
+               timeStamp="|25|50|20|18|1|112|6|48|0|" tick="31020109"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[564]"
+               ApiRefType="parent">
+    Find
+  </SilkTestDoc>
+  <Apiinfo id="751" time="2012-02-18; 20:50:25"
+           timeStamp="|25|50|20|18|1|112|6|48|0|" idx="//*/*[750]" severity="0">
+    WPFWindow.Find(locator: //WPFMenuItem[@automationId=&apos;Menubar_Disconnect&apos;])
+  </Apiinfo>
+  <ApiProp id="752" apicall="//*/*[750]" propId="0" propName="CS">CloseRumbaMainframe|c:\Temp\Rumba\frame.inc|126|CallExitHook|c:\Temp\common.inc|68|TestCaseExit|c:\Temp\common.inc|80|TextFieldCharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|34|</ApiProp>
+  <ApiProp id="753" apicall="//*/*[750]" propId="20286" propName="ROOT"></ApiProp>
+  <ApiProp id="754" apicall="//*/*[750]" propId="20286" propName="CID">20286</ApiProp>
+  <ApiProp id="755" apicall="//*/*[750]" propId="20286" propName="ID"></ApiProp>
+  <ApiProp id="756" apicall="//*/*[750]" propId="20286" propName="V"></ApiProp>
+  <ApiProp id="757" apicall="//*/*[750]" propId="20286" propName="TN"></ApiProp>
+  <ApiProp id="758" apicall="//*/*[750]" propId="20286" propName="T">0</ApiProp>
+  <ApiProp id="759" apicall="//*/*[750]" propId="20286" propName="BID"></ApiProp>
+  <ApiProp id="760" apicall="//*/*[750]" propId="20286" propName="PID">0</ApiProp>
+  <SilkTestDoc id="761" time="2012-02-18; 20:50:26"
+               timeStamp="|26|50|20|18|1|112|6|48|0|" tick="31020500"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[564]"
+               ApiRefType="parent">
+    Select
+  </SilkTestDoc>
+  <Apiinfo id="762" time="2012-02-18; 20:50:26"
+           timeStamp="|26|50|20|18|1|112|6|48|0|" idx="//*/*[761]" severity="0">
+    WPFMenuItem.Select()
+  </Apiinfo>
+  <ApiProp id="763" apicall="//*/*[761]" propId="0" propName="CS">CloseRumbaMainframe|c:\Temp\Rumba\frame.inc|126|CallExitHook|c:\Temp\common.inc|68|TestCaseExit|c:\Temp\common.inc|80|TextFieldCharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|34|</ApiProp>
+  <ApiProp id="764" apicall="//*/*[761]" propId="20287" propName="ROOT"></ApiProp>
+  <ApiProp id="765" apicall="//*/*[761]" propId="20287" propName="CID">20287</ApiProp>
+  <ApiProp id="766" apicall="//*/*[761]" propId="20287" propName="ID"></ApiProp>
+  <ApiProp id="767" apicall="//*/*[761]" propId="20287" propName="V"></ApiProp>
+  <ApiProp id="768" apicall="//*/*[761]" propId="20287" propName="TN"></ApiProp>
+  <ApiProp id="769" apicall="//*/*[761]" propId="20287" propName="T">0</ApiProp>
+  <ApiProp id="770" apicall="//*/*[761]" propId="20287" propName="BID"></ApiProp>
+  <ApiProp id="771" apicall="//*/*[761]" propId="20287" propName="PID">0</ApiProp>
+  <SilkTestDoc id="772" time="2012-02-18; 20:50:26"
+               timeStamp="|26|50|20|18|1|112|6|48|0|" tick="31020578"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[564]"
+               ApiRefType="parent">
+    Find
+  </SilkTestDoc>
+  <Apiinfo id="773" time="2012-02-18; 20:50:26"
+           timeStamp="|26|50|20|18|1|112|6|48|0|" idx="//*/*[772]" severity="0">
+    WPFWindow.Find(locator: //WPFButton[@automationId=&apos;PART_CloseButton&apos;], options: [1, false])
+  </Apiinfo>
+  <ApiProp id="774" apicall="//*/*[772]" propId="0" propName="CS">CloseRumbaMainframe|c:\Temp\Rumba\frame.inc|127|CallExitHook|c:\Temp\common.inc|68|TestCaseExit|c:\Temp\common.inc|80|TextFieldCharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|34|</ApiProp>
+  <ApiProp id="775" apicall="//*/*[772]" propId="20288" propName="ROOT"></ApiProp>
+  <ApiProp id="776" apicall="//*/*[772]" propId="20288" propName="CID">20288</ApiProp>
+  <ApiProp id="777" apicall="//*/*[772]" propId="20288" propName="ID"></ApiProp>
+  <ApiProp id="778" apicall="//*/*[772]" propId="20288" propName="V"></ApiProp>
+  <ApiProp id="779" apicall="//*/*[772]" propId="20288" propName="TN"></ApiProp>
+  <ApiProp id="780" apicall="//*/*[772]" propId="20288" propName="T">0</ApiProp>
+  <ApiProp id="781" apicall="//*/*[772]" propId="20288" propName="BID"></ApiProp>
+  <ApiProp id="782" apicall="//*/*[772]" propId="20288" propName="PID">0</ApiProp>
+  <SilkTestDoc id="783" time="2012-02-18; 20:50:26"
+               timeStamp="|26|50|20|18|1|112|6|48|0|" tick="31020968"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[564]"
+               ApiRefType="parent">
+    Select
+  </SilkTestDoc>
+  <Apiinfo id="784" time="2012-02-18; 20:50:26"
+           timeStamp="|26|50|20|18|1|112|6|48|0|" idx="//*/*[783]" severity="0">
+    WPFButton.Select()
+  </Apiinfo>
+  <ApiProp id="785" apicall="//*/*[783]" propId="0" propName="CS">CloseRumbaMainframe|c:\Temp\Rumba\frame.inc|129|CallExitHook|c:\Temp\common.inc|68|TestCaseExit|c:\Temp\common.inc|80|TextFieldCharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|34|</ApiProp>
+  <ApiProp id="786" apicall="//*/*[783]" propId="20289" propName="ROOT"></ApiProp>
+  <ApiProp id="787" apicall="//*/*[783]" propId="20289" propName="CID">20289</ApiProp>
+  <ApiProp id="788" apicall="//*/*[783]" propId="20289" propName="ID"></ApiProp>
+  <ApiProp id="789" apicall="//*/*[783]" propId="20289" propName="V"></ApiProp>
+  <ApiProp id="790" apicall="//*/*[783]" propId="20289" propName="TN"></ApiProp>
+  <ApiProp id="791" apicall="//*/*[783]" propId="20289" propName="T">0</ApiProp>
+  <ApiProp id="792" apicall="//*/*[783]" propId="20289" propName="BID"></ApiProp>
+  <ApiProp id="793" apicall="//*/*[783]" propId="20289" propName="PID">0</ApiProp>
+  <SilkTestDoc id="794" time="2012-02-18; 20:50:47"
+               timeStamp="|47|50|20|18|1|112|6|48|0|" tick="31042171"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[564]"
+               ApiRefType="parent">
+    Find
+  </SilkTestDoc>
+  <Apiinfo id="795" time="2012-02-18; 20:50:47"
+           timeStamp="|47|50|20|18|1|112|6|48|0|" idx="//*/*[794]" severity="0">
+    WPFWindow.Find(locator: //Dialog//Label[@caption=&apos;*save*Session Profile*&apos;]/../PushButton[@caption=&apos;No&apos;], options: [1, false])
+  </Apiinfo>
+  <ApiProp id="796" apicall="//*/*[794]" propId="0" propName="CS">CloseRumbaMainframe|c:\Temp\Rumba\frame.inc|130|CallExitHook|c:\Temp\common.inc|68|TestCaseExit|c:\Temp\common.inc|80|TextFieldCharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|34|</ApiProp>
+  <ApiProp id="797" apicall="//*/*[794]" propId="20290" propName="ROOT"></ApiProp>
+  <ApiProp id="798" apicall="//*/*[794]" propId="20290" propName="CID">20290</ApiProp>
+  <ApiProp id="799" apicall="//*/*[794]" propId="20290" propName="ID"></ApiProp>
+  <ApiProp id="800" apicall="//*/*[794]" propId="20290" propName="V"></ApiProp>
+  <ApiProp id="801" apicall="//*/*[794]" propId="20290" propName="TN"></ApiProp>
+  <ApiProp id="802" apicall="//*/*[794]" propId="20290" propName="T">0</ApiProp>
+  <ApiProp id="803" apicall="//*/*[794]" propId="20290" propName="BID"></ApiProp>
+  <ApiProp id="804" apicall="//*/*[794]" propId="20290" propName="PID">0</ApiProp>
+  <SilkTestDoc id="805" time="2012-02-18; 20:50:48"
+               timeStamp="|48|50|20|18|1|112|6|48|0|" tick="31043093"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[564]"
+               ApiRefType="parent">
+    Click
+  </SilkTestDoc>
+  <Apiinfo id="806" time="2012-02-18; 20:50:48"
+           timeStamp="|48|50|20|18|1|112|6|48|0|" idx="//*/*[805]" severity="0">
+    PushButton.Click()
+  </Apiinfo>
+  <ApiProp id="807" apicall="//*/*[805]" propId="0" propName="CS">CloseRumbaMainframe|c:\Temp\Rumba\frame.inc|132|CallExitHook|c:\Temp\common.inc|68|TestCaseExit|c:\Temp\common.inc|80|TextFieldCharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|34|</ApiProp>
+  <ApiProp id="808" apicall="//*/*[805]" propId="20291" propName="ROOT"></ApiProp>
+  <ApiProp id="809" apicall="//*/*[805]" propId="20291" propName="CID">20291</ApiProp>
+  <ApiProp id="810" apicall="//*/*[805]" propId="20291" propName="ID"></ApiProp>
+  <ApiProp id="811" apicall="//*/*[805]" propId="20291" propName="V"></ApiProp>
+  <ApiProp id="812" apicall="//*/*[805]" propId="20291" propName="TN"></ApiProp>
+  <ApiProp id="813" apicall="//*/*[805]" propId="20291" propName="T">0</ApiProp>
+  <ApiProp id="814" apicall="//*/*[805]" propId="20291" propName="BID"></ApiProp>
+  <ApiProp id="815" apicall="//*/*[805]" propId="20291" propName="PID">0</ApiProp>
+  <SilkTestDoc id="816" time="2012-02-18; 20:50:48"
+               timeStamp="|48|50|20|18|1|112|6|48|0|" tick="31043296"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[564]"
+               ApiRefType="parent">
+    Close
+  </SilkTestDoc>
+  <Apiinfo id="817" time="2012-02-18; 20:50:48"
+           timeStamp="|48|50|20|18|1|112|6|48|0|" idx="//*/*[816]" severity="0">
+    WPFWindow.Close()
+  </Apiinfo>
+  <ApiProp id="818" apicall="//*/*[816]" propId="0" propName="CS">Close|C:\Program Files (x86)\Silk\SilkTest\extend\WPF\WPF.inc|1167|CloseRumbaMainframe|c:\Temp\Rumba\frame.inc|133|CallExitHook|c:\Temp\common.inc|68|TestCaseExit|c:\Temp\common.inc|80|TextFieldCharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|34|</ApiProp>
+  <ApiProp id="819" apicall="//*/*[816]" propId="20292" propName="ROOT"></ApiProp>
+  <ApiProp id="820" apicall="//*/*[816]" propId="20292" propName="CID">20292</ApiProp>
+  <ApiProp id="821" apicall="//*/*[816]" propId="20292" propName="ID"></ApiProp>
+  <ApiProp id="822" apicall="//*/*[816]" propId="20292" propName="V"></ApiProp>
+  <ApiProp id="823" apicall="//*/*[816]" propId="20292" propName="TN"></ApiProp>
+  <ApiProp id="824" apicall="//*/*[816]" propId="20292" propName="T">0</ApiProp>
+  <ApiProp id="825" apicall="//*/*[816]" propId="20292" propName="BID"></ApiProp>
+  <ApiProp id="826" apicall="//*/*[816]" propId="20292" propName="PID">0</ApiProp>
+  <SilkTestDoc id="827" time="2012-02-18; 20:50:48"
+               timeStamp="|48|50|20|18|1|112|6|48|0|" tick="31043312"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[564]"
+               ApiRefType="parent">
+    Print
+  </SilkTestDoc>
+  <Apiinfo id="828" time="2012-02-18; 20:50:48"
+           timeStamp="|48|50|20|18|1|112|6|48|0|" idx="//*/*[827]" severity="0">
+    Message: Test case TextFieldCharacterAttributesTest started at 20:49:13 and ended at 20:50:48 and took time elapsed: 1:35.766 secs.
+  </Apiinfo>
+  <Apiinfo id="829" time="2012-02-18; 20:50:51"
+           timeStamp="|51|50|20|18|1|112|6|48|0|" idx="//*/*[564]" severity="3">
+    Elapsed Time: 00:01:39
+  </Apiinfo>
+  <Apiinfo id="830" time="2012-02-18; 20:50:51"
+           timeStamp="|51|50|20|18|1|112|6|48|0|" idx="//*/*[563]" severity="3">
+    Elapsed Time: 00:01:39
+  </Apiinfo>
+  <SilkTestDoc id="831" time="2012-02-18; 20:50:53"
+               timeStamp="|53|50|20|18|1|112|6|48|0|" tick="31047609"
+               ApiHandle="" file="" bdlLine="9" status="0" ApiCtxt="//*/*[3]"
+               ApiRefType="parent">
+    Testcase LabelCharacterAttributesTest
+  </SilkTestDoc>
+  <SilkTestDoc id="832" time="2012-02-18; 20:50:53"
+               timeStamp="|53|50|20|18|1|112|6|48|0|" tick="31047609"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[831]"
+               ApiRefType="parent">
+    Application State FieldTestBaseState
+  </SilkTestDoc>
+  <SilkTestDoc id="833" time="2012-02-18; 20:50:53"
+               timeStamp="|53|50|20|18|1|112|6|48|0|" tick="31047609"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[832]"
+               ApiRefType="parent">
+    Application State MainframeBasestate
+  </SilkTestDoc>
+  <SilkTestDoc id="834" time="2012-02-18; 20:50:56"
+               timeStamp="|56|50|20|18|1|112|6|48|0|" tick="31051468"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[833]"
+               ApiRefType="parent">
+    Print
+  </SilkTestDoc>
+  <Apiinfo id="835" time="2012-02-18; 20:50:56"
+           timeStamp="|56|50|20|18|1|112|6|48|0|" idx="//*/*[834]" severity="0">
+    Message: MainframeBasestate
+  </Apiinfo>
+  <SilkTestDoc id="836" time="2012-02-18; 20:50:57"
+               timeStamp="|57|50|20|18|1|112|6|48|0|" tick="31051671"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[833]"
+               ApiRefType="parent">
+    ReleaseKeys
+  </SilkTestDoc>
+  <Apiinfo id="837" time="2012-02-18; 20:50:57"
+           timeStamp="|57|50|20|18|1|112|6|48|0|" idx="//*/*[836]" severity="0">
+    WPFWindow.ReleaseKeys(keys: &lt;Alt&gt;&lt;Ctrl&gt;&lt;Shift&gt;)
+  </Apiinfo>
+  <ApiProp id="838" apicall="//*/*[836]" propId="0" propName="CS">MainframeBasestate|c:\Temp\Rumba\frame.inc|40|FieldTestBaseState|c:\Temp\Rumba\frame.inc|46|DefaultTestCaseEnter|C:\Program Files (x86)\Silk\SilkTest\defaults.inc|543|CallEnterHook|c:\Temp\common.inc|57|TestCaseEnter|c:\Temp\common.inc|73|LabelCharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|42|</ApiProp>
+  <ApiProp id="839" apicall="//*/*[836]" propId="20293" propName="ROOT"></ApiProp>
+  <ApiProp id="840" apicall="//*/*[836]" propId="20293" propName="CID">20293</ApiProp>
+  <ApiProp id="841" apicall="//*/*[836]" propId="20293" propName="ID"></ApiProp>
+  <ApiProp id="842" apicall="//*/*[836]" propId="20293" propName="V"></ApiProp>
+  <ApiProp id="843" apicall="//*/*[836]" propId="20293" propName="TN"></ApiProp>
+  <ApiProp id="844" apicall="//*/*[836]" propId="20293" propName="T">0</ApiProp>
+  <ApiProp id="845" apicall="//*/*[836]" propId="20293" propName="BID"></ApiProp>
+  <ApiProp id="846" apicall="//*/*[836]" propId="20293" propName="PID">0</ApiProp>
+  <SilkTestDoc id="847" time="2012-02-18; 20:50:57"
+               timeStamp="|57|50|20|18|1|112|6|48|0|" tick="31051796"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[833]"
+               ApiRefType="parent">
+    Find
+  </SilkTestDoc>
+  <Apiinfo id="848" time="2012-02-18; 20:50:57"
+           timeStamp="|57|50|20|18|1|112|6|48|0|" idx="//*/*[847]" severity="0">
+    WPFWindow.Find(locator: //WPFMenuItem[@automationId=&apos;mainframeDsp1&apos;])
+  </Apiinfo>
+  <ApiProp id="849" apicall="//*/*[847]" propId="0" propName="CS">MainframeBasestate|c:\Temp\Rumba\frame.inc|41|FieldTestBaseState|c:\Temp\Rumba\frame.inc|46|DefaultTestCaseEnter|C:\Program Files (x86)\Silk\SilkTest\defaults.inc|543|CallEnterHook|c:\Temp\common.inc|57|TestCaseEnter|c:\Temp\common.inc|73|LabelCharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|42|</ApiProp>
+  <ApiProp id="850" apicall="//*/*[847]" propId="20294" propName="ROOT"></ApiProp>
+  <ApiProp id="851" apicall="//*/*[847]" propId="20294" propName="CID">20294</ApiProp>
+  <ApiProp id="852" apicall="//*/*[847]" propId="20294" propName="ID"></ApiProp>
+  <ApiProp id="853" apicall="//*/*[847]" propId="20294" propName="V"></ApiProp>
+  <ApiProp id="854" apicall="//*/*[847]" propId="20294" propName="TN"></ApiProp>
+  <ApiProp id="855" apicall="//*/*[847]" propId="20294" propName="T">0</ApiProp>
+  <ApiProp id="856" apicall="//*/*[847]" propId="20294" propName="BID"></ApiProp>
+  <ApiProp id="857" apicall="//*/*[847]" propId="20294" propName="PID">0</ApiProp>
+  <SilkTestDoc id="858" time="2012-02-18; 20:51:19"
+               timeStamp="|19|51|20|18|1|112|6|48|0|" tick="31073812"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[833]"
+               ApiRefType="parent">
+    Select
+  </SilkTestDoc>
+  <Apiinfo id="859" time="2012-02-18; 20:51:19"
+           timeStamp="|19|51|20|18|1|112|6|48|0|" idx="//*/*[858]" severity="0">
+    WPFMenuItem.Select()
+  </Apiinfo>
+  <ApiProp id="860" apicall="//*/*[858]" propId="0" propName="CS">MainframeBasestate|c:\Temp\Rumba\frame.inc|41|FieldTestBaseState|c:\Temp\Rumba\frame.inc|46|DefaultTestCaseEnter|C:\Program Files (x86)\Silk\SilkTest\defaults.inc|543|CallEnterHook|c:\Temp\common.inc|57|TestCaseEnter|c:\Temp\common.inc|73|LabelCharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|42|</ApiProp>
+  <ApiProp id="861" apicall="//*/*[858]" propId="20295" propName="ROOT"></ApiProp>
+  <ApiProp id="862" apicall="//*/*[858]" propId="20295" propName="CID">20295</ApiProp>
+  <ApiProp id="863" apicall="//*/*[858]" propId="20295" propName="ID"></ApiProp>
+  <ApiProp id="864" apicall="//*/*[858]" propId="20295" propName="V"></ApiProp>
+  <ApiProp id="865" apicall="//*/*[858]" propId="20295" propName="TN"></ApiProp>
+  <ApiProp id="866" apicall="//*/*[858]" propId="20295" propName="T">0</ApiProp>
+  <ApiProp id="867" apicall="//*/*[858]" propId="20295" propName="BID"></ApiProp>
+  <ApiProp id="868" apicall="//*/*[858]" propId="20295" propName="PID">0</ApiProp>
+  <SilkTestDoc id="869" time="2012-02-18; 20:51:39"
+               timeStamp="|39|51|20|18|1|112|6|48|0|" tick="31094015"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[833]"
+               ApiRefType="parent">
+    Find
+  </SilkTestDoc>
+  <Apiinfo id="870" time="2012-02-18; 20:51:39"
+           timeStamp="|39|51|20|18|1|112|6|48|0|" idx="//*/*[869]" severity="0">
+    WPFWindow.Find(locator: //WPFMenuItem[@automationId=&apos;Menubar_Connect&apos;])
+  </Apiinfo>
+  <ApiProp id="871" apicall="//*/*[869]" propId="0" propName="CS">MainframeBasestate|c:\Temp\Rumba\frame.inc|42|FieldTestBaseState|c:\Temp\Rumba\frame.inc|46|DefaultTestCaseEnter|C:\Program Files (x86)\Silk\SilkTest\defaults.inc|543|CallEnterHook|c:\Temp\common.inc|57|TestCaseEnter|c:\Temp\common.inc|73|LabelCharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|42|</ApiProp>
+  <ApiProp id="872" apicall="//*/*[869]" propId="20296" propName="ROOT"></ApiProp>
+  <ApiProp id="873" apicall="//*/*[869]" propId="20296" propName="CID">20296</ApiProp>
+  <ApiProp id="874" apicall="//*/*[869]" propId="20296" propName="ID"></ApiProp>
+  <ApiProp id="875" apicall="//*/*[869]" propId="20296" propName="V"></ApiProp>
+  <ApiProp id="876" apicall="//*/*[869]" propId="20296" propName="TN"></ApiProp>
+  <ApiProp id="877" apicall="//*/*[869]" propId="20296" propName="T">0</ApiProp>
+  <ApiProp id="878" apicall="//*/*[869]" propId="20296" propName="BID"></ApiProp>
+  <ApiProp id="879" apicall="//*/*[869]" propId="20296" propName="PID">0</ApiProp>
+  <SilkTestDoc id="880" time="2012-02-18; 20:51:40"
+               timeStamp="|40|51|20|18|1|112|6|48|0|" tick="31094531"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[833]"
+               ApiRefType="parent">
+    Select
+  </SilkTestDoc>
+  <Apiinfo id="881" time="2012-02-18; 20:51:40"
+           timeStamp="|40|51|20|18|1|112|6|48|0|" idx="//*/*[880]" severity="0">
+    WPFMenuItem.Select()
+  </Apiinfo>
+  <ApiProp id="882" apicall="//*/*[880]" propId="0" propName="CS">MainframeBasestate|c:\Temp\Rumba\frame.inc|42|FieldTestBaseState|c:\Temp\Rumba\frame.inc|46|DefaultTestCaseEnter|C:\Program Files (x86)\Silk\SilkTest\defaults.inc|543|CallEnterHook|c:\Temp\common.inc|57|TestCaseEnter|c:\Temp\common.inc|73|LabelCharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|42|</ApiProp>
+  <ApiProp id="883" apicall="//*/*[880]" propId="20297" propName="ROOT"></ApiProp>
+  <ApiProp id="884" apicall="//*/*[880]" propId="20297" propName="CID">20297</ApiProp>
+  <ApiProp id="885" apicall="//*/*[880]" propId="20297" propName="ID"></ApiProp>
+  <ApiProp id="886" apicall="//*/*[880]" propId="20297" propName="V"></ApiProp>
+  <ApiProp id="887" apicall="//*/*[880]" propId="20297" propName="TN"></ApiProp>
+  <ApiProp id="888" apicall="//*/*[880]" propId="20297" propName="T">0</ApiProp>
+  <ApiProp id="889" apicall="//*/*[880]" propId="20297" propName="BID"></ApiProp>
+  <ApiProp id="890" apicall="//*/*[880]" propId="20297" propName="PID">0</ApiProp>
+  <SilkTestDoc id="891" time="2012-02-18; 20:51:40"
+               timeStamp="|40|51|20|18|1|112|6|48|0|" tick="31094671"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[833]"
+               ApiRefType="parent">
+    Find
+  </SilkTestDoc>
+  <Apiinfo id="892" time="2012-02-18; 20:51:40"
+           timeStamp="|40|51|20|18|1|112|6|48|0|" idx="//*/*[891]" severity="0">
+    WPFWindow.Find(locator: //RumbaScreen)
+  </Apiinfo>
+  <ApiProp id="893" apicall="//*/*[891]" propId="0" propName="CS">MainframeBasestate|c:\Temp\Rumba\frame.inc|43|FieldTestBaseState|c:\Temp\Rumba\frame.inc|46|DefaultTestCaseEnter|C:\Program Files (x86)\Silk\SilkTest\defaults.inc|543|CallEnterHook|c:\Temp\common.inc|57|TestCaseEnter|c:\Temp\common.inc|73|LabelCharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|42|</ApiProp>
+  <ApiProp id="894" apicall="//*/*[891]" propId="20298" propName="ROOT"></ApiProp>
+  <ApiProp id="895" apicall="//*/*[891]" propId="20298" propName="CID">20298</ApiProp>
+  <ApiProp id="896" apicall="//*/*[891]" propId="20298" propName="ID"></ApiProp>
+  <ApiProp id="897" apicall="//*/*[891]" propId="20298" propName="V"></ApiProp>
+  <ApiProp id="898" apicall="//*/*[891]" propId="20298" propName="TN"></ApiProp>
+  <ApiProp id="899" apicall="//*/*[891]" propId="20298" propName="T">0</ApiProp>
+  <ApiProp id="900" apicall="//*/*[891]" propId="20298" propName="BID"></ApiProp>
+  <ApiProp id="901" apicall="//*/*[891]" propId="20298" propName="PID">0</ApiProp>
+  <SilkTestDoc id="902" time="2012-02-18; 20:51:46"
+               timeStamp="|46|51|20|18|1|112|6|48|0|" tick="31100921"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[833]"
+               ApiRefType="parent">
+    WaitForProperty
+  </SilkTestDoc>
+  <Apiinfo id="903" time="2012-02-18; 20:51:46"
+           timeStamp="|46|51|20|18|1|112|6|48|0|" idx="//*/*[902]" severity="0">
+    RumbaScreen.WaitForProperty(propertyName: HostConnected, expectedValue: true, timeout: 60)
+  </Apiinfo>
+  <ApiProp id="904" apicall="//*/*[902]" propId="0" propName="CS">MainframeBasestate|c:\Temp\Rumba\frame.inc|44|FieldTestBaseState|c:\Temp\Rumba\frame.inc|46|DefaultTestCaseEnter|C:\Program Files (x86)\Silk\SilkTest\defaults.inc|543|CallEnterHook|c:\Temp\common.inc|57|TestCaseEnter|c:\Temp\common.inc|73|LabelCharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|42|</ApiProp>
+  <ApiProp id="905" apicall="//*/*[902]" propId="20299" propName="ROOT"></ApiProp>
+  <ApiProp id="906" apicall="//*/*[902]" propId="20299" propName="CID">20299</ApiProp>
+  <ApiProp id="907" apicall="//*/*[902]" propId="20299" propName="ID"></ApiProp>
+  <ApiProp id="908" apicall="//*/*[902]" propId="20299" propName="V"></ApiProp>
+  <ApiProp id="909" apicall="//*/*[902]" propId="20299" propName="TN"></ApiProp>
+  <ApiProp id="910" apicall="//*/*[902]" propId="20299" propName="T">0</ApiProp>
+  <ApiProp id="911" apicall="//*/*[902]" propId="20299" propName="BID"></ApiProp>
+  <ApiProp id="912" apicall="//*/*[902]" propId="20299" propName="PID">0</ApiProp>
+  <Apiinfo id="913" time="2012-02-18; 20:51:46"
+           timeStamp="|46|51|20|18|1|112|6|48|0|" idx="//*/*[833]" severity="0">
+    Elapsed Time: 00:00:53
+  </Apiinfo>
+  <SilkTestDoc id="914" time="2012-02-18; 20:51:46"
+               timeStamp="|46|51|20|18|1|112|6|48|0|" tick="31100984"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[832]"
+               ApiRefType="parent">
+    Print
+  </SilkTestDoc>
+  <Apiinfo id="915" time="2012-02-18; 20:51:46"
+           timeStamp="|46|51|20|18|1|112|6|48|0|" idx="//*/*[914]" severity="0">
+    Message: FieldTestBaseState
+  </Apiinfo>
+  <SilkTestDoc id="916" time="2012-02-18; 20:51:46"
+               timeStamp="|46|51|20|18|1|112|6|48|0|" tick="31101265"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[832]"
+               ApiRefType="parent">
+    Find
+  </SilkTestDoc>
+  <Apiinfo id="917" time="2012-02-18; 20:51:46"
+           timeStamp="|46|51|20|18|1|112|6|48|0|" idx="//*/*[916]" severity="0">
+    RumbaScreen.Find(locator: //RumbaTextField)
+  </Apiinfo>
+  <ApiProp id="918" apicall="//*/*[916]" propId="0" propName="CS">FieldTestBaseState|c:\Temp\Rumba\frame.inc|51|DefaultTestCaseEnter|C:\Program Files (x86)\Silk\SilkTest\defaults.inc|543|CallEnterHook|c:\Temp\common.inc|57|TestCaseEnter|c:\Temp\common.inc|73|LabelCharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|42|</ApiProp>
+  <ApiProp id="919" apicall="//*/*[916]" propId="20300" propName="ROOT"></ApiProp>
+  <ApiProp id="920" apicall="//*/*[916]" propId="20300" propName="CID">20300</ApiProp>
+  <ApiProp id="921" apicall="//*/*[916]" propId="20300" propName="ID"></ApiProp>
+  <ApiProp id="922" apicall="//*/*[916]" propId="20300" propName="V"></ApiProp>
+  <ApiProp id="923" apicall="//*/*[916]" propId="20300" propName="TN"></ApiProp>
+  <ApiProp id="924" apicall="//*/*[916]" propId="20300" propName="T">0</ApiProp>
+  <ApiProp id="925" apicall="//*/*[916]" propId="20300" propName="BID"></ApiProp>
+  <ApiProp id="926" apicall="//*/*[916]" propId="20300" propName="PID">0</ApiProp>
+  <SilkTestDoc id="927" time="2012-02-18; 20:51:47"
+               timeStamp="|47|51|20|18|1|112|6|48|0|" tick="31101687"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[832]"
+               ApiRefType="parent">
+    SynchSendKeys
+  </SilkTestDoc>
+  <Apiinfo id="928" time="2012-02-18; 20:51:47"
+           timeStamp="|47|51|20|18|1|112|6|48|0|" idx="//*/*[927]" severity="0">
+    RumbaTextField.SynchSendKeys(keys: tso dvtest8@E)
+  </Apiinfo>
+  <ApiProp id="929" apicall="//*/*[927]" propId="0" propName="CS">FieldTestBaseState|c:\Temp\Rumba\frame.inc|51|DefaultTestCaseEnter|C:\Program Files (x86)\Silk\SilkTest\defaults.inc|543|CallEnterHook|c:\Temp\common.inc|57|TestCaseEnter|c:\Temp\common.inc|73|LabelCharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|42|</ApiProp>
+  <ApiProp id="930" apicall="//*/*[927]" propId="20301" propName="ROOT"></ApiProp>
+  <ApiProp id="931" apicall="//*/*[927]" propId="20301" propName="CID">20301</ApiProp>
+  <ApiProp id="932" apicall="//*/*[927]" propId="20301" propName="ID"></ApiProp>
+  <ApiProp id="933" apicall="//*/*[927]" propId="20301" propName="V"></ApiProp>
+  <ApiProp id="934" apicall="//*/*[927]" propId="20301" propName="TN"></ApiProp>
+  <ApiProp id="935" apicall="//*/*[927]" propId="20301" propName="T">0</ApiProp>
+  <ApiProp id="936" apicall="//*/*[927]" propId="20301" propName="BID"></ApiProp>
+  <ApiProp id="937" apicall="//*/*[927]" propId="20301" propName="PID">0</ApiProp>
+  <SilkTestDoc id="938" time="2012-02-18; 20:51:47"
+               timeStamp="|47|51|20|18|1|112|6|48|0|" tick="31102187"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[832]"
+               ApiRefType="parent">
+    Find
+  </SilkTestDoc>
+  <Apiinfo id="939" time="2012-02-18; 20:51:47"
+           timeStamp="|47|51|20|18|1|112|6|48|0|" idx="//*/*[938]" severity="0">
+    RumbaScreen.Find(locator: //RumbaTextField[@priorlabel=&apos;Password  ===&gt;&apos;])
+  </Apiinfo>
+  <ApiProp id="940" apicall="//*/*[938]" propId="0" propName="CS">FieldTestBaseState|c:\Temp\Rumba\frame.inc|52|DefaultTestCaseEnter|C:\Program Files (x86)\Silk\SilkTest\defaults.inc|543|CallEnterHook|c:\Temp\common.inc|57|TestCaseEnter|c:\Temp\common.inc|73|LabelCharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|42|</ApiProp>
+  <ApiProp id="941" apicall="//*/*[938]" propId="20302" propName="ROOT"></ApiProp>
+  <ApiProp id="942" apicall="//*/*[938]" propId="20302" propName="CID">20302</ApiProp>
+  <ApiProp id="943" apicall="//*/*[938]" propId="20302" propName="ID"></ApiProp>
+  <ApiProp id="944" apicall="//*/*[938]" propId="20302" propName="V"></ApiProp>
+  <ApiProp id="945" apicall="//*/*[938]" propId="20302" propName="TN"></ApiProp>
+  <ApiProp id="946" apicall="//*/*[938]" propId="20302" propName="T">0</ApiProp>
+  <ApiProp id="947" apicall="//*/*[938]" propId="20302" propName="BID"></ApiProp>
+  <ApiProp id="948" apicall="//*/*[938]" propId="20302" propName="PID">0</ApiProp>
+  <SilkTestDoc id="949" time="2012-02-18; 20:51:52"
+               timeStamp="|52|51|20|18|1|112|6|48|0|" tick="31106484"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[832]"
+               ApiRefType="parent">
+    SynchSendKeys
+  </SilkTestDoc>
+  <Apiinfo id="950" time="2012-02-18; 20:51:52"
+           timeStamp="|52|51|20|18|1|112|6|48|0|" idx="//*/*[949]" severity="0">
+    RumbaTextField.SynchSendKeys(keys: dvtest@E)
+  </Apiinfo>
+  <ApiProp id="951" apicall="//*/*[949]" propId="0" propName="CS">FieldTestBaseState|c:\Temp\Rumba\frame.inc|52|DefaultTestCaseEnter|C:\Program Files (x86)\Silk\SilkTest\defaults.inc|543|CallEnterHook|c:\Temp\common.inc|57|TestCaseEnter|c:\Temp\common.inc|73|LabelCharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|42|</ApiProp>
+  <ApiProp id="952" apicall="//*/*[949]" propId="20303" propName="ROOT"></ApiProp>
+  <ApiProp id="953" apicall="//*/*[949]" propId="20303" propName="CID">20303</ApiProp>
+  <ApiProp id="954" apicall="//*/*[949]" propId="20303" propName="ID"></ApiProp>
+  <ApiProp id="955" apicall="//*/*[949]" propId="20303" propName="V"></ApiProp>
+  <ApiProp id="956" apicall="//*/*[949]" propId="20303" propName="TN"></ApiProp>
+  <ApiProp id="957" apicall="//*/*[949]" propId="20303" propName="T">0</ApiProp>
+  <ApiProp id="958" apicall="//*/*[949]" propId="20303" propName="BID"></ApiProp>
+  <ApiProp id="959" apicall="//*/*[949]" propId="20303" propName="PID">0</ApiProp>
+  <SilkTestDoc id="960" time="2012-02-18; 20:51:52"
+               timeStamp="|52|51|20|18|1|112|6|48|0|" tick="31106593"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[832]"
+               ApiRefType="parent">
+    Find
+  </SilkTestDoc>
+  <Apiinfo id="961" time="2012-02-18; 20:51:52"
+           timeStamp="|52|51|20|18|1|112|6|48|0|" idx="//*/*[960]" severity="0">
+    RumbaScreen.Find(locator: //RumbaTextField[@Text=&apos;*LAST ACCESS AT*&apos;], options: [2, false])
+  </Apiinfo>
+  <ApiProp id="962" apicall="//*/*[960]" propId="0" propName="CS">FieldTestBaseState|c:\Temp\Rumba\frame.inc|59|DefaultTestCaseEnter|C:\Program Files (x86)\Silk\SilkTest\defaults.inc|543|CallEnterHook|c:\Temp\common.inc|57|TestCaseEnter|c:\Temp\common.inc|73|LabelCharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|42|</ApiProp>
+  <ApiProp id="963" apicall="//*/*[960]" propId="20304" propName="ROOT"></ApiProp>
+  <ApiProp id="964" apicall="//*/*[960]" propId="20304" propName="CID">20304</ApiProp>
+  <ApiProp id="965" apicall="//*/*[960]" propId="20304" propName="ID"></ApiProp>
+  <ApiProp id="966" apicall="//*/*[960]" propId="20304" propName="V"></ApiProp>
+  <ApiProp id="967" apicall="//*/*[960]" propId="20304" propName="TN"></ApiProp>
+  <ApiProp id="968" apicall="//*/*[960]" propId="20304" propName="T">0</ApiProp>
+  <ApiProp id="969" apicall="//*/*[960]" propId="20304" propName="BID"></ApiProp>
+  <ApiProp id="970" apicall="//*/*[960]" propId="20304" propName="PID">0</ApiProp>
+  <SilkTestDoc id="971" time="2012-02-18; 20:51:52"
+               timeStamp="|52|51|20|18|1|112|6|48|0|" tick="31106718"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[832]"
+               ApiRefType="parent">
+    WaitForProperty
+  </SilkTestDoc>
+  <Apiinfo id="972" time="2012-02-18; 20:51:52"
+           timeStamp="|52|51|20|18|1|112|6|48|0|" idx="//*/*[971]" severity="0">
+    RumbaScreen.WaitForProperty(propertyName: CursorColumn, expectedValue: 6)
+  </Apiinfo>
+  <ApiProp id="973" apicall="//*/*[971]" propId="0" propName="CS">FieldTestBaseState|c:\Temp\Rumba\frame.inc|61|DefaultTestCaseEnter|C:\Program Files (x86)\Silk\SilkTest\defaults.inc|543|CallEnterHook|c:\Temp\common.inc|57|TestCaseEnter|c:\Temp\common.inc|73|LabelCharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|42|</ApiProp>
+  <ApiProp id="974" apicall="//*/*[971]" propId="20305" propName="ROOT"></ApiProp>
+  <ApiProp id="975" apicall="//*/*[971]" propId="20305" propName="CID">20305</ApiProp>
+  <ApiProp id="976" apicall="//*/*[971]" propId="20305" propName="ID"></ApiProp>
+  <ApiProp id="977" apicall="//*/*[971]" propId="20305" propName="V"></ApiProp>
+  <ApiProp id="978" apicall="//*/*[971]" propId="20305" propName="TN"></ApiProp>
+  <ApiProp id="979" apicall="//*/*[971]" propId="20305" propName="T">0</ApiProp>
+  <ApiProp id="980" apicall="//*/*[971]" propId="20305" propName="BID"></ApiProp>
+  <ApiProp id="981" apicall="//*/*[971]" propId="20305" propName="PID">0</ApiProp>
+  <SilkTestDoc id="982" time="2012-02-18; 20:52:00"
+               timeStamp="|0|52|20|18|1|112|6|48|0|" tick="31114578"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[832]"
+               ApiRefType="parent">
+    Submit
+  </SilkTestDoc>
+  <Apiinfo id="983" time="2012-02-18; 20:52:00"
+           timeStamp="|0|52|20|18|1|112|6|48|0|" idx="//*/*[982]" severity="0">
+    RumbaScreen.Submit()
+  </Apiinfo>
+  <ApiProp id="984" apicall="//*/*[982]" propId="0" propName="CS">FieldTestBaseState|c:\Temp\Rumba\frame.inc|66|DefaultTestCaseEnter|C:\Program Files (x86)\Silk\SilkTest\defaults.inc|543|CallEnterHook|c:\Temp\common.inc|57|TestCaseEnter|c:\Temp\common.inc|73|LabelCharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|42|</ApiProp>
+  <ApiProp id="985" apicall="//*/*[982]" propId="20306" propName="ROOT"></ApiProp>
+  <ApiProp id="986" apicall="//*/*[982]" propId="20306" propName="CID">20306</ApiProp>
+  <ApiProp id="987" apicall="//*/*[982]" propId="20306" propName="ID"></ApiProp>
+  <ApiProp id="988" apicall="//*/*[982]" propId="20306" propName="V"></ApiProp>
+  <ApiProp id="989" apicall="//*/*[982]" propId="20306" propName="TN"></ApiProp>
+  <ApiProp id="990" apicall="//*/*[982]" propId="20306" propName="T">0</ApiProp>
+  <ApiProp id="991" apicall="//*/*[982]" propId="20306" propName="BID"></ApiProp>
+  <ApiProp id="992" apicall="//*/*[982]" propId="20306" propName="PID">0</ApiProp>
+  <SilkTestDoc id="993" time="2012-02-18; 20:52:10"
+               timeStamp="|10|52|20|18|1|112|6|48|0|" tick="31124921"
+               ApiHandle="" file="" bdlLine="0" status="3" ApiCtxt="//*/*[832]"
+               ApiRefType="parent">
+    Submit
+  </SilkTestDoc>
+  <Apiinfo id="994" time="2012-02-18; 20:52:10"
+           timeStamp="|10|52|20|18|1|112|6|48|0|" idx="//*/*[993]" severity="3">
+    RumbaScreen.Submit()
+  </Apiinfo>
+  <ApiProp id="995" apicall="//*/*[993]" propId="0" propName="CS">CallExitHook|c:\Temp\common.inc|64|TestCaseExit|c:\Temp\common.inc|80|LabelCharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|42|</ApiProp>
+  <Apiinfo id="996" time="2012-02-18; 20:52:10"
+           timeStamp="|10|52|20|18|1|112|6|48|0|" idx="//*/*[993]" severity="3">
+    Error during executing the method/property &apos;Submit&apos;. Could not execute synchSendKeys: APITimedOut.
+  </Apiinfo>
+  <ApiProp id="997" apicall="//*/*[993]" propId="20307" propName="ROOT"></ApiProp>
+  <ApiProp id="998" apicall="//*/*[993]" propId="20307" propName="CID">20307</ApiProp>
+  <ApiProp id="999" apicall="//*/*[993]" propId="20307" propName="ID"></ApiProp>
+  <ApiProp id="1000" apicall="//*/*[993]" propId="20307" propName="V"></ApiProp>
+  <ApiProp id="1001" apicall="//*/*[993]" propId="20307" propName="TN"></ApiProp>
+  <ApiProp id="1002" apicall="//*/*[993]" propId="20307" propName="T">0</ApiProp>
+  <ApiProp id="1003" apicall="//*/*[993]" propId="20307" propName="BID"></ApiProp>
+  <ApiProp id="1004" apicall="//*/*[993]" propId="20307" propName="PID">0</ApiProp>
+  <SilkTestDoc id="1005" time="2012-02-18; 20:52:10"
+               timeStamp="|10|52|20|18|1|112|6|48|0|" tick="31125281"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[832]"
+               ApiRefType="parent">
+    CaptureBitmap
+  </SilkTestDoc>
+  <Apiinfo id="1006" time="2012-02-18; 20:52:10"
+           timeStamp="|10|52|20|18|1|112|6|48|0|" idx="//*/*[1005]" severity="0">
+    AnyWin.CaptureBitmap(fileName: C:\Users\ADMINI~1\AppData\Local\Temp\SCC_ExecServer_19124_19125\PerfProjects\PerfPrj_23_1329594348909\LabelCharacterAttributesTest_20-52-10.bmp)
+  </Apiinfo>
+  <ApiProp id="1007" apicall="//*/*[1005]" propId="0" propName="CS">CaptureDesktop|c:\Temp\common.inc|302|CallExitHook|c:\Temp\common.inc|65|TestCaseExit|c:\Temp\common.inc|80|LabelCharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|42|</ApiProp>
+  <ApiProp id="1008" apicall="//*/*[1005]" propId="20308" propName="ROOT"></ApiProp>
+  <ApiProp id="1009" apicall="//*/*[1005]" propId="20308" propName="CID">20308</ApiProp>
+  <ApiProp id="1010" apicall="//*/*[1005]" propId="20308" propName="ID"></ApiProp>
+  <ApiProp id="1011" apicall="//*/*[1005]" propId="20308" propName="V"></ApiProp>
+  <ApiProp id="1012" apicall="//*/*[1005]" propId="20308" propName="TN"></ApiProp>
+  <ApiProp id="1013" apicall="//*/*[1005]" propId="20308" propName="T">0</ApiProp>
+  <ApiProp id="1014" apicall="//*/*[1005]" propId="20308" propName="BID"></ApiProp>
+  <ApiProp id="1015" apicall="//*/*[1005]" propId="20308" propName="PID">0</ApiProp>
+  <SilkTestDoc id="1016" time="2012-02-18; 20:52:10"
+               timeStamp="|10|52|20|18|1|112|6|48|0|" tick="31125296"
+               ApiHandle="" file="" bdlLine="0" status="3" ApiCtxt="//*/*[832]"
+               ApiRefType="parent">
+    Error
+  </SilkTestDoc>
+  <ApiProp id="1017" apicall="//*/*[1016]" propId="0" propName="CS">GenerateError|c:\Temp\common.inc|261|CaptureDesktop|c:\Temp\common.inc|309|CallExitHook|c:\Temp\common.inc|65|TestCaseExit|c:\Temp\common.inc|80|LabelCharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|42|</ApiProp>
+  <Apiinfo id="1018" time="2012-02-18; 20:52:10"
+           timeStamp="|10|52|20|18|1|112|6|48|0|" idx="//*/*[1016]" severity="3">
+    &lt;&lt;&lt;&lt; &lt;click me&gt; for screen capture of the current error
+  </Apiinfo>
+  <ApiProp id="1019" apicall="//*/*[1016]" propId="20309" propName="ROOT"></ApiProp>
+  <ApiProp id="1020" apicall="//*/*[1016]" propId="20309" propName="CID">20309</ApiProp>
+  <ApiProp id="1021" apicall="//*/*[1016]" propId="20309" propName="ID"></ApiProp>
+  <ApiProp id="1022" apicall="//*/*[1016]" propId="20309" propName="V"></ApiProp>
+  <ApiProp id="1023" apicall="//*/*[1016]" propId="20309" propName="TN"></ApiProp>
+  <ApiProp id="1024" apicall="//*/*[1016]" propId="20309" propName="T">0</ApiProp>
+  <ApiProp id="1025" apicall="//*/*[1016]" propId="20309" propName="BID"></ApiProp>
+  <ApiProp id="1026" apicall="//*/*[1016]" propId="20309" propName="PID">0</ApiProp>
+  <SilkTestDoc id="1027" time="2012-02-18; 20:52:10"
+               timeStamp="|10|52|20|18|1|112|6|48|0|" tick="31125296"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[832]"
+               ApiRefType="parent">
+    Print
+  </SilkTestDoc>
+  <Apiinfo id="1028" time="2012-02-18; 20:52:10"
+           timeStamp="|10|52|20|18|1|112|6|48|0|" idx="//*/*[1027]" severity="0">
+    Message: CloseRumbaMainframe
+  </Apiinfo>
+  <SilkTestDoc id="1029" time="2012-02-18; 20:52:10"
+               timeStamp="|10|52|20|18|1|112|6|48|0|" tick="31125359"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[832]"
+               ApiRefType="parent">
+    Find
+  </SilkTestDoc>
+  <Apiinfo id="1030" time="2012-02-18; 20:52:10"
+           timeStamp="|10|52|20|18|1|112|6|48|0|" idx="//*/*[1029]" severity="0">
+    WPFWindow.Find(locator: //WPFMenuItem[@automationId=&apos;Menubar_Disconnect&apos;])
+  </Apiinfo>
+  <ApiProp id="1031" apicall="//*/*[1029]" propId="0" propName="CS">CloseRumbaMainframe|c:\Temp\Rumba\frame.inc|126|CallExitHook|c:\Temp\common.inc|68|TestCaseExit|c:\Temp\common.inc|80|LabelCharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|42|</ApiProp>
+  <ApiProp id="1032" apicall="//*/*[1029]" propId="20310" propName="ROOT"></ApiProp>
+  <ApiProp id="1033" apicall="//*/*[1029]" propId="20310" propName="CID">20310</ApiProp>
+  <ApiProp id="1034" apicall="//*/*[1029]" propId="20310" propName="ID"></ApiProp>
+  <ApiProp id="1035" apicall="//*/*[1029]" propId="20310" propName="V"></ApiProp>
+  <ApiProp id="1036" apicall="//*/*[1029]" propId="20310" propName="TN"></ApiProp>
+  <ApiProp id="1037" apicall="//*/*[1029]" propId="20310" propName="T">0</ApiProp>
+  <ApiProp id="1038" apicall="//*/*[1029]" propId="20310" propName="BID"></ApiProp>
+  <ApiProp id="1039" apicall="//*/*[1029]" propId="20310" propName="PID">0</ApiProp>
+  <SilkTestDoc id="1040" time="2012-02-18; 20:52:11"
+               timeStamp="|11|52|20|18|1|112|6|48|0|" tick="31125953"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[832]"
+               ApiRefType="parent">
+    Select
+  </SilkTestDoc>
+  <Apiinfo id="1041" time="2012-02-18; 20:52:11"
+           timeStamp="|11|52|20|18|1|112|6|48|0|" idx="//*/*[1040]" severity="0">
+    WPFMenuItem.Select()
+  </Apiinfo>
+  <ApiProp id="1042" apicall="//*/*[1040]" propId="0" propName="CS">CloseRumbaMainframe|c:\Temp\Rumba\frame.inc|126|CallExitHook|c:\Temp\common.inc|68|TestCaseExit|c:\Temp\common.inc|80|LabelCharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|42|</ApiProp>
+  <ApiProp id="1043" apicall="//*/*[1040]" propId="20311" propName="ROOT"></ApiProp>
+  <ApiProp id="1044" apicall="//*/*[1040]" propId="20311" propName="CID">20311</ApiProp>
+  <ApiProp id="1045" apicall="//*/*[1040]" propId="20311" propName="ID"></ApiProp>
+  <ApiProp id="1046" apicall="//*/*[1040]" propId="20311" propName="V"></ApiProp>
+  <ApiProp id="1047" apicall="//*/*[1040]" propId="20311" propName="TN"></ApiProp>
+  <ApiProp id="1048" apicall="//*/*[1040]" propId="20311" propName="T">0</ApiProp>
+  <ApiProp id="1049" apicall="//*/*[1040]" propId="20311" propName="BID"></ApiProp>
+  <ApiProp id="1050" apicall="//*/*[1040]" propId="20311" propName="PID">0</ApiProp>
+  <SilkTestDoc id="1051" time="2012-02-18; 20:52:11"
+               timeStamp="|11|52|20|18|1|112|6|48|0|" tick="31126031"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[832]"
+               ApiRefType="parent">
+    Find
+  </SilkTestDoc>
+  <Apiinfo id="1052" time="2012-02-18; 20:52:11"
+           timeStamp="|11|52|20|18|1|112|6|48|0|" idx="//*/*[1051]" severity="0">
+    WPFWindow.Find(locator: //WPFButton[@automationId=&apos;PART_CloseButton&apos;], options: [1, false])
+  </Apiinfo>
+  <ApiProp id="1053" apicall="//*/*[1051]" propId="0" propName="CS">CloseRumbaMainframe|c:\Temp\Rumba\frame.inc|127|CallExitHook|c:\Temp\common.inc|68|TestCaseExit|c:\Temp\common.inc|80|LabelCharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|42|</ApiProp>
+  <ApiProp id="1054" apicall="//*/*[1051]" propId="20312" propName="ROOT"></ApiProp>
+  <ApiProp id="1055" apicall="//*/*[1051]" propId="20312" propName="CID">20312</ApiProp>
+  <ApiProp id="1056" apicall="//*/*[1051]" propId="20312" propName="ID"></ApiProp>
+  <ApiProp id="1057" apicall="//*/*[1051]" propId="20312" propName="V"></ApiProp>
+  <ApiProp id="1058" apicall="//*/*[1051]" propId="20312" propName="TN"></ApiProp>
+  <ApiProp id="1059" apicall="//*/*[1051]" propId="20312" propName="T">0</ApiProp>
+  <ApiProp id="1060" apicall="//*/*[1051]" propId="20312" propName="BID"></ApiProp>
+  <ApiProp id="1061" apicall="//*/*[1051]" propId="20312" propName="PID">0</ApiProp>
+  <SilkTestDoc id="1062" time="2012-02-18; 20:52:33"
+               timeStamp="|33|52|20|18|1|112|6|48|0|" tick="31147484"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[832]"
+               ApiRefType="parent">
+    Select
+  </SilkTestDoc>
+  <Apiinfo id="1063" time="2012-02-18; 20:52:33"
+           timeStamp="|33|52|20|18|1|112|6|48|0|" idx="//*/*[1062]" severity="0">
+    WPFButton.Select()
+  </Apiinfo>
+  <ApiProp id="1064" apicall="//*/*[1062]" propId="0" propName="CS">CloseRumbaMainframe|c:\Temp\Rumba\frame.inc|129|CallExitHook|c:\Temp\common.inc|68|TestCaseExit|c:\Temp\common.inc|80|LabelCharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|42|</ApiProp>
+  <ApiProp id="1065" apicall="//*/*[1062]" propId="20313" propName="ROOT"></ApiProp>
+  <ApiProp id="1066" apicall="//*/*[1062]" propId="20313" propName="CID">20313</ApiProp>
+  <ApiProp id="1067" apicall="//*/*[1062]" propId="20313" propName="ID"></ApiProp>
+  <ApiProp id="1068" apicall="//*/*[1062]" propId="20313" propName="V"></ApiProp>
+  <ApiProp id="1069" apicall="//*/*[1062]" propId="20313" propName="TN"></ApiProp>
+  <ApiProp id="1070" apicall="//*/*[1062]" propId="20313" propName="T">0</ApiProp>
+  <ApiProp id="1071" apicall="//*/*[1062]" propId="20313" propName="BID"></ApiProp>
+  <ApiProp id="1072" apicall="//*/*[1062]" propId="20313" propName="PID">0</ApiProp>
+  <SilkTestDoc id="1073" time="2012-02-18; 20:52:33"
+               timeStamp="|33|52|20|18|1|112|6|48|0|" tick="31147640"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[832]"
+               ApiRefType="parent">
+    Find
+  </SilkTestDoc>
+  <Apiinfo id="1074" time="2012-02-18; 20:52:33"
+           timeStamp="|33|52|20|18|1|112|6|48|0|" idx="//*/*[1073]" severity="0">
+    WPFWindow.Find(locator: //Dialog//Label[@caption=&apos;*save*Session Profile*&apos;]/../PushButton[@caption=&apos;No&apos;], options: [1, false])
+  </Apiinfo>
+  <ApiProp id="1075" apicall="//*/*[1073]" propId="0" propName="CS">CloseRumbaMainframe|c:\Temp\Rumba\frame.inc|130|CallExitHook|c:\Temp\common.inc|68|TestCaseExit|c:\Temp\common.inc|80|LabelCharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|42|</ApiProp>
+  <ApiProp id="1076" apicall="//*/*[1073]" propId="20314" propName="ROOT"></ApiProp>
+  <ApiProp id="1077" apicall="//*/*[1073]" propId="20314" propName="CID">20314</ApiProp>
+  <ApiProp id="1078" apicall="//*/*[1073]" propId="20314" propName="ID"></ApiProp>
+  <ApiProp id="1079" apicall="//*/*[1073]" propId="20314" propName="V"></ApiProp>
+  <ApiProp id="1080" apicall="//*/*[1073]" propId="20314" propName="TN"></ApiProp>
+  <ApiProp id="1081" apicall="//*/*[1073]" propId="20314" propName="T">0</ApiProp>
+  <ApiProp id="1082" apicall="//*/*[1073]" propId="20314" propName="BID"></ApiProp>
+  <ApiProp id="1083" apicall="//*/*[1073]" propId="20314" propName="PID">0</ApiProp>
+  <SilkTestDoc id="1084" time="2012-02-18; 20:52:34"
+               timeStamp="|34|52|20|18|1|112|6|48|0|" tick="31148734"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[832]"
+               ApiRefType="parent">
+    Click
+  </SilkTestDoc>
+  <Apiinfo id="1085" time="2012-02-18; 20:52:34"
+           timeStamp="|34|52|20|18|1|112|6|48|0|" idx="//*/*[1084]" severity="0">
+    PushButton.Click()
+  </Apiinfo>
+  <ApiProp id="1086" apicall="//*/*[1084]" propId="0" propName="CS">CloseRumbaMainframe|c:\Temp\Rumba\frame.inc|132|CallExitHook|c:\Temp\common.inc|68|TestCaseExit|c:\Temp\common.inc|80|LabelCharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|42|</ApiProp>
+  <ApiProp id="1087" apicall="//*/*[1084]" propId="20315" propName="ROOT"></ApiProp>
+  <ApiProp id="1088" apicall="//*/*[1084]" propId="20315" propName="CID">20315</ApiProp>
+  <ApiProp id="1089" apicall="//*/*[1084]" propId="20315" propName="ID"></ApiProp>
+  <ApiProp id="1090" apicall="//*/*[1084]" propId="20315" propName="V"></ApiProp>
+  <ApiProp id="1091" apicall="//*/*[1084]" propId="20315" propName="TN"></ApiProp>
+  <ApiProp id="1092" apicall="//*/*[1084]" propId="20315" propName="T">0</ApiProp>
+  <ApiProp id="1093" apicall="//*/*[1084]" propId="20315" propName="BID"></ApiProp>
+  <ApiProp id="1094" apicall="//*/*[1084]" propId="20315" propName="PID">0</ApiProp>
+  <SilkTestDoc id="1095" time="2012-02-18; 20:52:34"
+               timeStamp="|34|52|20|18|1|112|6|48|0|" tick="31148937"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[832]"
+               ApiRefType="parent">
+    Close
+  </SilkTestDoc>
+  <Apiinfo id="1096" time="2012-02-18; 20:52:34"
+           timeStamp="|34|52|20|18|1|112|6|48|0|" idx="//*/*[1095]" severity="0">
+    WPFWindow.Close()
+  </Apiinfo>
+  <ApiProp id="1097" apicall="//*/*[1095]" propId="0" propName="CS">Close|C:\Program Files (x86)\Silk\SilkTest\extend\WPF\WPF.inc|1167|CloseRumbaMainframe|c:\Temp\Rumba\frame.inc|133|CallExitHook|c:\Temp\common.inc|68|TestCaseExit|c:\Temp\common.inc|80|LabelCharacterAttributesTest|c:\Temp\Rumba\ApiTest.t|42|</ApiProp>
+  <ApiProp id="1098" apicall="//*/*[1095]" propId="20316" propName="ROOT"></ApiProp>
+  <ApiProp id="1099" apicall="//*/*[1095]" propId="20316" propName="CID">20316</ApiProp>
+  <ApiProp id="1100" apicall="//*/*[1095]" propId="20316" propName="ID"></ApiProp>
+  <ApiProp id="1101" apicall="//*/*[1095]" propId="20316" propName="V"></ApiProp>
+  <ApiProp id="1102" apicall="//*/*[1095]" propId="20316" propName="TN"></ApiProp>
+  <ApiProp id="1103" apicall="//*/*[1095]" propId="20316" propName="T">0</ApiProp>
+  <ApiProp id="1104" apicall="//*/*[1095]" propId="20316" propName="BID"></ApiProp>
+  <ApiProp id="1105" apicall="//*/*[1095]" propId="20316" propName="PID">0</ApiProp>
+  <SilkTestDoc id="1106" time="2012-02-18; 20:52:34"
+               timeStamp="|34|52|20|18|1|112|6|48|0|" tick="31148968"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[832]"
+               ApiRefType="parent">
+    Print
+  </SilkTestDoc>
+  <Apiinfo id="1107" time="2012-02-18; 20:52:34"
+           timeStamp="|34|52|20|18|1|112|6|48|0|" idx="//*/*[1106]" severity="0">
+    Message: Test case LabelCharacterAttributesTest started at 20:50:53 and ended at 20:52:34 and took time elapsed: 1:41.344 secs.
+  </Apiinfo>
+  <Apiinfo id="1108" time="2012-02-18; 20:52:37"
+           timeStamp="|37|52|20|18|1|112|6|48|0|" idx="//*/*[832]" severity="3">
+    Elapsed Time: 00:01:45
+  </Apiinfo>
+  <Apiinfo id="1109" time="2012-02-18; 20:52:37"
+           timeStamp="|37|52|20|18|1|112|6|48|0|" idx="//*/*[831]" severity="3">
+    Elapsed Time: 00:01:45
+  </Apiinfo>
+  <SilkTestDoc id="1110" time="2012-02-18; 20:52:39"
+               timeStamp="|39|52|20|18|1|112|6|48|0|" tick="31153750"
+               ApiHandle="" file="" bdlLine="13" status="0" ApiCtxt="//*/*[3]"
+               ApiRefType="parent">
+    Testcase TestTrading
+  </SilkTestDoc>
+  <SilkTestDoc id="1111" time="2012-02-18; 20:52:39"
+               timeStamp="|39|52|20|18|1|112|6|48|0|" tick="31153765"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[1110]"
+               ApiRefType="parent">
+    Application State TradingAppBasestate
+  </SilkTestDoc>
+  <SilkTestDoc id="1112" time="2012-02-18; 20:52:39"
+               timeStamp="|39|52|20|18|1|112|6|48|0|" tick="31153765"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[1111]"
+               ApiRefType="parent">
+    Application State MainframeBasestate
+  </SilkTestDoc>
+  <SilkTestDoc id="1113" time="2012-02-18; 20:52:43"
+               timeStamp="|43|52|20|18|1|112|6|48|0|" tick="31157781"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[1112]"
+               ApiRefType="parent">
+    Print
+  </SilkTestDoc>
+  <Apiinfo id="1114" time="2012-02-18; 20:52:43"
+           timeStamp="|43|52|20|18|1|112|6|48|0|" idx="//*/*[1113]" severity="0">
+    Message: MainframeBasestate
+  </Apiinfo>
+  <SilkTestDoc id="1115" time="2012-02-18; 20:52:43"
+               timeStamp="|43|52|20|18|1|112|6|48|0|" tick="31157843"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[1112]"
+               ApiRefType="parent">
+    ReleaseKeys
+  </SilkTestDoc>
+  <Apiinfo id="1116" time="2012-02-18; 20:52:43"
+           timeStamp="|43|52|20|18|1|112|6|48|0|" idx="//*/*[1115]" severity="0">
+    WPFWindow.ReleaseKeys(keys: &lt;Alt&gt;&lt;Ctrl&gt;&lt;Shift&gt;)
+  </Apiinfo>
+  <ApiProp id="1117" apicall="//*/*[1115]" propId="0" propName="CS">MainframeBasestate|c:\Temp\Rumba\frame.inc|40|TradingAppBasestate|c:\Temp\Rumba\frame.inc|82|DefaultTestCaseEnter|C:\Program Files (x86)\Silk\SilkTest\defaults.inc|543|CallEnterHook|c:\Temp\common.inc|57|TestCaseEnter|c:\Temp\common.inc|73|TestTrading|c:\Temp\Rumba\WorkflowTests.t|3|</ApiProp>
+  <ApiProp id="1118" apicall="//*/*[1115]" propId="20317" propName="ROOT"></ApiProp>
+  <ApiProp id="1119" apicall="//*/*[1115]" propId="20317" propName="CID">20317</ApiProp>
+  <ApiProp id="1120" apicall="//*/*[1115]" propId="20317" propName="ID"></ApiProp>
+  <ApiProp id="1121" apicall="//*/*[1115]" propId="20317" propName="V"></ApiProp>
+  <ApiProp id="1122" apicall="//*/*[1115]" propId="20317" propName="TN"></ApiProp>
+  <ApiProp id="1123" apicall="//*/*[1115]" propId="20317" propName="T">0</ApiProp>
+  <ApiProp id="1124" apicall="//*/*[1115]" propId="20317" propName="BID"></ApiProp>
+  <ApiProp id="1125" apicall="//*/*[1115]" propId="20317" propName="PID">0</ApiProp>
+  <SilkTestDoc id="1126" time="2012-02-18; 20:52:43"
+               timeStamp="|43|52|20|18|1|112|6|48|0|" tick="31157968"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[1112]"
+               ApiRefType="parent">
+    Find
+  </SilkTestDoc>
+  <Apiinfo id="1127" time="2012-02-18; 20:52:43"
+           timeStamp="|43|52|20|18|1|112|6|48|0|" idx="//*/*[1126]" severity="0">
+    WPFWindow.Find(locator: //WPFMenuItem[@automationId=&apos;mainframeDsp1&apos;])
+  </Apiinfo>
+  <ApiProp id="1128" apicall="//*/*[1126]" propId="0" propName="CS">MainframeBasestate|c:\Temp\Rumba\frame.inc|41|TradingAppBasestate|c:\Temp\Rumba\frame.inc|82|DefaultTestCaseEnter|C:\Program Files (x86)\Silk\SilkTest\defaults.inc|543|CallEnterHook|c:\Temp\common.inc|57|TestCaseEnter|c:\Temp\common.inc|73|TestTrading|c:\Temp\Rumba\WorkflowTests.t|3|</ApiProp>
+  <ApiProp id="1129" apicall="//*/*[1126]" propId="20318" propName="ROOT"></ApiProp>
+  <ApiProp id="1130" apicall="//*/*[1126]" propId="20318" propName="CID">20318</ApiProp>
+  <ApiProp id="1131" apicall="//*/*[1126]" propId="20318" propName="ID"></ApiProp>
+  <ApiProp id="1132" apicall="//*/*[1126]" propId="20318" propName="V"></ApiProp>
+  <ApiProp id="1133" apicall="//*/*[1126]" propId="20318" propName="TN"></ApiProp>
+  <ApiProp id="1134" apicall="//*/*[1126]" propId="20318" propName="T">0</ApiProp>
+  <ApiProp id="1135" apicall="//*/*[1126]" propId="20318" propName="BID"></ApiProp>
+  <ApiProp id="1136" apicall="//*/*[1126]" propId="20318" propName="PID">0</ApiProp>
+  <SilkTestDoc id="1137" time="2012-02-18; 20:53:05"
+               timeStamp="|5|53|20|18|1|112|6|48|0|" tick="31179843"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[1112]"
+               ApiRefType="parent">
+    Select
+  </SilkTestDoc>
+  <Apiinfo id="1138" time="2012-02-18; 20:53:05"
+           timeStamp="|5|53|20|18|1|112|6|48|0|" idx="//*/*[1137]" severity="0">
+    WPFMenuItem.Select()
+  </Apiinfo>
+  <ApiProp id="1139" apicall="//*/*[1137]" propId="0" propName="CS">MainframeBasestate|c:\Temp\Rumba\frame.inc|41|TradingAppBasestate|c:\Temp\Rumba\frame.inc|82|DefaultTestCaseEnter|C:\Program Files (x86)\Silk\SilkTest\defaults.inc|543|CallEnterHook|c:\Temp\common.inc|57|TestCaseEnter|c:\Temp\common.inc|73|TestTrading|c:\Temp\Rumba\WorkflowTests.t|3|</ApiProp>
+  <ApiProp id="1140" apicall="//*/*[1137]" propId="20319" propName="ROOT"></ApiProp>
+  <ApiProp id="1141" apicall="//*/*[1137]" propId="20319" propName="CID">20319</ApiProp>
+  <ApiProp id="1142" apicall="//*/*[1137]" propId="20319" propName="ID"></ApiProp>
+  <ApiProp id="1143" apicall="//*/*[1137]" propId="20319" propName="V"></ApiProp>
+  <ApiProp id="1144" apicall="//*/*[1137]" propId="20319" propName="TN"></ApiProp>
+  <ApiProp id="1145" apicall="//*/*[1137]" propId="20319" propName="T">0</ApiProp>
+  <ApiProp id="1146" apicall="//*/*[1137]" propId="20319" propName="BID"></ApiProp>
+  <ApiProp id="1147" apicall="//*/*[1137]" propId="20319" propName="PID">0</ApiProp>
+  <SilkTestDoc id="1148" time="2012-02-18; 20:53:25"
+               timeStamp="|25|53|20|18|1|112|6|48|0|" tick="31200031"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[1112]"
+               ApiRefType="parent">
+    Find
+  </SilkTestDoc>
+  <Apiinfo id="1149" time="2012-02-18; 20:53:25"
+           timeStamp="|25|53|20|18|1|112|6|48|0|" idx="//*/*[1148]" severity="0">
+    WPFWindow.Find(locator: //WPFMenuItem[@automationId=&apos;Menubar_Connect&apos;])
+  </Apiinfo>
+  <ApiProp id="1150" apicall="//*/*[1148]" propId="0" propName="CS">MainframeBasestate|c:\Temp\Rumba\frame.inc|42|TradingAppBasestate|c:\Temp\Rumba\frame.inc|82|DefaultTestCaseEnter|C:\Program Files (x86)\Silk\SilkTest\defaults.inc|543|CallEnterHook|c:\Temp\common.inc|57|TestCaseEnter|c:\Temp\common.inc|73|TestTrading|c:\Temp\Rumba\WorkflowTests.t|3|</ApiProp>
+  <ApiProp id="1151" apicall="//*/*[1148]" propId="20320" propName="ROOT"></ApiProp>
+  <ApiProp id="1152" apicall="//*/*[1148]" propId="20320" propName="CID">20320</ApiProp>
+  <ApiProp id="1153" apicall="//*/*[1148]" propId="20320" propName="ID"></ApiProp>
+  <ApiProp id="1154" apicall="//*/*[1148]" propId="20320" propName="V"></ApiProp>
+  <ApiProp id="1155" apicall="//*/*[1148]" propId="20320" propName="TN"></ApiProp>
+  <ApiProp id="1156" apicall="//*/*[1148]" propId="20320" propName="T">0</ApiProp>
+  <ApiProp id="1157" apicall="//*/*[1148]" propId="20320" propName="BID"></ApiProp>
+  <ApiProp id="1158" apicall="//*/*[1148]" propId="20320" propName="PID">0</ApiProp>
+  <SilkTestDoc id="1159" time="2012-02-18; 20:53:26"
+               timeStamp="|26|53|20|18|1|112|6|48|0|" tick="31200593"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[1112]"
+               ApiRefType="parent">
+    Select
+  </SilkTestDoc>
+  <Apiinfo id="1160" time="2012-02-18; 20:53:26"
+           timeStamp="|26|53|20|18|1|112|6|48|0|" idx="//*/*[1159]" severity="0">
+    WPFMenuItem.Select()
+  </Apiinfo>
+  <ApiProp id="1161" apicall="//*/*[1159]" propId="0" propName="CS">MainframeBasestate|c:\Temp\Rumba\frame.inc|42|TradingAppBasestate|c:\Temp\Rumba\frame.inc|82|DefaultTestCaseEnter|C:\Program Files (x86)\Silk\SilkTest\defaults.inc|543|CallEnterHook|c:\Temp\common.inc|57|TestCaseEnter|c:\Temp\common.inc|73|TestTrading|c:\Temp\Rumba\WorkflowTests.t|3|</ApiProp>
+  <ApiProp id="1162" apicall="//*/*[1159]" propId="20321" propName="ROOT"></ApiProp>
+  <ApiProp id="1163" apicall="//*/*[1159]" propId="20321" propName="CID">20321</ApiProp>
+  <ApiProp id="1164" apicall="//*/*[1159]" propId="20321" propName="ID"></ApiProp>
+  <ApiProp id="1165" apicall="//*/*[1159]" propId="20321" propName="V"></ApiProp>
+  <ApiProp id="1166" apicall="//*/*[1159]" propId="20321" propName="TN"></ApiProp>
+  <ApiProp id="1167" apicall="//*/*[1159]" propId="20321" propName="T">0</ApiProp>
+  <ApiProp id="1168" apicall="//*/*[1159]" propId="20321" propName="BID"></ApiProp>
+  <ApiProp id="1169" apicall="//*/*[1159]" propId="20321" propName="PID">0</ApiProp>
+  <SilkTestDoc id="1170" time="2012-02-18; 20:53:26"
+               timeStamp="|26|53|20|18|1|112|6|48|0|" tick="31200734"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[1112]"
+               ApiRefType="parent">
+    Find
+  </SilkTestDoc>
+  <Apiinfo id="1171" time="2012-02-18; 20:53:26"
+           timeStamp="|26|53|20|18|1|112|6|48|0|" idx="//*/*[1170]" severity="0">
+    WPFWindow.Find(locator: //RumbaScreen)
+  </Apiinfo>
+  <ApiProp id="1172" apicall="//*/*[1170]" propId="0" propName="CS">MainframeBasestate|c:\Temp\Rumba\frame.inc|43|TradingAppBasestate|c:\Temp\Rumba\frame.inc|82|DefaultTestCaseEnter|C:\Program Files (x86)\Silk\SilkTest\defaults.inc|543|CallEnterHook|c:\Temp\common.inc|57|TestCaseEnter|c:\Temp\common.inc|73|TestTrading|c:\Temp\Rumba\WorkflowTests.t|3|</ApiProp>
+  <ApiProp id="1173" apicall="//*/*[1170]" propId="20322" propName="ROOT"></ApiProp>
+  <ApiProp id="1174" apicall="//*/*[1170]" propId="20322" propName="CID">20322</ApiProp>
+  <ApiProp id="1175" apicall="//*/*[1170]" propId="20322" propName="ID"></ApiProp>
+  <ApiProp id="1176" apicall="//*/*[1170]" propId="20322" propName="V"></ApiProp>
+  <ApiProp id="1177" apicall="//*/*[1170]" propId="20322" propName="TN"></ApiProp>
+  <ApiProp id="1178" apicall="//*/*[1170]" propId="20322" propName="T">0</ApiProp>
+  <ApiProp id="1179" apicall="//*/*[1170]" propId="20322" propName="BID"></ApiProp>
+  <ApiProp id="1180" apicall="//*/*[1170]" propId="20322" propName="PID">0</ApiProp>
+  <SilkTestDoc id="1181" time="2012-02-18; 20:53:32"
+               timeStamp="|32|53|20|18|1|112|6|48|0|" tick="31207125"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[1112]"
+               ApiRefType="parent">
+    WaitForProperty
+  </SilkTestDoc>
+  <Apiinfo id="1182" time="2012-02-18; 20:53:32"
+           timeStamp="|32|53|20|18|1|112|6|48|0|" idx="//*/*[1181]" severity="0">
+    RumbaScreen.WaitForProperty(propertyName: HostConnected, expectedValue: true, timeout: 60)
+  </Apiinfo>
+  <ApiProp id="1183" apicall="//*/*[1181]" propId="0" propName="CS">MainframeBasestate|c:\Temp\Rumba\frame.inc|44|TradingAppBasestate|c:\Temp\Rumba\frame.inc|82|DefaultTestCaseEnter|C:\Program Files (x86)\Silk\SilkTest\defaults.inc|543|CallEnterHook|c:\Temp\common.inc|57|TestCaseEnter|c:\Temp\common.inc|73|TestTrading|c:\Temp\Rumba\WorkflowTests.t|3|</ApiProp>
+  <ApiProp id="1184" apicall="//*/*[1181]" propId="20323" propName="ROOT"></ApiProp>
+  <ApiProp id="1185" apicall="//*/*[1181]" propId="20323" propName="CID">20323</ApiProp>
+  <ApiProp id="1186" apicall="//*/*[1181]" propId="20323" propName="ID"></ApiProp>
+  <ApiProp id="1187" apicall="//*/*[1181]" propId="20323" propName="V"></ApiProp>
+  <ApiProp id="1188" apicall="//*/*[1181]" propId="20323" propName="TN"></ApiProp>
+  <ApiProp id="1189" apicall="//*/*[1181]" propId="20323" propName="T">0</ApiProp>
+  <ApiProp id="1190" apicall="//*/*[1181]" propId="20323" propName="BID"></ApiProp>
+  <ApiProp id="1191" apicall="//*/*[1181]" propId="20323" propName="PID">0</ApiProp>
+  <Apiinfo id="1192" time="2012-02-18; 20:53:32"
+           timeStamp="|32|53|20|18|1|112|6|48|0|" idx="//*/*[1112]" severity="0">
+    Elapsed Time: 00:00:53
+  </Apiinfo>
+  <SilkTestDoc id="1193" time="2012-02-18; 20:53:32"
+               timeStamp="|32|53|20|18|1|112|6|48|0|" tick="31207203"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[1111]"
+               ApiRefType="parent">
+    Print
+  </SilkTestDoc>
+  <Apiinfo id="1194" time="2012-02-18; 20:53:32"
+           timeStamp="|32|53|20|18|1|112|6|48|0|" idx="//*/*[1193]" severity="0">
+    Message: TradingAppBasestate
+  </Apiinfo>
+  <SilkTestDoc id="1195" time="2012-02-18; 20:53:32"
+               timeStamp="|32|53|20|18|1|112|6|48|0|" tick="31207375"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[1111]"
+               ApiRefType="parent">
+    Find
+  </SilkTestDoc>
+  <Apiinfo id="1196" time="2012-02-18; 20:53:32"
+           timeStamp="|32|53|20|18|1|112|6|48|0|" idx="//*/*[1195]" severity="0">
+    RumbaScreen.Find(locator: //RumbaTextField)
+  </Apiinfo>
+  <ApiProp id="1197" apicall="//*/*[1195]" propId="0" propName="CS">TradingAppBasestate|c:\Temp\Rumba\frame.inc|84|DefaultTestCaseEnter|C:\Program Files (x86)\Silk\SilkTest\defaults.inc|543|CallEnterHook|c:\Temp\common.inc|57|TestCaseEnter|c:\Temp\common.inc|73|TestTrading|c:\Temp\Rumba\WorkflowTests.t|3|</ApiProp>
+  <ApiProp id="1198" apicall="//*/*[1195]" propId="20324" propName="ROOT"></ApiProp>
+  <ApiProp id="1199" apicall="//*/*[1195]" propId="20324" propName="CID">20324</ApiProp>
+  <ApiProp id="1200" apicall="//*/*[1195]" propId="20324" propName="ID"></ApiProp>
+  <ApiProp id="1201" apicall="//*/*[1195]" propId="20324" propName="V"></ApiProp>
+  <ApiProp id="1202" apicall="//*/*[1195]" propId="20324" propName="TN"></ApiProp>
+  <ApiProp id="1203" apicall="//*/*[1195]" propId="20324" propName="T">0</ApiProp>
+  <ApiProp id="1204" apicall="//*/*[1195]" propId="20324" propName="BID"></ApiProp>
+  <ApiProp id="1205" apicall="//*/*[1195]" propId="20324" propName="PID">0</ApiProp>
+  <SilkTestDoc id="1206" time="2012-02-18; 20:53:33"
+               timeStamp="|33|53|20|18|1|112|6|48|0|" tick="31207546"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[1111]"
+               ApiRefType="parent">
+    SetText
+  </SilkTestDoc>
+  <Apiinfo id="1207" time="2012-02-18; 20:53:33"
+           timeStamp="|33|53|20|18|1|112|6|48|0|" idx="//*/*[1206]" severity="0">
+    RumbaTextField.SetText(text: cics)
+  </Apiinfo>
+  <ApiProp id="1208" apicall="//*/*[1206]" propId="0" propName="CS">TradingAppBasestate|c:\Temp\Rumba\frame.inc|84|DefaultTestCaseEnter|C:\Program Files (x86)\Silk\SilkTest\defaults.inc|543|CallEnterHook|c:\Temp\common.inc|57|TestCaseEnter|c:\Temp\common.inc|73|TestTrading|c:\Temp\Rumba\WorkflowTests.t|3|</ApiProp>
+  <ApiProp id="1209" apicall="//*/*[1206]" propId="20325" propName="ROOT"></ApiProp>
+  <ApiProp id="1210" apicall="//*/*[1206]" propId="20325" propName="CID">20325</ApiProp>
+  <ApiProp id="1211" apicall="//*/*[1206]" propId="20325" propName="ID"></ApiProp>
+  <ApiProp id="1212" apicall="//*/*[1206]" propId="20325" propName="V"></ApiProp>
+  <ApiProp id="1213" apicall="//*/*[1206]" propId="20325" propName="TN"></ApiProp>
+  <ApiProp id="1214" apicall="//*/*[1206]" propId="20325" propName="T">0</ApiProp>
+  <ApiProp id="1215" apicall="//*/*[1206]" propId="20325" propName="BID"></ApiProp>
+  <ApiProp id="1216" apicall="//*/*[1206]" propId="20325" propName="PID">0</ApiProp>
+  <SilkTestDoc id="1217" time="2012-02-18; 20:53:33"
+               timeStamp="|33|53|20|18|1|112|6|48|0|" tick="31208234"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[1111]"
+               ApiRefType="parent">
+    Submit
+  </SilkTestDoc>
+  <Apiinfo id="1218" time="2012-02-18; 20:53:33"
+           timeStamp="|33|53|20|18|1|112|6|48|0|" idx="//*/*[1217]" severity="0">
+    RumbaScreen.Submit()
+  </Apiinfo>
+  <ApiProp id="1219" apicall="//*/*[1217]" propId="0" propName="CS">TradingAppBasestate|c:\Temp\Rumba\frame.inc|85|DefaultTestCaseEnter|C:\Program Files (x86)\Silk\SilkTest\defaults.inc|543|CallEnterHook|c:\Temp\common.inc|57|TestCaseEnter|c:\Temp\common.inc|73|TestTrading|c:\Temp\Rumba\WorkflowTests.t|3|</ApiProp>
+  <ApiProp id="1220" apicall="//*/*[1217]" propId="20326" propName="ROOT"></ApiProp>
+  <ApiProp id="1221" apicall="//*/*[1217]" propId="20326" propName="CID">20326</ApiProp>
+  <ApiProp id="1222" apicall="//*/*[1217]" propId="20326" propName="ID"></ApiProp>
+  <ApiProp id="1223" apicall="//*/*[1217]" propId="20326" propName="V"></ApiProp>
+  <ApiProp id="1224" apicall="//*/*[1217]" propId="20326" propName="TN"></ApiProp>
+  <ApiProp id="1225" apicall="//*/*[1217]" propId="20326" propName="T">0</ApiProp>
+  <ApiProp id="1226" apicall="//*/*[1217]" propId="20326" propName="BID"></ApiProp>
+  <ApiProp id="1227" apicall="//*/*[1217]" propId="20326" propName="PID">0</ApiProp>
+  <SilkTestDoc id="1228" time="2012-02-18; 20:53:33"
+               timeStamp="|33|53|20|18|1|112|6|48|0|" tick="31208343"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[1111]"
+               ApiRefType="parent">
+    WaitForObject
+  </SilkTestDoc>
+  <Apiinfo id="1229" time="2012-02-18; 20:53:33"
+           timeStamp="|33|53|20|18|1|112|6|48|0|" idx="//*/*[1228]" severity="0">
+    RumbaScreen.WaitForObject(locator: //RumbaLabel[@caption=&apos;WELCOME TO THE MICRO FOCUS EIT CICS/TS SERVER*&apos;])
+  </Apiinfo>
+  <ApiProp id="1230" apicall="//*/*[1228]" propId="0" propName="CS">TradingAppBasestate|c:\Temp\Rumba\frame.inc|86|DefaultTestCaseEnter|C:\Program Files (x86)\Silk\SilkTest\defaults.inc|543|CallEnterHook|c:\Temp\common.inc|57|TestCaseEnter|c:\Temp\common.inc|73|TestTrading|c:\Temp\Rumba\WorkflowTests.t|3|</ApiProp>
+  <ApiProp id="1231" apicall="//*/*[1228]" propId="20327" propName="ROOT"></ApiProp>
+  <ApiProp id="1232" apicall="//*/*[1228]" propId="20327" propName="CID">20327</ApiProp>
+  <ApiProp id="1233" apicall="//*/*[1228]" propId="20327" propName="ID"></ApiProp>
+  <ApiProp id="1234" apicall="//*/*[1228]" propId="20327" propName="V"></ApiProp>
+  <ApiProp id="1235" apicall="//*/*[1228]" propId="20327" propName="TN"></ApiProp>
+  <ApiProp id="1236" apicall="//*/*[1228]" propId="20327" propName="T">0</ApiProp>
+  <ApiProp id="1237" apicall="//*/*[1228]" propId="20327" propName="BID"></ApiProp>
+  <ApiProp id="1238" apicall="//*/*[1228]" propId="20327" propName="PID">0</ApiProp>
+  <SilkTestDoc id="1239" time="2012-02-18; 20:53:34"
+               timeStamp="|34|53|20|18|1|112|6|48|0|" tick="31209015"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[1111]"
+               ApiRefType="parent">
+    Clear
+  </SilkTestDoc>
+  <Apiinfo id="1240" time="2012-02-18; 20:53:34"
+           timeStamp="|34|53|20|18|1|112|6|48|0|" idx="//*/*[1239]" severity="0">
+    RumbaScreen.Clear()
+  </Apiinfo>
+  <ApiProp id="1241" apicall="//*/*[1239]" propId="0" propName="CS">TradingAppBasestate|c:\Temp\Rumba\frame.inc|87|DefaultTestCaseEnter|C:\Program Files (x86)\Silk\SilkTest\defaults.inc|543|CallEnterHook|c:\Temp\common.inc|57|TestCaseEnter|c:\Temp\common.inc|73|TestTrading|c:\Temp\Rumba\WorkflowTests.t|3|</ApiProp>
+  <ApiProp id="1242" apicall="//*/*[1239]" propId="20328" propName="ROOT"></ApiProp>
+  <ApiProp id="1243" apicall="//*/*[1239]" propId="20328" propName="CID">20328</ApiProp>
+  <ApiProp id="1244" apicall="//*/*[1239]" propId="20328" propName="ID"></ApiProp>
+  <ApiProp id="1245" apicall="//*/*[1239]" propId="20328" propName="V"></ApiProp>
+  <ApiProp id="1246" apicall="//*/*[1239]" propId="20328" propName="TN"></ApiProp>
+  <ApiProp id="1247" apicall="//*/*[1239]" propId="20328" propName="T">0</ApiProp>
+  <ApiProp id="1248" apicall="//*/*[1239]" propId="20328" propName="BID"></ApiProp>
+  <ApiProp id="1249" apicall="//*/*[1239]" propId="20328" propName="PID">0</ApiProp>
+  <SilkTestDoc id="1250" time="2012-02-18; 20:53:35"
+               timeStamp="|35|53|20|18|1|112|6|48|0|" tick="31209796"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[1111]"
+               ApiRefType="parent">
+    WriteText
+  </SilkTestDoc>
+  <Apiinfo id="1251" time="2012-02-18; 20:53:35"
+           timeStamp="|35|53|20|18|1|112|6|48|0|" idx="//*/*[1250]" severity="0">
+    RumbaScreen.WriteText(text: trad)
+  </Apiinfo>
+  <ApiProp id="1252" apicall="//*/*[1250]" propId="0" propName="CS">TradingAppBasestate|c:\Temp\Rumba\frame.inc|88|DefaultTestCaseEnter|C:\Program Files (x86)\Silk\SilkTest\defaults.inc|543|CallEnterHook|c:\Temp\common.inc|57|TestCaseEnter|c:\Temp\common.inc|73|TestTrading|c:\Temp\Rumba\WorkflowTests.t|3|</ApiProp>
+  <ApiProp id="1253" apicall="//*/*[1250]" propId="20329" propName="ROOT"></ApiProp>
+  <ApiProp id="1254" apicall="//*/*[1250]" propId="20329" propName="CID">20329</ApiProp>
+  <ApiProp id="1255" apicall="//*/*[1250]" propId="20329" propName="ID"></ApiProp>
+  <ApiProp id="1256" apicall="//*/*[1250]" propId="20329" propName="V"></ApiProp>
+  <ApiProp id="1257" apicall="//*/*[1250]" propId="20329" propName="TN"></ApiProp>
+  <ApiProp id="1258" apicall="//*/*[1250]" propId="20329" propName="T">0</ApiProp>
+  <ApiProp id="1259" apicall="//*/*[1250]" propId="20329" propName="BID"></ApiProp>
+  <ApiProp id="1260" apicall="//*/*[1250]" propId="20329" propName="PID">0</ApiProp>
+  <SilkTestDoc id="1261" time="2012-02-18; 20:53:37"
+               timeStamp="|37|53|20|18|1|112|6|48|0|" tick="31212171"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[1111]"
+               ApiRefType="parent">
+    Submit
+  </SilkTestDoc>
+  <Apiinfo id="1262" time="2012-02-18; 20:53:37"
+           timeStamp="|37|53|20|18|1|112|6|48|0|" idx="//*/*[1261]" severity="0">
+    RumbaScreen.Submit()
+  </Apiinfo>
+  <ApiProp id="1263" apicall="//*/*[1261]" propId="0" propName="CS">TradingAppBasestate|c:\Temp\Rumba\frame.inc|89|DefaultTestCaseEnter|C:\Program Files (x86)\Silk\SilkTest\defaults.inc|543|CallEnterHook|c:\Temp\common.inc|57|TestCaseEnter|c:\Temp\common.inc|73|TestTrading|c:\Temp\Rumba\WorkflowTests.t|3|</ApiProp>
+  <ApiProp id="1264" apicall="//*/*[1261]" propId="20330" propName="ROOT"></ApiProp>
+  <ApiProp id="1265" apicall="//*/*[1261]" propId="20330" propName="CID">20330</ApiProp>
+  <ApiProp id="1266" apicall="//*/*[1261]" propId="20330" propName="ID"></ApiProp>
+  <ApiProp id="1267" apicall="//*/*[1261]" propId="20330" propName="V"></ApiProp>
+  <ApiProp id="1268" apicall="//*/*[1261]" propId="20330" propName="TN"></ApiProp>
+  <ApiProp id="1269" apicall="//*/*[1261]" propId="20330" propName="T">0</ApiProp>
+  <ApiProp id="1270" apicall="//*/*[1261]" propId="20330" propName="BID"></ApiProp>
+  <ApiProp id="1271" apicall="//*/*[1261]" propId="20330" propName="PID">0</ApiProp>
+  <SilkTestDoc id="1272" time="2012-02-18; 20:53:37"
+               timeStamp="|37|53|20|18|1|112|6|48|0|" tick="31212265"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[1111]"
+               ApiRefType="parent">
+    Find
+  </SilkTestDoc>
+  <Apiinfo id="1273" time="2012-02-18; 20:53:37"
+           timeStamp="|37|53|20|18|1|112|6|48|0|" idx="//*/*[1272]" severity="0">
+    RumbaScreen.Find(locator: //RumbaTextField[@priorlabel=&apos;*User Name*&apos;])
+  </Apiinfo>
+  <ApiProp id="1274" apicall="//*/*[1272]" propId="0" propName="CS">TradingAppBasestate|c:\Temp\Rumba\frame.inc|90|DefaultTestCaseEnter|C:\Program Files (x86)\Silk\SilkTest\defaults.inc|543|CallEnterHook|c:\Temp\common.inc|57|TestCaseEnter|c:\Temp\common.inc|73|TestTrading|c:\Temp\Rumba\WorkflowTests.t|3|</ApiProp>
+  <ApiProp id="1275" apicall="//*/*[1272]" propId="20331" propName="ROOT"></ApiProp>
+  <ApiProp id="1276" apicall="//*/*[1272]" propId="20331" propName="CID">20331</ApiProp>
+  <ApiProp id="1277" apicall="//*/*[1272]" propId="20331" propName="ID"></ApiProp>
+  <ApiProp id="1278" apicall="//*/*[1272]" propId="20331" propName="V"></ApiProp>
+  <ApiProp id="1279" apicall="//*/*[1272]" propId="20331" propName="TN"></ApiProp>
+  <ApiProp id="1280" apicall="//*/*[1272]" propId="20331" propName="T">0</ApiProp>
+  <ApiProp id="1281" apicall="//*/*[1272]" propId="20331" propName="BID"></ApiProp>
+  <ApiProp id="1282" apicall="//*/*[1272]" propId="20331" propName="PID">0</ApiProp>
+  <SilkTestDoc id="1283" time="2012-02-18; 20:53:38"
+               timeStamp="|38|53|20|18|1|112|6|48|0|" tick="31212796"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[1111]"
+               ApiRefType="parent">
+    SetText
+  </SilkTestDoc>
+  <Apiinfo id="1284" time="2012-02-18; 20:53:38"
+           timeStamp="|38|53|20|18|1|112|6|48|0|" idx="//*/*[1283]" severity="0">
+    RumbaTextField.SetText(text: WINDOWS7)
+  </Apiinfo>
+  <ApiProp id="1285" apicall="//*/*[1283]" propId="0" propName="CS">TradingAppBasestate|c:\Temp\Rumba\frame.inc|90|DefaultTestCaseEnter|C:\Program Files (x86)\Silk\SilkTest\defaults.inc|543|CallEnterHook|c:\Temp\common.inc|57|TestCaseEnter|c:\Temp\common.inc|73|TestTrading|c:\Temp\Rumba\WorkflowTests.t|3|</ApiProp>
+  <ApiProp id="1286" apicall="//*/*[1283]" propId="20332" propName="ROOT"></ApiProp>
+  <ApiProp id="1287" apicall="//*/*[1283]" propId="20332" propName="CID">20332</ApiProp>
+  <ApiProp id="1288" apicall="//*/*[1283]" propId="20332" propName="ID"></ApiProp>
+  <ApiProp id="1289" apicall="//*/*[1283]" propId="20332" propName="V"></ApiProp>
+  <ApiProp id="1290" apicall="//*/*[1283]" propId="20332" propName="TN"></ApiProp>
+  <ApiProp id="1291" apicall="//*/*[1283]" propId="20332" propName="T">0</ApiProp>
+  <ApiProp id="1292" apicall="//*/*[1283]" propId="20332" propName="BID"></ApiProp>
+  <ApiProp id="1293" apicall="//*/*[1283]" propId="20332" propName="PID">0</ApiProp>
+  <SilkTestDoc id="1294" time="2012-02-18; 20:53:38"
+               timeStamp="|38|53|20|18|1|112|6|48|0|" tick="31212890"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[1111]"
+               ApiRefType="parent">
+    Find
+  </SilkTestDoc>
+  <Apiinfo id="1295" time="2012-02-18; 20:53:38"
+           timeStamp="|38|53|20|18|1|112|6|48|0|" idx="//*/*[1294]" severity="0">
+    RumbaScreen.Find(locator: //RumbaTextField[@priorlabel=&apos;*Password*&apos;])
+  </Apiinfo>
+  <ApiProp id="1296" apicall="//*/*[1294]" propId="0" propName="CS">TradingAppBasestate|c:\Temp\Rumba\frame.inc|91|DefaultTestCaseEnter|C:\Program Files (x86)\Silk\SilkTest\defaults.inc|543|CallEnterHook|c:\Temp\common.inc|57|TestCaseEnter|c:\Temp\common.inc|73|TestTrading|c:\Temp\Rumba\WorkflowTests.t|3|</ApiProp>
+  <ApiProp id="1297" apicall="//*/*[1294]" propId="20333" propName="ROOT"></ApiProp>
+  <ApiProp id="1298" apicall="//*/*[1294]" propId="20333" propName="CID">20333</ApiProp>
+  <ApiProp id="1299" apicall="//*/*[1294]" propId="20333" propName="ID"></ApiProp>
+  <ApiProp id="1300" apicall="//*/*[1294]" propId="20333" propName="V"></ApiProp>
+  <ApiProp id="1301" apicall="//*/*[1294]" propId="20333" propName="TN"></ApiProp>
+  <ApiProp id="1302" apicall="//*/*[1294]" propId="20333" propName="T">0</ApiProp>
+  <ApiProp id="1303" apicall="//*/*[1294]" propId="20333" propName="BID"></ApiProp>
+  <ApiProp id="1304" apicall="//*/*[1294]" propId="20333" propName="PID">0</ApiProp>
+  <SilkTestDoc id="1305" time="2012-02-18; 20:53:39"
+               timeStamp="|39|53|20|18|1|112|6|48|0|" tick="31213796"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[1111]"
+               ApiRefType="parent">
+    SetText
+  </SilkTestDoc>
+  <Apiinfo id="1306" time="2012-02-18; 20:53:39"
+           timeStamp="|39|53|20|18|1|112|6|48|0|" idx="//*/*[1305]" severity="0">
+    RumbaTextField.SetText(text: password)
+  </Apiinfo>
+  <ApiProp id="1307" apicall="//*/*[1305]" propId="0" propName="CS">TradingAppBasestate|c:\Temp\Rumba\frame.inc|91|DefaultTestCaseEnter|C:\Program Files (x86)\Silk\SilkTest\defaults.inc|543|CallEnterHook|c:\Temp\common.inc|57|TestCaseEnter|c:\Temp\common.inc|73|TestTrading|c:\Temp\Rumba\WorkflowTests.t|3|</ApiProp>
+  <ApiProp id="1308" apicall="//*/*[1305]" propId="20334" propName="ROOT"></ApiProp>
+  <ApiProp id="1309" apicall="//*/*[1305]" propId="20334" propName="CID">20334</ApiProp>
+  <ApiProp id="1310" apicall="//*/*[1305]" propId="20334" propName="ID"></ApiProp>
+  <ApiProp id="1311" apicall="//*/*[1305]" propId="20334" propName="V"></ApiProp>
+  <ApiProp id="1312" apicall="//*/*[1305]" propId="20334" propName="TN"></ApiProp>
+  <ApiProp id="1313" apicall="//*/*[1305]" propId="20334" propName="T">0</ApiProp>
+  <ApiProp id="1314" apicall="//*/*[1305]" propId="20334" propName="BID"></ApiProp>
+  <ApiProp id="1315" apicall="//*/*[1305]" propId="20334" propName="PID">0</ApiProp>
+  <SilkTestDoc id="1316" time="2012-02-18; 20:53:41"
+               timeStamp="|41|53|20|18|1|112|6|48|0|" tick="31215875"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[1111]"
+               ApiRefType="parent">
+    Submit
+  </SilkTestDoc>
+  <Apiinfo id="1317" time="2012-02-18; 20:53:41"
+           timeStamp="|41|53|20|18|1|112|6|48|0|" idx="//*/*[1316]" severity="0">
+    RumbaScreen.Submit()
+  </Apiinfo>
+  <ApiProp id="1318" apicall="//*/*[1316]" propId="0" propName="CS">TradingAppBasestate|c:\Temp\Rumba\frame.inc|92|DefaultTestCaseEnter|C:\Program Files (x86)\Silk\SilkTest\defaults.inc|543|CallEnterHook|c:\Temp\common.inc|57|TestCaseEnter|c:\Temp\common.inc|73|TestTrading|c:\Temp\Rumba\WorkflowTests.t|3|</ApiProp>
+  <ApiProp id="1319" apicall="//*/*[1316]" propId="20335" propName="ROOT"></ApiProp>
+  <ApiProp id="1320" apicall="//*/*[1316]" propId="20335" propName="CID">20335</ApiProp>
+  <ApiProp id="1321" apicall="//*/*[1316]" propId="20335" propName="ID"></ApiProp>
+  <ApiProp id="1322" apicall="//*/*[1316]" propId="20335" propName="V"></ApiProp>
+  <ApiProp id="1323" apicall="//*/*[1316]" propId="20335" propName="TN"></ApiProp>
+  <ApiProp id="1324" apicall="//*/*[1316]" propId="20335" propName="T">0</ApiProp>
+  <ApiProp id="1325" apicall="//*/*[1316]" propId="20335" propName="BID"></ApiProp>
+  <ApiProp id="1326" apicall="//*/*[1316]" propId="20335" propName="PID">0</ApiProp>
+  <Apiinfo id="1327" time="2012-02-18; 20:53:41"
+           timeStamp="|41|53|20|18|1|112|6|48|0|" idx="//*/*[1111]" severity="0">
+    Elapsed Time: 00:01:02
+  </Apiinfo>
+  <SilkTestDoc id="1328" time="2012-02-18; 20:53:41"
+               timeStamp="|41|53|20|18|1|112|6|48|0|" tick="31215968"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[1110]"
+               ApiRefType="parent">
+    Find
+  </SilkTestDoc>
+  <Apiinfo id="1329" time="2012-02-18; 20:53:41"
+           timeStamp="|41|53|20|18|1|112|6|48|0|" idx="//*/*[1328]" severity="0">
+    RumbaScreen.Find(locator: //RumbaTextField)
+  </Apiinfo>
+  <ApiProp id="1330" apicall="//*/*[1328]" propId="0" propName="CS">TestTrading|c:\Temp\Rumba\WorkflowTests.t|4|</ApiProp>
+  <ApiProp id="1331" apicall="//*/*[1328]" propId="20336" propName="ROOT"></ApiProp>
+  <ApiProp id="1332" apicall="//*/*[1328]" propId="20336" propName="CID">20336</ApiProp>
+  <ApiProp id="1333" apicall="//*/*[1328]" propId="20336" propName="ID"></ApiProp>
+  <ApiProp id="1334" apicall="//*/*[1328]" propId="20336" propName="V"></ApiProp>
+  <ApiProp id="1335" apicall="//*/*[1328]" propId="20336" propName="TN"></ApiProp>
+  <ApiProp id="1336" apicall="//*/*[1328]" propId="20336" propName="T">0</ApiProp>
+  <ApiProp id="1337" apicall="//*/*[1328]" propId="20336" propName="BID"></ApiProp>
+  <ApiProp id="1338" apicall="//*/*[1328]" propId="20336" propName="PID">0</ApiProp>
+  <SilkTestDoc id="1339" time="2012-02-18; 20:53:42"
+               timeStamp="|42|53|20|18|1|112|6|48|0|" tick="31216796"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[1110]"
+               ApiRefType="parent">
+    SetText
+  </SilkTestDoc>
+  <Apiinfo id="1340" time="2012-02-18; 20:53:42"
+           timeStamp="|42|53|20|18|1|112|6|48|0|" idx="//*/*[1339]" severity="0">
+    RumbaTextField.SetText(text: 4)
+  </Apiinfo>
+  <ApiProp id="1341" apicall="//*/*[1339]" propId="0" propName="CS">TestTrading|c:\Temp\Rumba\WorkflowTests.t|4|</ApiProp>
+  <ApiProp id="1342" apicall="//*/*[1339]" propId="20337" propName="ROOT"></ApiProp>
+  <ApiProp id="1343" apicall="//*/*[1339]" propId="20337" propName="CID">20337</ApiProp>
+  <ApiProp id="1344" apicall="//*/*[1339]" propId="20337" propName="ID"></ApiProp>
+  <ApiProp id="1345" apicall="//*/*[1339]" propId="20337" propName="V"></ApiProp>
+  <ApiProp id="1346" apicall="//*/*[1339]" propId="20337" propName="TN"></ApiProp>
+  <ApiProp id="1347" apicall="//*/*[1339]" propId="20337" propName="T">0</ApiProp>
+  <ApiProp id="1348" apicall="//*/*[1339]" propId="20337" propName="BID"></ApiProp>
+  <ApiProp id="1349" apicall="//*/*[1339]" propId="20337" propName="PID">0</ApiProp>
+  <SilkTestDoc id="1350" time="2012-02-18; 20:53:44"
+               timeStamp="|44|53|20|18|1|112|6|48|0|" tick="31219265"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[1110]"
+               ApiRefType="parent">
+    Submit
+  </SilkTestDoc>
+  <Apiinfo id="1351" time="2012-02-18; 20:53:44"
+           timeStamp="|44|53|20|18|1|112|6|48|0|" idx="//*/*[1350]" severity="0">
+    RumbaScreen.Submit()
+  </Apiinfo>
+  <ApiProp id="1352" apicall="//*/*[1350]" propId="0" propName="CS">TestTrading|c:\Temp\Rumba\WorkflowTests.t|5|</ApiProp>
+  <ApiProp id="1353" apicall="//*/*[1350]" propId="20338" propName="ROOT"></ApiProp>
+  <ApiProp id="1354" apicall="//*/*[1350]" propId="20338" propName="CID">20338</ApiProp>
+  <ApiProp id="1355" apicall="//*/*[1350]" propId="20338" propName="ID"></ApiProp>
+  <ApiProp id="1356" apicall="//*/*[1350]" propId="20338" propName="V"></ApiProp>
+  <ApiProp id="1357" apicall="//*/*[1350]" propId="20338" propName="TN"></ApiProp>
+  <ApiProp id="1358" apicall="//*/*[1350]" propId="20338" propName="T">0</ApiProp>
+  <ApiProp id="1359" apicall="//*/*[1350]" propId="20338" propName="BID"></ApiProp>
+  <ApiProp id="1360" apicall="//*/*[1350]" propId="20338" propName="PID">0</ApiProp>
+  <SilkTestDoc id="1361" time="2012-02-18; 20:53:44"
+               timeStamp="|44|53|20|18|1|112|6|48|0|" tick="31219375"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[1110]"
+               ApiRefType="parent">
+    Find
+  </SilkTestDoc>
+  <Apiinfo id="1362" time="2012-02-18; 20:53:44"
+           timeStamp="|44|53|20|18|1|112|6|48|0|" idx="//*/*[1361]" severity="0">
+    RumbaScreen.Find(locator: //RumbaTextField)
+  </Apiinfo>
+  <ApiProp id="1363" apicall="//*/*[1361]" propId="0" propName="CS">TestTrading|c:\Temp\Rumba\WorkflowTests.t|8|</ApiProp>
+  <ApiProp id="1364" apicall="//*/*[1361]" propId="20339" propName="ROOT"></ApiProp>
+  <ApiProp id="1365" apicall="//*/*[1361]" propId="20339" propName="CID">20339</ApiProp>
+  <ApiProp id="1366" apicall="//*/*[1361]" propId="20339" propName="ID"></ApiProp>
+  <ApiProp id="1367" apicall="//*/*[1361]" propId="20339" propName="V"></ApiProp>
+  <ApiProp id="1368" apicall="//*/*[1361]" propId="20339" propName="TN"></ApiProp>
+  <ApiProp id="1369" apicall="//*/*[1361]" propId="20339" propName="T">0</ApiProp>
+  <ApiProp id="1370" apicall="//*/*[1361]" propId="20339" propName="BID"></ApiProp>
+  <ApiProp id="1371" apicall="//*/*[1361]" propId="20339" propName="PID">0</ApiProp>
+  <SilkTestDoc id="1372" time="2012-02-18; 20:53:45"
+               timeStamp="|45|53|20|18|1|112|6|48|0|" tick="31219796"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[1110]"
+               ApiRefType="parent">
+    SetText
+  </SilkTestDoc>
+  <Apiinfo id="1373" time="2012-02-18; 20:53:45"
+           timeStamp="|45|53|20|18|1|112|6|48|0|" idx="//*/*[1372]" severity="0">
+    RumbaTextField.SetText(text: 2)
+  </Apiinfo>
+  <ApiProp id="1374" apicall="//*/*[1372]" propId="0" propName="CS">TestTrading|c:\Temp\Rumba\WorkflowTests.t|8|</ApiProp>
+  <ApiProp id="1375" apicall="//*/*[1372]" propId="20340" propName="ROOT"></ApiProp>
+  <ApiProp id="1376" apicall="//*/*[1372]" propId="20340" propName="CID">20340</ApiProp>
+  <ApiProp id="1377" apicall="//*/*[1372]" propId="20340" propName="ID"></ApiProp>
+  <ApiProp id="1378" apicall="//*/*[1372]" propId="20340" propName="V"></ApiProp>
+  <ApiProp id="1379" apicall="//*/*[1372]" propId="20340" propName="TN"></ApiProp>
+  <ApiProp id="1380" apicall="//*/*[1372]" propId="20340" propName="T">0</ApiProp>
+  <ApiProp id="1381" apicall="//*/*[1372]" propId="20340" propName="BID"></ApiProp>
+  <ApiProp id="1382" apicall="//*/*[1372]" propId="20340" propName="PID">0</ApiProp>
+  <SilkTestDoc id="1383" time="2012-02-18; 20:53:46"
+               timeStamp="|46|53|20|18|1|112|6|48|0|" tick="31221421"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[1110]"
+               ApiRefType="parent">
+    SynchSendKeys
+  </SilkTestDoc>
+  <Apiinfo id="1384" time="2012-02-18; 20:53:46"
+           timeStamp="|46|53|20|18|1|112|6|48|0|" idx="//*/*[1383]" severity="0">
+    RumbaScreen.SynchSendKeys(keys: @E)
+  </Apiinfo>
+  <ApiProp id="1385" apicall="//*/*[1383]" propId="0" propName="CS">TestTrading|c:\Temp\Rumba\WorkflowTests.t|9|</ApiProp>
+  <ApiProp id="1386" apicall="//*/*[1383]" propId="20341" propName="ROOT"></ApiProp>
+  <ApiProp id="1387" apicall="//*/*[1383]" propId="20341" propName="CID">20341</ApiProp>
+  <ApiProp id="1388" apicall="//*/*[1383]" propId="20341" propName="ID"></ApiProp>
+  <ApiProp id="1389" apicall="//*/*[1383]" propId="20341" propName="V"></ApiProp>
+  <ApiProp id="1390" apicall="//*/*[1383]" propId="20341" propName="TN"></ApiProp>
+  <ApiProp id="1391" apicall="//*/*[1383]" propId="20341" propName="T">0</ApiProp>
+  <ApiProp id="1392" apicall="//*/*[1383]" propId="20341" propName="BID"></ApiProp>
+  <ApiProp id="1393" apicall="//*/*[1383]" propId="20341" propName="PID">0</ApiProp>
+  <SilkTestDoc id="1394" time="2012-02-18; 20:53:47"
+               timeStamp="|47|53|20|18|1|112|6|48|0|" tick="31221515"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[1110]"
+               ApiRefType="parent">
+    Find
+  </SilkTestDoc>
+  <Apiinfo id="1395" time="2012-02-18; 20:53:47"
+           timeStamp="|47|53|20|18|1|112|6|48|0|" idx="//*/*[1394]" severity="0">
+    RumbaScreen.Find(locator: //RumbaTextField)
+  </Apiinfo>
+  <ApiProp id="1396" apicall="//*/*[1394]" propId="0" propName="CS">TestTrading|c:\Temp\Rumba\WorkflowTests.t|10|</ApiProp>
+  <ApiProp id="1397" apicall="//*/*[1394]" propId="20342" propName="ROOT"></ApiProp>
+  <ApiProp id="1398" apicall="//*/*[1394]" propId="20342" propName="CID">20342</ApiProp>
+  <ApiProp id="1399" apicall="//*/*[1394]" propId="20342" propName="ID"></ApiProp>
+  <ApiProp id="1400" apicall="//*/*[1394]" propId="20342" propName="V"></ApiProp>
+  <ApiProp id="1401" apicall="//*/*[1394]" propId="20342" propName="TN"></ApiProp>
+  <ApiProp id="1402" apicall="//*/*[1394]" propId="20342" propName="T">0</ApiProp>
+  <ApiProp id="1403" apicall="//*/*[1394]" propId="20342" propName="BID"></ApiProp>
+  <ApiProp id="1404" apicall="//*/*[1394]" propId="20342" propName="PID">0</ApiProp>
+  <SilkTestDoc id="1405" time="2012-02-18; 20:53:47"
+               timeStamp="|47|53|20|18|1|112|6|48|0|" tick="31221796"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[1110]"
+               ApiRefType="parent">
+    SetText
+  </SilkTestDoc>
+  <Apiinfo id="1406" time="2012-02-18; 20:53:47"
+           timeStamp="|47|53|20|18|1|112|6|48|0|" idx="//*/*[1405]" severity="0">
+    RumbaTextField.SetText(text: 2000)
+  </Apiinfo>
+  <ApiProp id="1407" apicall="//*/*[1405]" propId="0" propName="CS">TestTrading|c:\Temp\Rumba\WorkflowTests.t|10|</ApiProp>
+  <ApiProp id="1408" apicall="//*/*[1405]" propId="20343" propName="ROOT"></ApiProp>
+  <ApiProp id="1409" apicall="//*/*[1405]" propId="20343" propName="CID">20343</ApiProp>
+  <ApiProp id="1410" apicall="//*/*[1405]" propId="20343" propName="ID"></ApiProp>
+  <ApiProp id="1411" apicall="//*/*[1405]" propId="20343" propName="V"></ApiProp>
+  <ApiProp id="1412" apicall="//*/*[1405]" propId="20343" propName="TN"></ApiProp>
+  <ApiProp id="1413" apicall="//*/*[1405]" propId="20343" propName="T">0</ApiProp>
+  <ApiProp id="1414" apicall="//*/*[1405]" propId="20343" propName="BID"></ApiProp>
+  <ApiProp id="1415" apicall="//*/*[1405]" propId="20343" propName="PID">0</ApiProp>
+  <SilkTestDoc id="1416" time="2012-02-18; 20:53:49"
+               timeStamp="|49|53|20|18|1|112|6|48|0|" tick="31224203"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[1110]"
+               ApiRefType="parent">
+    Submit
+  </SilkTestDoc>
+  <Apiinfo id="1417" time="2012-02-18; 20:53:49"
+           timeStamp="|49|53|20|18|1|112|6|48|0|" idx="//*/*[1416]" severity="0">
+    RumbaScreen.Submit()
+  </Apiinfo>
+  <ApiProp id="1418" apicall="//*/*[1416]" propId="0" propName="CS">TestTrading|c:\Temp\Rumba\WorkflowTests.t|11|</ApiProp>
+  <ApiProp id="1419" apicall="//*/*[1416]" propId="20344" propName="ROOT"></ApiProp>
+  <ApiProp id="1420" apicall="//*/*[1416]" propId="20344" propName="CID">20344</ApiProp>
+  <ApiProp id="1421" apicall="//*/*[1416]" propId="20344" propName="ID"></ApiProp>
+  <ApiProp id="1422" apicall="//*/*[1416]" propId="20344" propName="V"></ApiProp>
+  <ApiProp id="1423" apicall="//*/*[1416]" propId="20344" propName="TN"></ApiProp>
+  <ApiProp id="1424" apicall="//*/*[1416]" propId="20344" propName="T">0</ApiProp>
+  <ApiProp id="1425" apicall="//*/*[1416]" propId="20344" propName="BID"></ApiProp>
+  <ApiProp id="1426" apicall="//*/*[1416]" propId="20344" propName="PID">0</ApiProp>
+  <SilkTestDoc id="1427" time="2012-02-18; 20:53:49"
+               timeStamp="|49|53|20|18|1|112|6|48|0|" tick="31224328"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[1110]"
+               ApiRefType="parent">
+    Find
+  </SilkTestDoc>
+  <Apiinfo id="1428" time="2012-02-18; 20:53:49"
+           timeStamp="|49|53|20|18|1|112|6|48|0|" idx="//*/*[1427]" severity="0">
+    RumbaScreen.Find(locator: //RumbaLabel[@caption=&apos;Request Completed OK*&apos;])
+  </Apiinfo>
+  <ApiProp id="1429" apicall="//*/*[1427]" propId="0" propName="CS">TestTrading|c:\Temp\Rumba\WorkflowTests.t|12|</ApiProp>
+  <ApiProp id="1430" apicall="//*/*[1427]" propId="20345" propName="ROOT"></ApiProp>
+  <ApiProp id="1431" apicall="//*/*[1427]" propId="20345" propName="CID">20345</ApiProp>
+  <ApiProp id="1432" apicall="//*/*[1427]" propId="20345" propName="ID"></ApiProp>
+  <ApiProp id="1433" apicall="//*/*[1427]" propId="20345" propName="V"></ApiProp>
+  <ApiProp id="1434" apicall="//*/*[1427]" propId="20345" propName="TN"></ApiProp>
+  <ApiProp id="1435" apicall="//*/*[1427]" propId="20345" propName="T">0</ApiProp>
+  <ApiProp id="1436" apicall="//*/*[1427]" propId="20345" propName="BID"></ApiProp>
+  <ApiProp id="1437" apicall="//*/*[1427]" propId="20345" propName="PID">0</ApiProp>
+  <SilkTestDoc id="1438" time="2012-02-18; 20:53:49"
+               timeStamp="|49|53|20|18|1|112|6|48|0|" tick="31224437"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[1110]"
+               ApiRefType="parent">
+    Find
+  </SilkTestDoc>
+  <Apiinfo id="1439" time="2012-02-18; 20:53:49"
+           timeStamp="|49|53|20|18|1|112|6|48|0|" idx="//*/*[1438]" severity="0">
+    RumbaScreen.Find(locator: //RumbaTextField)
+  </Apiinfo>
+  <ApiProp id="1440" apicall="//*/*[1438]" propId="0" propName="CS">TestTrading|c:\Temp\Rumba\WorkflowTests.t|15|</ApiProp>
+  <ApiProp id="1441" apicall="//*/*[1438]" propId="20346" propName="ROOT"></ApiProp>
+  <ApiProp id="1442" apicall="//*/*[1438]" propId="20346" propName="CID">20346</ApiProp>
+  <ApiProp id="1443" apicall="//*/*[1438]" propId="20346" propName="ID"></ApiProp>
+  <ApiProp id="1444" apicall="//*/*[1438]" propId="20346" propName="V"></ApiProp>
+  <ApiProp id="1445" apicall="//*/*[1438]" propId="20346" propName="TN"></ApiProp>
+  <ApiProp id="1446" apicall="//*/*[1438]" propId="20346" propName="T">0</ApiProp>
+  <ApiProp id="1447" apicall="//*/*[1438]" propId="20346" propName="BID"></ApiProp>
+  <ApiProp id="1448" apicall="//*/*[1438]" propId="20346" propName="PID">0</ApiProp>
+  <SilkTestDoc id="1449" time="2012-02-18; 20:53:50"
+               timeStamp="|50|53|20|18|1|112|6|48|0|" tick="31224796"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[1110]"
+               ApiRefType="parent">
+    SetText
+  </SilkTestDoc>
+  <Apiinfo id="1450" time="2012-02-18; 20:53:50"
+           timeStamp="|50|53|20|18|1|112|6|48|0|" idx="//*/*[1449]" severity="0">
+    RumbaTextField.SetText(text: 1)
+  </Apiinfo>
+  <ApiProp id="1451" apicall="//*/*[1449]" propId="0" propName="CS">TestTrading|c:\Temp\Rumba\WorkflowTests.t|15|</ApiProp>
+  <ApiProp id="1452" apicall="//*/*[1449]" propId="20347" propName="ROOT"></ApiProp>
+  <ApiProp id="1453" apicall="//*/*[1449]" propId="20347" propName="CID">20347</ApiProp>
+  <ApiProp id="1454" apicall="//*/*[1449]" propId="20347" propName="ID"></ApiProp>
+  <ApiProp id="1455" apicall="//*/*[1449]" propId="20347" propName="V"></ApiProp>
+  <ApiProp id="1456" apicall="//*/*[1449]" propId="20347" propName="TN"></ApiProp>
+  <ApiProp id="1457" apicall="//*/*[1449]" propId="20347" propName="T">0</ApiProp>
+  <ApiProp id="1458" apicall="//*/*[1449]" propId="20347" propName="BID"></ApiProp>
+  <ApiProp id="1459" apicall="//*/*[1449]" propId="20347" propName="PID">0</ApiProp>
+  <SilkTestDoc id="1460" time="2012-02-18; 20:53:54"
+               timeStamp="|54|53|20|18|1|112|6|48|0|" tick="31229234"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[1110]"
+               ApiRefType="parent">
+    Submit
+  </SilkTestDoc>
+  <Apiinfo id="1461" time="2012-02-18; 20:53:54"
+           timeStamp="|54|53|20|18|1|112|6|48|0|" idx="//*/*[1460]" severity="0">
+    RumbaScreen.Submit()
+  </Apiinfo>
+  <ApiProp id="1462" apicall="//*/*[1460]" propId="0" propName="CS">TestTrading|c:\Temp\Rumba\WorkflowTests.t|16|</ApiProp>
+  <ApiProp id="1463" apicall="//*/*[1460]" propId="20348" propName="ROOT"></ApiProp>
+  <ApiProp id="1464" apicall="//*/*[1460]" propId="20348" propName="CID">20348</ApiProp>
+  <ApiProp id="1465" apicall="//*/*[1460]" propId="20348" propName="ID"></ApiProp>
+  <ApiProp id="1466" apicall="//*/*[1460]" propId="20348" propName="V"></ApiProp>
+  <ApiProp id="1467" apicall="//*/*[1460]" propId="20348" propName="TN"></ApiProp>
+  <ApiProp id="1468" apicall="//*/*[1460]" propId="20348" propName="T">0</ApiProp>
+  <ApiProp id="1469" apicall="//*/*[1460]" propId="20348" propName="BID"></ApiProp>
+  <ApiProp id="1470" apicall="//*/*[1460]" propId="20348" propName="PID">0</ApiProp>
+  <SilkTestDoc id="1471" time="2012-02-18; 20:53:55"
+               timeStamp="|55|53|20|18|1|112|6|48|0|" tick="31229484"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[1110]"
+               ApiRefType="parent">
+    Find
+  </SilkTestDoc>
+  <Apiinfo id="1472" time="2012-02-18; 20:53:55"
+           timeStamp="|55|53|20|18|1|112|6|48|0|" idx="//*/*[1471]" severity="0">
+    RumbaScreen.Find(locator: //RumbaLabel[31])
+  </Apiinfo>
+  <ApiProp id="1473" apicall="//*/*[1471]" propId="0" propName="CS">TestTrading|c:\Temp\Rumba\WorkflowTests.t|18|</ApiProp>
+  <ApiProp id="1474" apicall="//*/*[1471]" propId="20349" propName="ROOT"></ApiProp>
+  <ApiProp id="1475" apicall="//*/*[1471]" propId="20349" propName="CID">20349</ApiProp>
+  <ApiProp id="1476" apicall="//*/*[1471]" propId="20349" propName="ID"></ApiProp>
+  <ApiProp id="1477" apicall="//*/*[1471]" propId="20349" propName="V"></ApiProp>
+  <ApiProp id="1478" apicall="//*/*[1471]" propId="20349" propName="TN"></ApiProp>
+  <ApiProp id="1479" apicall="//*/*[1471]" propId="20349" propName="T">0</ApiProp>
+  <ApiProp id="1480" apicall="//*/*[1471]" propId="20349" propName="BID"></ApiProp>
+  <ApiProp id="1481" apicall="//*/*[1471]" propId="20349" propName="PID">0</ApiProp>
+  <SilkTestDoc id="1482" time="2012-02-18; 20:53:57"
+               timeStamp="|57|53|20|18|1|112|6|48|0|" tick="31231859"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[1110]"
+               ApiRefType="parent">
+    SynchSendKeys
+  </SilkTestDoc>
+  <Apiinfo id="1483" time="2012-02-18; 20:53:57"
+           timeStamp="|57|53|20|18|1|112|6|48|0|" idx="//*/*[1482]" severity="0">
+    RumbaScreen.SynchSendKeys(keys: @3)
+  </Apiinfo>
+  <ApiProp id="1484" apicall="//*/*[1482]" propId="0" propName="CS">TestTrading|c:\Temp\Rumba\WorkflowTests.t|20|</ApiProp>
+  <ApiProp id="1485" apicall="//*/*[1482]" propId="20350" propName="ROOT"></ApiProp>
+  <ApiProp id="1486" apicall="//*/*[1482]" propId="20350" propName="CID">20350</ApiProp>
+  <ApiProp id="1487" apicall="//*/*[1482]" propId="20350" propName="ID"></ApiProp>
+  <ApiProp id="1488" apicall="//*/*[1482]" propId="20350" propName="V"></ApiProp>
+  <ApiProp id="1489" apicall="//*/*[1482]" propId="20350" propName="TN"></ApiProp>
+  <ApiProp id="1490" apicall="//*/*[1482]" propId="20350" propName="T">0</ApiProp>
+  <ApiProp id="1491" apicall="//*/*[1482]" propId="20350" propName="BID"></ApiProp>
+  <ApiProp id="1492" apicall="//*/*[1482]" propId="20350" propName="PID">0</ApiProp>
+  <SilkTestDoc id="1493" time="2012-02-18; 20:53:57"
+               timeStamp="|57|53|20|18|1|112|6|48|0|" tick="31231968"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[1110]"
+               ApiRefType="parent">
+    Find
+  </SilkTestDoc>
+  <Apiinfo id="1494" time="2012-02-18; 20:53:57"
+           timeStamp="|57|53|20|18|1|112|6|48|0|" idx="//*/*[1493]" severity="0">
+    RumbaScreen.Find(locator: //RumbaTextField)
+  </Apiinfo>
+  <ApiProp id="1495" apicall="//*/*[1493]" propId="0" propName="CS">TestTrading|c:\Temp\Rumba\WorkflowTests.t|23|</ApiProp>
+  <ApiProp id="1496" apicall="//*/*[1493]" propId="20351" propName="ROOT"></ApiProp>
+  <ApiProp id="1497" apicall="//*/*[1493]" propId="20351" propName="CID">20351</ApiProp>
+  <ApiProp id="1498" apicall="//*/*[1493]" propId="20351" propName="ID"></ApiProp>
+  <ApiProp id="1499" apicall="//*/*[1493]" propId="20351" propName="V"></ApiProp>
+  <ApiProp id="1500" apicall="//*/*[1493]" propId="20351" propName="TN"></ApiProp>
+  <ApiProp id="1501" apicall="//*/*[1493]" propId="20351" propName="T">0</ApiProp>
+  <ApiProp id="1502" apicall="//*/*[1493]" propId="20351" propName="BID"></ApiProp>
+  <ApiProp id="1503" apicall="//*/*[1493]" propId="20351" propName="PID">0</ApiProp>
+  <SilkTestDoc id="1504" time="2012-02-18; 20:53:58"
+               timeStamp="|58|53|20|18|1|112|6|48|0|" tick="31232796"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[1110]"
+               ApiRefType="parent">
+    SetText
+  </SilkTestDoc>
+  <Apiinfo id="1505" time="2012-02-18; 20:53:58"
+           timeStamp="|58|53|20|18|1|112|6|48|0|" idx="//*/*[1504]" severity="0">
+    RumbaTextField.SetText(text: 3)
+  </Apiinfo>
+  <ApiProp id="1506" apicall="//*/*[1504]" propId="0" propName="CS">TestTrading|c:\Temp\Rumba\WorkflowTests.t|23|</ApiProp>
+  <ApiProp id="1507" apicall="//*/*[1504]" propId="20352" propName="ROOT"></ApiProp>
+  <ApiProp id="1508" apicall="//*/*[1504]" propId="20352" propName="CID">20352</ApiProp>
+  <ApiProp id="1509" apicall="//*/*[1504]" propId="20352" propName="ID"></ApiProp>
+  <ApiProp id="1510" apicall="//*/*[1504]" propId="20352" propName="V"></ApiProp>
+  <ApiProp id="1511" apicall="//*/*[1504]" propId="20352" propName="TN"></ApiProp>
+  <ApiProp id="1512" apicall="//*/*[1504]" propId="20352" propName="T">0</ApiProp>
+  <ApiProp id="1513" apicall="//*/*[1504]" propId="20352" propName="BID"></ApiProp>
+  <ApiProp id="1514" apicall="//*/*[1504]" propId="20352" propName="PID">0</ApiProp>
+  <SilkTestDoc id="1515" time="2012-02-18; 20:53:59"
+               timeStamp="|59|53|20|18|1|112|6|48|0|" tick="31233625"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[1110]"
+               ApiRefType="parent">
+    Submit
+  </SilkTestDoc>
+  <Apiinfo id="1516" time="2012-02-18; 20:53:59"
+           timeStamp="|59|53|20|18|1|112|6|48|0|" idx="//*/*[1515]" severity="0">
+    RumbaScreen.Submit()
+  </Apiinfo>
+  <ApiProp id="1517" apicall="//*/*[1515]" propId="0" propName="CS">TestTrading|c:\Temp\Rumba\WorkflowTests.t|24|</ApiProp>
+  <ApiProp id="1518" apicall="//*/*[1515]" propId="20353" propName="ROOT"></ApiProp>
+  <ApiProp id="1519" apicall="//*/*[1515]" propId="20353" propName="CID">20353</ApiProp>
+  <ApiProp id="1520" apicall="//*/*[1515]" propId="20353" propName="ID"></ApiProp>
+  <ApiProp id="1521" apicall="//*/*[1515]" propId="20353" propName="V"></ApiProp>
+  <ApiProp id="1522" apicall="//*/*[1515]" propId="20353" propName="TN"></ApiProp>
+  <ApiProp id="1523" apicall="//*/*[1515]" propId="20353" propName="T">0</ApiProp>
+  <ApiProp id="1524" apicall="//*/*[1515]" propId="20353" propName="BID"></ApiProp>
+  <ApiProp id="1525" apicall="//*/*[1515]" propId="20353" propName="PID">0</ApiProp>
+  <SilkTestDoc id="1526" time="2012-02-18; 20:53:59"
+               timeStamp="|59|53|20|18|1|112|6|48|0|" tick="31233750"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[1110]"
+               ApiRefType="parent">
+    Find
+  </SilkTestDoc>
+  <Apiinfo id="1527" time="2012-02-18; 20:53:59"
+           timeStamp="|59|53|20|18|1|112|6|48|0|" idx="//*/*[1526]" severity="0">
+    RumbaScreen.Find(locator: //RumbaTextField)
+  </Apiinfo>
+  <ApiProp id="1528" apicall="//*/*[1526]" propId="0" propName="CS">TestTrading|c:\Temp\Rumba\WorkflowTests.t|25|</ApiProp>
+  <ApiProp id="1529" apicall="//*/*[1526]" propId="20354" propName="ROOT"></ApiProp>
+  <ApiProp id="1530" apicall="//*/*[1526]" propId="20354" propName="CID">20354</ApiProp>
+  <ApiProp id="1531" apicall="//*/*[1526]" propId="20354" propName="ID"></ApiProp>
+  <ApiProp id="1532" apicall="//*/*[1526]" propId="20354" propName="V"></ApiProp>
+  <ApiProp id="1533" apicall="//*/*[1526]" propId="20354" propName="TN"></ApiProp>
+  <ApiProp id="1534" apicall="//*/*[1526]" propId="20354" propName="T">0</ApiProp>
+  <ApiProp id="1535" apicall="//*/*[1526]" propId="20354" propName="BID"></ApiProp>
+  <ApiProp id="1536" apicall="//*/*[1526]" propId="20354" propName="PID">0</ApiProp>
+  <SilkTestDoc id="1537" time="2012-02-18; 20:54:00"
+               timeStamp="|0|54|20|18|1|112|6|48|0|" tick="31234796"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[1110]"
+               ApiRefType="parent">
+    SetText
+  </SilkTestDoc>
+  <Apiinfo id="1538" time="2012-02-18; 20:54:00"
+           timeStamp="|0|54|20|18|1|112|6|48|0|" idx="//*/*[1537]" severity="0">
+    RumbaTextField.SetText(text: 2000)
+  </Apiinfo>
+  <ApiProp id="1539" apicall="//*/*[1537]" propId="0" propName="CS">TestTrading|c:\Temp\Rumba\WorkflowTests.t|25|</ApiProp>
+  <ApiProp id="1540" apicall="//*/*[1537]" propId="20355" propName="ROOT"></ApiProp>
+  <ApiProp id="1541" apicall="//*/*[1537]" propId="20355" propName="CID">20355</ApiProp>
+  <ApiProp id="1542" apicall="//*/*[1537]" propId="20355" propName="ID"></ApiProp>
+  <ApiProp id="1543" apicall="//*/*[1537]" propId="20355" propName="V"></ApiProp>
+  <ApiProp id="1544" apicall="//*/*[1537]" propId="20355" propName="TN"></ApiProp>
+  <ApiProp id="1545" apicall="//*/*[1537]" propId="20355" propName="T">0</ApiProp>
+  <ApiProp id="1546" apicall="//*/*[1537]" propId="20355" propName="BID"></ApiProp>
+  <ApiProp id="1547" apicall="//*/*[1537]" propId="20355" propName="PID">0</ApiProp>
+  <SilkTestDoc id="1548" time="2012-02-18; 20:54:01"
+               timeStamp="|1|54|20|18|1|112|6|48|0|" tick="31235578"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[1110]"
+               ApiRefType="parent">
+    SynchSendKeys
+  </SilkTestDoc>
+  <Apiinfo id="1549" time="2012-02-18; 20:54:01"
+           timeStamp="|1|54|20|18|1|112|6|48|0|" idx="//*/*[1548]" severity="0">
+    RumbaScreen.SynchSendKeys(keys: @E)
+  </Apiinfo>
+  <ApiProp id="1550" apicall="//*/*[1548]" propId="0" propName="CS">TestTrading|c:\Temp\Rumba\WorkflowTests.t|26|</ApiProp>
+  <ApiProp id="1551" apicall="//*/*[1548]" propId="20356" propName="ROOT"></ApiProp>
+  <ApiProp id="1552" apicall="//*/*[1548]" propId="20356" propName="CID">20356</ApiProp>
+  <ApiProp id="1553" apicall="//*/*[1548]" propId="20356" propName="ID"></ApiProp>
+  <ApiProp id="1554" apicall="//*/*[1548]" propId="20356" propName="V"></ApiProp>
+  <ApiProp id="1555" apicall="//*/*[1548]" propId="20356" propName="TN"></ApiProp>
+  <ApiProp id="1556" apicall="//*/*[1548]" propId="20356" propName="T">0</ApiProp>
+  <ApiProp id="1557" apicall="//*/*[1548]" propId="20356" propName="BID"></ApiProp>
+  <ApiProp id="1558" apicall="//*/*[1548]" propId="20356" propName="PID">0</ApiProp>
+  <SilkTestDoc id="1559" time="2012-02-18; 20:54:01"
+               timeStamp="|1|54|20|18|1|112|6|48|0|" tick="31235687"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[1110]"
+               ApiRefType="parent">
+    Find
+  </SilkTestDoc>
+  <Apiinfo id="1560" time="2012-02-18; 20:54:01"
+           timeStamp="|1|54|20|18|1|112|6|48|0|" idx="//*/*[1559]" severity="0">
+    RumbaScreen.Find(locator: //RumbaLabel[@caption=&apos;Request Completed OK*&apos;])
+  </Apiinfo>
+  <ApiProp id="1561" apicall="//*/*[1559]" propId="0" propName="CS">TestTrading|c:\Temp\Rumba\WorkflowTests.t|27|</ApiProp>
+  <ApiProp id="1562" apicall="//*/*[1559]" propId="20357" propName="ROOT"></ApiProp>
+  <ApiProp id="1563" apicall="//*/*[1559]" propId="20357" propName="CID">20357</ApiProp>
+  <ApiProp id="1564" apicall="//*/*[1559]" propId="20357" propName="ID"></ApiProp>
+  <ApiProp id="1565" apicall="//*/*[1559]" propId="20357" propName="V"></ApiProp>
+  <ApiProp id="1566" apicall="//*/*[1559]" propId="20357" propName="TN"></ApiProp>
+  <ApiProp id="1567" apicall="//*/*[1559]" propId="20357" propName="T">0</ApiProp>
+  <ApiProp id="1568" apicall="//*/*[1559]" propId="20357" propName="BID"></ApiProp>
+  <ApiProp id="1569" apicall="//*/*[1559]" propId="20357" propName="PID">0</ApiProp>
+  <SilkTestDoc id="1570" time="2012-02-18; 20:54:01"
+               timeStamp="|1|54|20|18|1|112|6|48|0|" tick="31235812"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[1110]"
+               ApiRefType="parent">
+    Find
+  </SilkTestDoc>
+  <Apiinfo id="1571" time="2012-02-18; 20:54:01"
+           timeStamp="|1|54|20|18|1|112|6|48|0|" idx="//*/*[1570]" severity="0">
+    RumbaScreen.Find(locator: //RumbaTextField)
+  </Apiinfo>
+  <ApiProp id="1572" apicall="//*/*[1570]" propId="0" propName="CS">TestTrading|c:\Temp\Rumba\WorkflowTests.t|30|</ApiProp>
+  <ApiProp id="1573" apicall="//*/*[1570]" propId="20358" propName="ROOT"></ApiProp>
+  <ApiProp id="1574" apicall="//*/*[1570]" propId="20358" propName="CID">20358</ApiProp>
+  <ApiProp id="1575" apicall="//*/*[1570]" propId="20358" propName="ID"></ApiProp>
+  <ApiProp id="1576" apicall="//*/*[1570]" propId="20358" propName="V"></ApiProp>
+  <ApiProp id="1577" apicall="//*/*[1570]" propId="20358" propName="TN"></ApiProp>
+  <ApiProp id="1578" apicall="//*/*[1570]" propId="20358" propName="T">0</ApiProp>
+  <ApiProp id="1579" apicall="//*/*[1570]" propId="20358" propName="BID"></ApiProp>
+  <ApiProp id="1580" apicall="//*/*[1570]" propId="20358" propName="PID">0</ApiProp>
+  <SilkTestDoc id="1581" time="2012-02-18; 20:54:02"
+               timeStamp="|2|54|20|18|1|112|6|48|0|" tick="31236796"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[1110]"
+               ApiRefType="parent">
+    SetText
+  </SilkTestDoc>
+  <Apiinfo id="1582" time="2012-02-18; 20:54:02"
+           timeStamp="|2|54|20|18|1|112|6|48|0|" idx="//*/*[1581]" severity="0">
+    RumbaTextField.SetText(text: 1)
+  </Apiinfo>
+  <ApiProp id="1583" apicall="//*/*[1581]" propId="0" propName="CS">TestTrading|c:\Temp\Rumba\WorkflowTests.t|30|</ApiProp>
+  <ApiProp id="1584" apicall="//*/*[1581]" propId="20359" propName="ROOT"></ApiProp>
+  <ApiProp id="1585" apicall="//*/*[1581]" propId="20359" propName="CID">20359</ApiProp>
+  <ApiProp id="1586" apicall="//*/*[1581]" propId="20359" propName="ID"></ApiProp>
+  <ApiProp id="1587" apicall="//*/*[1581]" propId="20359" propName="V"></ApiProp>
+  <ApiProp id="1588" apicall="//*/*[1581]" propId="20359" propName="TN"></ApiProp>
+  <ApiProp id="1589" apicall="//*/*[1581]" propId="20359" propName="T">0</ApiProp>
+  <ApiProp id="1590" apicall="//*/*[1581]" propId="20359" propName="BID"></ApiProp>
+  <ApiProp id="1591" apicall="//*/*[1581]" propId="20359" propName="PID">0</ApiProp>
+  <SilkTestDoc id="1592" time="2012-02-18; 20:54:07"
+               timeStamp="|7|54|20|18|1|112|6|48|0|" tick="31241515"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[1110]"
+               ApiRefType="parent">
+    Submit
+  </SilkTestDoc>
+  <Apiinfo id="1593" time="2012-02-18; 20:54:07"
+           timeStamp="|7|54|20|18|1|112|6|48|0|" idx="//*/*[1592]" severity="0">
+    RumbaScreen.Submit()
+  </Apiinfo>
+  <ApiProp id="1594" apicall="//*/*[1592]" propId="0" propName="CS">TestTrading|c:\Temp\Rumba\WorkflowTests.t|31|</ApiProp>
+  <ApiProp id="1595" apicall="//*/*[1592]" propId="20360" propName="ROOT"></ApiProp>
+  <ApiProp id="1596" apicall="//*/*[1592]" propId="20360" propName="CID">20360</ApiProp>
+  <ApiProp id="1597" apicall="//*/*[1592]" propId="20360" propName="ID"></ApiProp>
+  <ApiProp id="1598" apicall="//*/*[1592]" propId="20360" propName="V"></ApiProp>
+  <ApiProp id="1599" apicall="//*/*[1592]" propId="20360" propName="TN"></ApiProp>
+  <ApiProp id="1600" apicall="//*/*[1592]" propId="20360" propName="T">0</ApiProp>
+  <ApiProp id="1601" apicall="//*/*[1592]" propId="20360" propName="BID"></ApiProp>
+  <ApiProp id="1602" apicall="//*/*[1592]" propId="20360" propName="PID">0</ApiProp>
+  <SilkTestDoc id="1603" time="2012-02-18; 20:54:07"
+               timeStamp="|7|54|20|18|1|112|6|48|0|" tick="31241687"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[1110]"
+               ApiRefType="parent">
+    Find
+  </SilkTestDoc>
+  <Apiinfo id="1604" time="2012-02-18; 20:54:07"
+           timeStamp="|7|54|20|18|1|112|6|48|0|" idx="//*/*[1603]" severity="0">
+    RumbaScreen.Find(locator: //RumbaLabel[31])
+  </Apiinfo>
+  <ApiProp id="1605" apicall="//*/*[1603]" propId="0" propName="CS">TestTrading|c:\Temp\Rumba\WorkflowTests.t|32|</ApiProp>
+  <ApiProp id="1606" apicall="//*/*[1603]" propId="20361" propName="ROOT"></ApiProp>
+  <ApiProp id="1607" apicall="//*/*[1603]" propId="20361" propName="CID">20361</ApiProp>
+  <ApiProp id="1608" apicall="//*/*[1603]" propId="20361" propName="ID"></ApiProp>
+  <ApiProp id="1609" apicall="//*/*[1603]" propId="20361" propName="V"></ApiProp>
+  <ApiProp id="1610" apicall="//*/*[1603]" propId="20361" propName="TN"></ApiProp>
+  <ApiProp id="1611" apicall="//*/*[1603]" propId="20361" propName="T">0</ApiProp>
+  <ApiProp id="1612" apicall="//*/*[1603]" propId="20361" propName="BID"></ApiProp>
+  <ApiProp id="1613" apicall="//*/*[1603]" propId="20361" propName="PID">0</ApiProp>
+  <SilkTestDoc id="1614" time="2012-02-18; 20:54:10"
+               timeStamp="|10|54|20|18|1|112|6|48|0|" tick="31244500"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[1110]"
+               ApiRefType="parent">
+    SynchSendKeys
+  </SilkTestDoc>
+  <Apiinfo id="1615" time="2012-02-18; 20:54:10"
+           timeStamp="|10|54|20|18|1|112|6|48|0|" idx="//*/*[1614]" severity="0">
+    RumbaScreen.SynchSendKeys(keys: @3)
+  </Apiinfo>
+  <ApiProp id="1616" apicall="//*/*[1614]" propId="0" propName="CS">TestTrading|c:\Temp\Rumba\WorkflowTests.t|34|</ApiProp>
+  <ApiProp id="1617" apicall="//*/*[1614]" propId="20362" propName="ROOT"></ApiProp>
+  <ApiProp id="1618" apicall="//*/*[1614]" propId="20362" propName="CID">20362</ApiProp>
+  <ApiProp id="1619" apicall="//*/*[1614]" propId="20362" propName="ID"></ApiProp>
+  <ApiProp id="1620" apicall="//*/*[1614]" propId="20362" propName="V"></ApiProp>
+  <ApiProp id="1621" apicall="//*/*[1614]" propId="20362" propName="TN"></ApiProp>
+  <ApiProp id="1622" apicall="//*/*[1614]" propId="20362" propName="T">0</ApiProp>
+  <ApiProp id="1623" apicall="//*/*[1614]" propId="20362" propName="BID"></ApiProp>
+  <ApiProp id="1624" apicall="//*/*[1614]" propId="20362" propName="PID">0</ApiProp>
+  <SilkTestDoc id="1625" time="2012-02-18; 20:54:10"
+               timeStamp="|10|54|20|18|1|112|6|48|0|" tick="31244500"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[1110]"
+               ApiRefType="parent">
+    Print
+  </SilkTestDoc>
+  <Apiinfo id="1626" time="2012-02-18; 20:54:10"
+           timeStamp="|10|54|20|18|1|112|6|48|0|" idx="//*/*[1625]" severity="0">
+    Message: CloseRumbaMainframe
+  </Apiinfo>
+  <SilkTestDoc id="1627" time="2012-02-18; 20:54:10"
+               timeStamp="|10|54|20|18|1|112|6|48|0|" tick="31244578"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[1110]"
+               ApiRefType="parent">
+    Find
+  </SilkTestDoc>
+  <Apiinfo id="1628" time="2012-02-18; 20:54:10"
+           timeStamp="|10|54|20|18|1|112|6|48|0|" idx="//*/*[1627]" severity="0">
+    WPFWindow.Find(locator: //WPFMenuItem[@automationId=&apos;Menubar_Disconnect&apos;])
+  </Apiinfo>
+  <ApiProp id="1629" apicall="//*/*[1627]" propId="0" propName="CS">CloseRumbaMainframe|c:\Temp\Rumba\frame.inc|126|CallExitHook|c:\Temp\common.inc|68|TestCaseExit|c:\Temp\common.inc|80|TestTrading|c:\Temp\Rumba\WorkflowTests.t|34|</ApiProp>
+  <ApiProp id="1630" apicall="//*/*[1627]" propId="20363" propName="ROOT"></ApiProp>
+  <ApiProp id="1631" apicall="//*/*[1627]" propId="20363" propName="CID">20363</ApiProp>
+  <ApiProp id="1632" apicall="//*/*[1627]" propId="20363" propName="ID"></ApiProp>
+  <ApiProp id="1633" apicall="//*/*[1627]" propId="20363" propName="V"></ApiProp>
+  <ApiProp id="1634" apicall="//*/*[1627]" propId="20363" propName="TN"></ApiProp>
+  <ApiProp id="1635" apicall="//*/*[1627]" propId="20363" propName="T">0</ApiProp>
+  <ApiProp id="1636" apicall="//*/*[1627]" propId="20363" propName="BID"></ApiProp>
+  <ApiProp id="1637" apicall="//*/*[1627]" propId="20363" propName="PID">0</ApiProp>
+  <SilkTestDoc id="1638" time="2012-02-18; 20:54:10"
+               timeStamp="|10|54|20|18|1|112|6|48|0|" tick="31245203"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[1110]"
+               ApiRefType="parent">
+    Select
+  </SilkTestDoc>
+  <Apiinfo id="1639" time="2012-02-18; 20:54:10"
+           timeStamp="|10|54|20|18|1|112|6|48|0|" idx="//*/*[1638]" severity="0">
+    WPFMenuItem.Select()
+  </Apiinfo>
+  <ApiProp id="1640" apicall="//*/*[1638]" propId="0" propName="CS">CloseRumbaMainframe|c:\Temp\Rumba\frame.inc|126|CallExitHook|c:\Temp\common.inc|68|TestCaseExit|c:\Temp\common.inc|80|TestTrading|c:\Temp\Rumba\WorkflowTests.t|34|</ApiProp>
+  <ApiProp id="1641" apicall="//*/*[1638]" propId="20364" propName="ROOT"></ApiProp>
+  <ApiProp id="1642" apicall="//*/*[1638]" propId="20364" propName="CID">20364</ApiProp>
+  <ApiProp id="1643" apicall="//*/*[1638]" propId="20364" propName="ID"></ApiProp>
+  <ApiProp id="1644" apicall="//*/*[1638]" propId="20364" propName="V"></ApiProp>
+  <ApiProp id="1645" apicall="//*/*[1638]" propId="20364" propName="TN"></ApiProp>
+  <ApiProp id="1646" apicall="//*/*[1638]" propId="20364" propName="T">0</ApiProp>
+  <ApiProp id="1647" apicall="//*/*[1638]" propId="20364" propName="BID"></ApiProp>
+  <ApiProp id="1648" apicall="//*/*[1638]" propId="20364" propName="PID">0</ApiProp>
+  <SilkTestDoc id="1649" time="2012-02-18; 20:54:10"
+               timeStamp="|10|54|20|18|1|112|6|48|0|" tick="31245281"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[1110]"
+               ApiRefType="parent">
+    Find
+  </SilkTestDoc>
+  <Apiinfo id="1650" time="2012-02-18; 20:54:10"
+           timeStamp="|10|54|20|18|1|112|6|48|0|" idx="//*/*[1649]" severity="0">
+    WPFWindow.Find(locator: //WPFButton[@automationId=&apos;PART_CloseButton&apos;], options: [1, false])
+  </Apiinfo>
+  <ApiProp id="1651" apicall="//*/*[1649]" propId="0" propName="CS">CloseRumbaMainframe|c:\Temp\Rumba\frame.inc|127|CallExitHook|c:\Temp\common.inc|68|TestCaseExit|c:\Temp\common.inc|80|TestTrading|c:\Temp\Rumba\WorkflowTests.t|34|</ApiProp>
+  <ApiProp id="1652" apicall="//*/*[1649]" propId="20365" propName="ROOT"></ApiProp>
+  <ApiProp id="1653" apicall="//*/*[1649]" propId="20365" propName="CID">20365</ApiProp>
+  <ApiProp id="1654" apicall="//*/*[1649]" propId="20365" propName="ID"></ApiProp>
+  <ApiProp id="1655" apicall="//*/*[1649]" propId="20365" propName="V"></ApiProp>
+  <ApiProp id="1656" apicall="//*/*[1649]" propId="20365" propName="TN"></ApiProp>
+  <ApiProp id="1657" apicall="//*/*[1649]" propId="20365" propName="T">0</ApiProp>
+  <ApiProp id="1658" apicall="//*/*[1649]" propId="20365" propName="BID"></ApiProp>
+  <ApiProp id="1659" apicall="//*/*[1649]" propId="20365" propName="PID">0</ApiProp>
+  <SilkTestDoc id="1660" time="2012-02-18; 20:54:32"
+               timeStamp="|32|54|20|18|1|112|6|48|0|" tick="31266718"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[1110]"
+               ApiRefType="parent">
+    Select
+  </SilkTestDoc>
+  <Apiinfo id="1661" time="2012-02-18; 20:54:32"
+           timeStamp="|32|54|20|18|1|112|6|48|0|" idx="//*/*[1660]" severity="0">
+    WPFButton.Select()
+  </Apiinfo>
+  <ApiProp id="1662" apicall="//*/*[1660]" propId="0" propName="CS">CloseRumbaMainframe|c:\Temp\Rumba\frame.inc|129|CallExitHook|c:\Temp\common.inc|68|TestCaseExit|c:\Temp\common.inc|80|TestTrading|c:\Temp\Rumba\WorkflowTests.t|34|</ApiProp>
+  <ApiProp id="1663" apicall="//*/*[1660]" propId="20366" propName="ROOT"></ApiProp>
+  <ApiProp id="1664" apicall="//*/*[1660]" propId="20366" propName="CID">20366</ApiProp>
+  <ApiProp id="1665" apicall="//*/*[1660]" propId="20366" propName="ID"></ApiProp>
+  <ApiProp id="1666" apicall="//*/*[1660]" propId="20366" propName="V"></ApiProp>
+  <ApiProp id="1667" apicall="//*/*[1660]" propId="20366" propName="TN"></ApiProp>
+  <ApiProp id="1668" apicall="//*/*[1660]" propId="20366" propName="T">0</ApiProp>
+  <ApiProp id="1669" apicall="//*/*[1660]" propId="20366" propName="BID"></ApiProp>
+  <ApiProp id="1670" apicall="//*/*[1660]" propId="20366" propName="PID">0</ApiProp>
+  <SilkTestDoc id="1671" time="2012-02-18; 20:54:32"
+               timeStamp="|32|54|20|18|1|112|6|48|0|" tick="31266890"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[1110]"
+               ApiRefType="parent">
+    Find
+  </SilkTestDoc>
+  <Apiinfo id="1672" time="2012-02-18; 20:54:32"
+           timeStamp="|32|54|20|18|1|112|6|48|0|" idx="//*/*[1671]" severity="0">
+    WPFWindow.Find(locator: //Dialog//Label[@caption=&apos;*save*Session Profile*&apos;]/../PushButton[@caption=&apos;No&apos;], options: [1, false])
+  </Apiinfo>
+  <ApiProp id="1673" apicall="//*/*[1671]" propId="0" propName="CS">CloseRumbaMainframe|c:\Temp\Rumba\frame.inc|130|CallExitHook|c:\Temp\common.inc|68|TestCaseExit|c:\Temp\common.inc|80|TestTrading|c:\Temp\Rumba\WorkflowTests.t|34|</ApiProp>
+  <ApiProp id="1674" apicall="//*/*[1671]" propId="20367" propName="ROOT"></ApiProp>
+  <ApiProp id="1675" apicall="//*/*[1671]" propId="20367" propName="CID">20367</ApiProp>
+  <ApiProp id="1676" apicall="//*/*[1671]" propId="20367" propName="ID"></ApiProp>
+  <ApiProp id="1677" apicall="//*/*[1671]" propId="20367" propName="V"></ApiProp>
+  <ApiProp id="1678" apicall="//*/*[1671]" propId="20367" propName="TN"></ApiProp>
+  <ApiProp id="1679" apicall="//*/*[1671]" propId="20367" propName="T">0</ApiProp>
+  <ApiProp id="1680" apicall="//*/*[1671]" propId="20367" propName="BID"></ApiProp>
+  <ApiProp id="1681" apicall="//*/*[1671]" propId="20367" propName="PID">0</ApiProp>
+  <SilkTestDoc id="1682" time="2012-02-18; 20:54:33"
+               timeStamp="|33|54|20|18|1|112|6|48|0|" tick="31268046"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[1110]"
+               ApiRefType="parent">
+    Click
+  </SilkTestDoc>
+  <Apiinfo id="1683" time="2012-02-18; 20:54:33"
+           timeStamp="|33|54|20|18|1|112|6|48|0|" idx="//*/*[1682]" severity="0">
+    PushButton.Click()
+  </Apiinfo>
+  <ApiProp id="1684" apicall="//*/*[1682]" propId="0" propName="CS">CloseRumbaMainframe|c:\Temp\Rumba\frame.inc|132|CallExitHook|c:\Temp\common.inc|68|TestCaseExit|c:\Temp\common.inc|80|TestTrading|c:\Temp\Rumba\WorkflowTests.t|34|</ApiProp>
+  <ApiProp id="1685" apicall="//*/*[1682]" propId="20368" propName="ROOT"></ApiProp>
+  <ApiProp id="1686" apicall="//*/*[1682]" propId="20368" propName="CID">20368</ApiProp>
+  <ApiProp id="1687" apicall="//*/*[1682]" propId="20368" propName="ID"></ApiProp>
+  <ApiProp id="1688" apicall="//*/*[1682]" propId="20368" propName="V"></ApiProp>
+  <ApiProp id="1689" apicall="//*/*[1682]" propId="20368" propName="TN"></ApiProp>
+  <ApiProp id="1690" apicall="//*/*[1682]" propId="20368" propName="T">0</ApiProp>
+  <ApiProp id="1691" apicall="//*/*[1682]" propId="20368" propName="BID"></ApiProp>
+  <ApiProp id="1692" apicall="//*/*[1682]" propId="20368" propName="PID">0</ApiProp>
+  <SilkTestDoc id="1693" time="2012-02-18; 20:54:33"
+               timeStamp="|33|54|20|18|1|112|6|48|0|" tick="31268296"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[1110]"
+               ApiRefType="parent">
+    Close
+  </SilkTestDoc>
+  <Apiinfo id="1694" time="2012-02-18; 20:54:33"
+           timeStamp="|33|54|20|18|1|112|6|48|0|" idx="//*/*[1693]" severity="0">
+    WPFWindow.Close()
+  </Apiinfo>
+  <ApiProp id="1695" apicall="//*/*[1693]" propId="0" propName="CS">Close|C:\Program Files (x86)\Silk\SilkTest\extend\WPF\WPF.inc|1167|CloseRumbaMainframe|c:\Temp\Rumba\frame.inc|133|CallExitHook|c:\Temp\common.inc|68|TestCaseExit|c:\Temp\common.inc|80|TestTrading|c:\Temp\Rumba\WorkflowTests.t|34|</ApiProp>
+  <ApiProp id="1696" apicall="//*/*[1693]" propId="20369" propName="ROOT"></ApiProp>
+  <ApiProp id="1697" apicall="//*/*[1693]" propId="20369" propName="CID">20369</ApiProp>
+  <ApiProp id="1698" apicall="//*/*[1693]" propId="20369" propName="ID"></ApiProp>
+  <ApiProp id="1699" apicall="//*/*[1693]" propId="20369" propName="V"></ApiProp>
+  <ApiProp id="1700" apicall="//*/*[1693]" propId="20369" propName="TN"></ApiProp>
+  <ApiProp id="1701" apicall="//*/*[1693]" propId="20369" propName="T">0</ApiProp>
+  <ApiProp id="1702" apicall="//*/*[1693]" propId="20369" propName="BID"></ApiProp>
+  <ApiProp id="1703" apicall="//*/*[1693]" propId="20369" propName="PID">0</ApiProp>
+  <SilkTestDoc id="1704" time="2012-02-18; 20:54:33"
+               timeStamp="|33|54|20|18|1|112|6|48|0|" tick="31268312"
+               ApiHandle="" file="" bdlLine="0" status="0" ApiCtxt="//*/*[1110]"
+               ApiRefType="parent">
+    Print
+  </SilkTestDoc>
+  <Apiinfo id="1705" time="2012-02-18; 20:54:33"
+           timeStamp="|33|54|20|18|1|112|6|48|0|" idx="//*/*[1704]" severity="0">
+    Message: Test case TestTrading started at 20:52:39 and ended at 20:54:33 and took time elapsed: 1:54.562 secs.
+  </Apiinfo>
+  <Apiinfo id="1706" time="2012-02-18; 20:54:36"
+           timeStamp="|36|54|20|18|1|112|6|48|0|" idx="//*/*[1110]" severity="0">
+    Elapsed Time: 00:01:58
+  </Apiinfo>
+  <Apiinfo id="1707" time="2012-02-18; 20:54:38"
+           timeStamp="|38|54|20|18|1|112|6|48|0|" idx="//*/*[3]" severity="3">
+    Elapsed Time: 00:08:44
+  </Apiinfo>
+</SilkPerformerLog>
